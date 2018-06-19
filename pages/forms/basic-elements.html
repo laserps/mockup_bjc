@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Inspire - Bootstrap Admin Dashboard Template</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Bootstrap core CSS     -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--  Paper Dashboard CSS    -->
+    <link href="../../assets/css/inspire.css" rel="stylesheet">
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="../../assets/css/demo.css" rel="stylesheet">
+
+    <!--     Fonts and icons     -->
+    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../assets/css/font-muli.css" rel='stylesheet' type='text/css'>
+    <link href="../../assets/css/themify-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="logo">
+                <a href="#" class="simple-text">
+                  Inspire Admin
+                </a>
+            </div>
+            <div class="logo logo-mini">
+                <a href="#" class="simple-text">
+                  I
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav flex-column">
+                    <li class="d-flex flex-column">
+                        <a class="nav-link" href="../index.html">
+                            <i class="nav-icon ti-panel"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="d-flex flex-column">
+                        <a class="nav-link" href="../widgets/widgets.html">
+                            <i class="nav-icon ti-widget"></i>
+                            <p>Widgets</p>
+                        </a>
+                    </li>
+                    <li class="d-flex flex-column">
+                        <a data-toggle="collapse" href="#charts" class="collapsed nav-link" aria-expanded="false">
+                            <i class="nav-icon ti-bar-chart-alt"></i>
+                            <p>Charts
+                                <i class="fa fa-sort-desc submenu-toggle"></i>
+                            </p>
+                        </a>
+                        <div class="collapse" id="charts" role="navigation" aria-expanded="false" style="height: 0px;">
+                            <ul class="nav flex-column">
+                                <li>
+                                    <a class="nav-link" href="../charts/chart-js-charts.html">ChartJS</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="../charts/flot-charts.html">Flot</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column">
+                        <a data-toggle="collapse" href="#ui-elements" class="collapsed nav-link" aria-expanded="false">
+                            <i class="nav-icon ti-package"></i>
+                            <p>UI Elements
+                                <i class="fa fa-sort-desc submenu-toggle"></i>
+                            </p>
+                        </a>
+                        <div class="collapse" id="ui-elements" role="navigation" aria-expanded="false" style="height: 0px;">
+                            <ul class="nav flex-column">
+                                <li><a class="nav-link" href="../ui/accordions.html">Accordions</a></li>
+                                <li><a class="nav-link" href="../ui/alerts.html">Alerts</a></li>
+                                <li><a class="nav-link" href="../ui/buttons.html">Buttons</a></li>
+                                <li><a class="nav-link" href="../ui/grid.html">Grid System</a></li>
+                                <li><a class="nav-link" href="../ui/icons.html">Icons</a></li>
+                                <li><a class="nav-link" href="../ui/modals.html">Modals</a></li>
+                                <li><a class="nav-link" href="../ui/notifications.html">Notifications</a></li>
+                                <li><a class="nav-link" href="../ui/tabs.html">Tabs</a></li>
+                                <li><a class="nav-link" href="../ui/typography.html">Typography</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column active">
+                        <a data-toggle="collapse" href="#forms" class="collapsed nav-link" aria-expanded="false">
+                            <i class="nav-icon ti-clipboard"></i>
+                            <p>Forms
+                                <i class="fa fa-sort-desc submenu-toggle"></i>
+                            </p>
+                        </a>
+                        <div class="collapse" id="forms" role="navigation" aria-expanded="false" style="height: 0px;">
+                            <ul class="nav flex-column">
+                                <li class="active"><a class="nav-link" href="../forms/basic-elements.html">Basic Elements</a></li>
+                                <li><a class="nav-link" href="../forms/advanced-elements.html">Advanced Elements</a></li>
+                                <li><a class="nav-link" href="../forms/form-validation.html">Form Validation</a></li>
+                                <li><a class="nav-link" href="../forms/form-wizard.html">Form Wizard</a></li>
+                                <li><a class="nav-link" href="../forms/sample-forms.html">Sample Forms</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column">
+                        <a data-toggle="collapse" href="#tables" class="collapsed nav-link" aria-expanded="false">
+                            <i class="nav-icon ti-view-list-alt"></i>
+                            <p>Tables
+                                <i class="fa fa-sort-desc submenu-toggle"></i>
+                            </p>
+                        </a>
+                        <div class="collapse" id="tables" role="navigation" aria-expanded="false" style="height: 0px;">
+                            <ul class="nav flex-column">
+                                <li><a class="nav-link" href="../tables/tables.html">Simple Tables</a></li>
+                                <li><a class="nav-link" href="../tables/data-tables.html">Data Tables</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column">
+                        <a data-toggle="collapse" href="#pages" class="collapsed nav-link" aria-expanded="false">
+                            <i class="nav-icon ti-gift"></i>
+                            <p>Pages
+                                <i class="fa fa-sort-desc submenu-toggle"></i>
+                            </p>
+                        </a>
+                        <div class="collapse" id="pages" role="navigation" aria-expanded="false" style="height: 0px;">
+                            <ul class="nav flex-column">
+                                <li><a class="nav-link" href="../sample-pages/template.html">Template</a></li>
+                                <li><a class="nav-link" href="../sample-pages/user-profile.html">User Profile</a></li>
+                                <li><a class="nav-link" href="../sample-pages/login.html">Login</a></li>
+                                <li><a class="nav-link" href="../sample-pages/signup.html">Sign Up</a></li>
+                                <li><a class="nav-link" href="../sample-pages/pricing-table.html">Pricing Table</a></li>
+                                <li><a class="nav-link" href="../sample-pages/invoice.html">Invoice</a></li>
+                                <li><a class="nav-link" href="../sample-pages/help-faqs.html">Help & FAQs</a></li>
+                                <li><a class="nav-link" href="../sample-pages/timeline.html">Timeline</a></li>
+                                <li><a class="nav-link" href="../sample-pages/404.html">404</a></li>
+                                <li><a class="nav-link" href="../sample-pages/500.html">500</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column">
+                        <a class="nav-link" href="../calendar/calendar.html">
+                            <i class="nav-icon ti-calendar"></i>
+                            <p>Calendar</p>
+                        </a>
+                    </li>
+                    <li class="d-flex flex-column">
+                        <a class="nav-link" href="../docs/documentation.html">
+                            <i class="nav-icon ti-help"></i>
+                            <p>Documentation</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <nav class="navbar navbar-default navbar-toggleable-md navbar-inverse">
+                <div class="navbar-minimize">
+                    <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+                         <i class="ti-arrow-left"></i>
+                    </button>
+                </div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarsItems" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"> Forms </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarItems">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle nav-link" id="notificationList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="ti-bell nav-icon"></i>
+                                <span class="notification">6</span>
+                                <p class="hidden-lg-up">
+                                    Notifications
+                                    <i class="fa fa-sort-desc submenu-toggle"></i>
+                                </p>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="notificationList">
+                                <a class="dropdown-item" href="#">You have 5 new messages</a>
+                                <a class="dropdown-item" href="#">You're now friend with Mike</a>
+                                <a class="dropdown-item" href="#">Wish Mary on her birthday!</a>
+                                <a class="dropdown-item" href="#">5 warnings in Server Console</a>
+                                <a class="dropdown-item" href="#">Jane completed 'Induction Training'</a>
+                                <a class="dropdown-item" href="#">'Prepare Marketing Report' is overdue</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                <i class="ti-layout-grid3-alt nav-icon"></i>
+                                <p class="hidden-lg-up">Apps</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                <i class="ti-user nav-icon"></i>
+                                <p class="hidden-lg-up">Profile</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                <i class="ti-settings nav-icon"></i>
+                                <p class="hidden-lg-up">Settings</p>
+                            </a>
+                        </li>
+                        <li class="separator hidden-lg-up"></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <form method="get" action="/" class="form-horizontal">
+                                    <div class="header card-header-text">
+                                        <h4 class="title">Form Elements</h4>
+                                    </div>
+                                    <div class="content">
+                                        <fieldset>
+                                            <div class="form-group row">
+                                                <label class="col-md-2 col-form-label">With help</label>
+                                                <div class="col-md-10">
+                                                    <input type="text" class="form-control">
+                                                    <span class="form-text text-muted">A block of help text that breaks onto a new line.</span>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="form-group row">
+                                                <label class="col-md-2 col-form-label">Password</label>
+                                                <div class="col-md-10">
+                                                    <input type="password" name="password" class="form-control">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="form-group row">
+                                                <label class="col-md-2 col-form-label">Placeholder</label>
+                                                <div class="col-md-10">
+                                                    <input type="text" placeholder="placeholder" class="form-control">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="form-group row">
+
+                                                <label class="col-md-2 col-form-label">Disabled</label>
+                                                <div class="col-md-10">
+                                                    <input type="text" placeholder="Disabled input here..." disabled="" class="form-control">
+                                                </div>
+
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset>
+                                            <div class="form-group row">
+
+                                                <label class="col-md-2 col-form-label">Static control</label>
+                                                <div class="col-md-10">
+                                                    <p class="form-control-static">hello@example.com</p>
+                                                </div>
+
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset>
+                                            <div class="form-group row">
+
+                                                <label class="col-md-2 col-form-label">Checkboxes and radios</label>
+                                                <div class="col-md-10">
+                                                    <div class="form-check">
+                                                        <label class="checkbox form-check-label">
+                                                            <input type="checkbox" class="form-check-input" data-toggle="checkbox" value="">First Checkbox
+                                                          </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label class="checkbox form-check-label">
+                                                              <input type="checkbox" class="form-check-input" data-toggle="checkbox" value="">Second Checkbox
+                                                            </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label class="radio form-check-label">
+                                                              <input type="radio" class="form-check-input" data-toggle="radio" name="optionsRadios" value="option1" checked="">First Radio
+                                                            </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label class="radio form-check-label">
+                                                              <input type="radio" class="form-check-input" data-toggle="radio" name="optionsRadios" value="option2">Second Radio
+                                                            </label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset>
+                                            <div class="form-group row">
+
+                                                <label class="col-md-2">Inline checkboxes</label>
+                                                <div class="col-md-10">
+                                                    <div class="form-check form-check-inline">
+                                                        <label class="checkbox checkbox-inline form-check-label">
+                                                            <input type="checkbox" class="form-check-input" data-toggle="checkbox" value="option1">a
+                                                          </label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <label class="checkbox checkbox-inline form-check-label">
+                                                          <input type="checkbox" class="form-check-input" data-toggle="checkbox" value="option2">b
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <label class="checkbox checkbox-inline form-check-label">
+                                                          <input type="checkbox" class="form-check-input" data-toggle="checkbox" value="option3">c
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <form method="get" action="/" class="form-horizontal">
+                                    <div class="header card-header-text">
+                                        <h4 class="title">Input Variants</h4>
+                                    </div>
+                                    <div class="content">
+                                        <fieldset>
+                                            <div class="form-group row">
+
+                                                <label class="col-md-2">Custom Checkboxes &amp; radios</label>
+                                                <div class="col-md-4 offset-md-1">
+                                                    <div class="form-check">
+                                                        <label class="checkbox form-check-label">
+      	                                                    <input type="checkbox" class="form-check-input" data-toggle="checkbox" value="">
+      	                                                    Unchecked
+      	                                                   </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label class="checkbox form-check-label">
+    	                                                    <input type="checkbox" class="form-check-input" data-toggle="checkbox" value="" checked>
+    	                                                    Checked
+    	                                                   </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label class="checkbox form-check-label">
+    	                                                    <input type="checkbox" class="form-check-input" data-toggle="checkbox" value="" disabled>
+    	                                                    Disabled unchecked
+    	                                                   </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label class="checkbox form-check-label">
+    	                                                    <input type="checkbox" class="form-check-input" data-toggle="checkbox" value="" disabled checked>
+    	                                                    Disabled checked
+    	                                                   </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <div class="form-check">
+                                                        <label class="radio form-check-label">
+    	                                                    <input type="radio" class="form-check-input" data-toggle="radio" name="optionsRadios2" value="">
+    	                                                    Radio is off
+    	                                                   </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label class="radio form-check-label">
+    	                                                    <input type="radio" class="form-check-input" data-toggle="radio" name="optionsRadios2" value="" checked>
+    	                                                    Radio is on
+    	                                                   </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label class="radio form-check-label">
+    	                                                    <input type="radio" class="form-check-input" data-toggle="radio" name="optionsRadiosDisabled2" value="" disabled>
+    	                                                    Disabled radio is off
+    	                                                   </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label class="radio form-check-label">
+    	                                                    <input type="radio" class="form-check-input" data-toggle="radio" name="optionsRadiosDisabled2" value="" checked disabled>
+    	                                                    Disabled radio is on
+    	                                                   </label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset>
+                                            <div class="form-group has-success">
+                                                <div class="row">
+                                                    <label class="col-md-2">Input with success</label>
+                                                    <div class="col-md-10">
+                                                        <input type="text" value="Success" class="form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset>
+                                            <div class="form-group has-error">
+                                                <div class="row">
+                                                    <label class="col-md-2">Input with error</label>
+                                                    <div class="col-md-10">
+                                                        <input type="text" value="Error" class="form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset>
+                                            <div class="form-group row">
+                                                <label class="col-md-2">Column sizing</label>
+                                                <div class="col-md-10">
+                                                    <div class="row">
+                                                        <div class="col-lg-3">
+                                                            <input type="text" placeholder=".col-lg-3" class="form-control">
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <input type="text" placeholder=".col-lg-4" class="form-control">
+                                                        </div>
+                                                        <div class="col-lg-5">
+                                                            <input type="text" placeholder=".col-lg-5" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <label class="col-md-2">Input groups</label>
+                                                    <div class="col-md-3">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">@</span>
+                                                            <input type="text" placeholder="Username" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control">
+                                                            <span class="input-group-addon">.00</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">$</span>
+                                                            <input type="text" class="form-control">
+                                                            <span class="input-group-addon">.00</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="form-group row">
+
+                                                <label class="col-md-2">Textarea</label>
+                                                <div class="col-md-10">
+                                                    <textarea class="form-control" placeholder="Here can be your nice text" rows="3"></textarea>
+                                                </div>
+
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="float-left-xl">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Documentation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Contact
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Support
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="copyright float-right">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        <a href="#">Inspire Admin</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="../../assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="../../assets/vendors/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../../assets/vendors/tether.min.js" type="text/javascript"></script>
+    <script src="../../assets/vendors/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../../assets/vendors/material.min.js" type="text/javascript"></script>
+    <script src="../../assets/vendors/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+    <!-- Forms Validations Plugin -->
+    <script src="../../assets/vendors/jquery.validate.min.js"></script>
+    <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+    <script src="../../assets/vendors/moment.min.js"></script>
+    <!--  Charts Plugin -->
+    <script src="../../assets/vendors/chartist.min.js"></script>
+    <!--  Plugin for the Wizard -->
+    <script src="../../assets/vendors/jquery.bootstrap-wizard.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="../../assets/vendors/bootstrap-notify.js"></script>
+    <!-- DateTimePicker Plugin -->
+    <script src="../../assets/vendors/bootstrap-datepicker.min.js"></script>
+    <!--  Checkbox, Radio, Switch and Tags Input Plugins -->
+    <script src="../../assets/js/bootstrap-checkbox-radio-switch-tags.js"></script>
+    <!-- Vector Map plugin -->
+    <script src="../../assets/vendors/jquery-jvectormap.js"></script>
+    <!-- Sliders Plugin -->
+    <script src="../../assets/vendors/nouislider.min.js"></script>
+    <!-- Select Plugin -->
+    <script src="../../assets/vendors/jquery.select-bootstrap.js"></script>
+    <!--  DataTables.net Plugin    -->
+    <script src="../../assets/vendors/jquery.dataTables.min.js"></script>
+<script src="../../assets/vendors/dataTables.bootstrap4.js"></script>
+    <!-- Sweet Alert 2 plugin -->
+    <script src="../../assets/vendors/sweetalert/js/sweetalert2.min.js"></script>
+    <!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+    <script src="../../assets/vendors/jasny-bootstrap.min.js"></script>
+    <!--  Full Calendar Plugin    -->
+    <script src="../../assets/vendors/fullcalendar.min.js"></script>
+    <!-- TagsInput Plugin -->
+    <script src="../../assets/vendors/jquery.tagsinput.js"></script>
+    <!-- Material Dashboard javascript methods -->
+    <script src="../../assets/js/inspire.js"></script>
+    <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+    <script src="../../assets/js/demo.js"></script>
+</body>
+
+</html>

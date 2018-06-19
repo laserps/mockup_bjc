@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Inspire - Bootstrap Admin Dashboard Template</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <meta name="viewport" content="width=device-width">
+  <!-- Bootstrap core CSS     -->
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+  <!--  Paper Dashboard CSS    -->
+  <link href="../../assets/css/inspire.css" rel="stylesheet">
+  <!--  CSS for Demo Purpose, don't include it in your project     -->
+  <link href="../../assets/css/demo.css" rel="stylesheet">
+  <!--     Fonts and icons     -->
+  <link href="../../assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../../assets/css/font-muli.css" rel="stylesheet" type="text/css">
+  <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css">
+  <link href="../../assets/css/themify-icons.css" rel="stylesheet"> </head>
+
+<body>
+  <div class="wrapper">
+    <div class="sidebar">
+      <div class="logo">
+        <a href="#" class="simple-text">
+          <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
+      </div>
+      <div class="logo logo-mini">
+        <a href="#" class="simple-text"> Work </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav flex-column">
+          <li class="d-flex flex-column active">
+            <a href="../1_sale.html">
+              <i class="nav-icon ti-panel"></i>
+              <p>งานขาย</p>
+            </a>
+          </li>
+          <li class="d-flex flex-column">
+            <a href="../1_bake.html">
+              <i class="nav-icon ti-panel"></i>
+              <p>งานอบสายพาน</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <nav class="navbar navbar-default navbar-toggleable-md navbar-inverse">
+        <div class="navbar-minimize">
+          <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+            <i class="ti-arrow-left"></i>
+          </button>
+        </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">งานขาย</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarItems">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle nav-link" id="notificationList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="ti-bell nav-icon"></i>
+                <span class="notification">6</span>
+                <p class="hidden-lg-up"> Notifications
+                  <i class="fa fa-sort-desc submenu-toggle"></i>
+                </p>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="notificationList">
+                <a class="dropdown-item" href="#">You have 5 new messages</a>
+                <a class="dropdown-item" href="#">You're now friend with Mike</a>
+                <a class="dropdown-item" href="#">Wish Mary on her birthday!</a>
+                <a class="dropdown-item" href="#">5 warnings in Server Console</a>
+                <a class="dropdown-item" href="#">Jane completed 'Induction Training'</a>
+                <a class="dropdown-item" href="#">'Prepare Marketing Report' is overdue</a>
+              </div>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-layout-grid3-alt nav-icon"></i>
+                <p class="hidden-lg-up">Apps</p>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-user nav-icon"></i>
+                <p class="hidden-lg-up">Profile</p>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-settings nav-icon"></i>
+                <p class="hidden-lg-up">Settings</p>
+              </a>
+            </li>
+            <li class="separator hidden-lg-up"></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body p-3">
+                  <form class="">
+                    <div class="form-group">
+                      <label>วันที่</label>
+                      <input type="date" class="form-control" placeholder="Enter email"> </div>
+                    <div class="form-group">
+                      <label for="firstName">ชื่อลูกค้า</label>
+                      <input type="text" class="form-control"> </div>
+                    <div class="form-group">
+                      <label for="firstName">นามสกุลลูกค้า</label>
+                      <input type="text" class="form-control"> </div>
+                    <div class="form-group">
+                      <label for="firstName">ประเภทลูกค้า</label>
+                      <select class="form-control">
+                        <option value="ประเภทหนึ่ง">ประเภทหนึ่ง</option>
+                        <option value="ประเภทสอง">ประเภทสอง</option>
+                        <option value="ประเภทสาม">ประเภทสาม</option>
+                        <option value="ประเภทสี่">ประเภทสี่</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="firstName">ชนิดสายพาน</label>
+                      <select class="form-control">
+                        <option value="1">บั้ง</option>
+                        <option value="2">เรียบ</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="firstName">สี</label>
+                      <select class="form-control">
+                        <option value="1">ดำ</option>
+                        <option value="2">ขาว</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="firstName">เกรดยางบน</label>
+                      <select class="form-control">
+                        <option value="1">M</option>
+                        <option value="2">PI</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="firstName">เกรดยางล่าง</label>
+                      <select class="form-control">
+                        <option value="1">M</option>
+                        <option value="2">PI</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="firstName">ชั้นผ้า</label>
+                      <input type="text" class="form-control"> </div>
+                    <div class="form-group">
+                      <label for="firstName">ชนิดผ้า</label>
+                      <select class="form-control">
+                        <option value="1">EP100</option>
+                        <option value="2">EP110</option>
+                        <option value="3">EP120</option>
+                        <option value="4">EP130</option>
+                        <option value="5">EP140</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="firstName">หนาบน</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" aria-label="...">
+                        <div class="input-group-btn">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                              <a href="#">มม.</a>
+                            </li>
+                            <li>
+                              <a href="#">ซม.</a>
+                            </li>
+                            <li>
+                              <a href="#">ม.</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /btn-group -->
+                      </div>
+                      <!-- /input-group -->
+                    </div>
+                    <!-- /.col-lg-6 -->
+                    <div class="form-group">
+                      <label for="firstName">หนาล่าง</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" aria-label="...">
+                        <div class="input-group-btn">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                              <a href="#">มม.</a>
+                            </li>
+                            <li>
+                              <a href="#">ซม.</a>
+                            </li>
+                            <li>
+                              <a href="#">ม.</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /btn-group -->
+                      </div>
+                      <!-- /input-group -->
+                    </div>
+                    <!-- /.col-lg-6 -->
+                    <div class="form-group">
+                      <label for="firstName">หนารวม</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" aria-label="...">
+                        <div class="input-group-btn">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                              <a href="#">มม.</a>
+                            </li>
+                            <li>
+                              <a href="#">ซม.</a>
+                            </li>
+                            <li>
+                              <a href="#">ม.</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /btn-group -->
+                      </div>
+                      <!-- /input-group -->
+                    </div>
+                    <!-- /.col-lg-6 -->
+                    <div class="form-group">
+                      <label for="firstName">ความยาว</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" aria-label="...">
+                        <div class="input-group-btn">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">หน่วย
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                              <a href="#">มม.</a>
+                            </li>
+                            <li>
+                              <a href="#">ซม.</a>
+                            </li>
+                            <li>
+                              <a href="#">ม.</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /btn-group -->
+                      </div>
+                      <!-- /input-group -->
+                    </div>
+                    <!-- /.col-lg-6 -->
+                      
+                    <div class="form-group">
+                      <label for="firstName">การอบ</label>
+                      <select class="form-control">
+                        <option value="ประเภทหนึ่ง">ตัดยาว</option>
+                        <option value="ประเภทสอง">ต่อกลม</option>
+                      </select>
+                    </div>
+                      
+                    <div class="form-group">
+                      <label for="firstName">จำนวน</label>
+                      <input type="text" class="form-control">
+                    </div>
+                      
+                    <div class="form-group">
+                      <label for="firstName"></label>
+                      <label for="firstName">สถานที่ส่งมอบ</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    </div>  
+                      
+                      
+                    <button type="submit" class="btn btn-light">บันทึก</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <p class="copyright float-right"> ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../../assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/tether.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/material.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+  <!-- Forms Validations Plugin -->
+  <script src="../../assets/vendors/jquery.validate.min.js"></script>
+  <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+  <script src="../../assets/vendors/moment.min.js"></script>
+  <!--  Charts Plugin -->
+  <script src="../../assets/vendors/chartist.min.js"></script>
+  <!--  Plugin for the Wizard -->
+  <script src="../../assets/vendors/jquery.bootstrap-wizard.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../../assets/vendors/bootstrap-notify.js"></script>
+  <!-- DateTimePicker Plugin -->
+  <script src="../../assets/vendors/bootstrap-datepicker.min.js"></script>
+  <!-- Vector Map plugin -->
+  <script src="../../assets/vendors/jquery-jvectormap.js"></script>
+  <!-- Sliders Plugin -->
+  <script src="../../assets/vendors/nouislider.min.js"></script>
+  <!-- Select Plugin -->
+  <script src="../../assets/vendors/jquery.select-bootstrap.js"></script>
+  <!--  DataTables.net Plugin    -->
+  <script src="../../assets/vendors/jquery.dataTables.min.js"></script>
+  <script src="../../assets/vendors/dataTables.bootstrap4.js"></script>
+  <!-- Sweet Alert 2 plugin -->
+  <script src="../../assets/vendors/sweetalert/js/sweetalert2.min.js"></script>
+  <!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+  <script src="../../assets/vendors/jasny-bootstrap.min.js"></script>
+  <!--  Full Calendar Plugin    -->
+  <script src="../../assets/vendors/fullcalendar.min.js"></script>
+  <!-- TagsInput Plugin -->
+  <script src="../../assets/vendors/jquery.tagsinput.js"></script>
+  <!-- Material Dashboard javascript methods -->
+  <script src="../../assets/js/inspire.js"></script>
+  <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../../assets/js/demo.js"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
+</body>
+
+</html>
