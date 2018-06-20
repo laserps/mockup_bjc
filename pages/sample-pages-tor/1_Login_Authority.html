@@ -73,7 +73,7 @@
                             <div class="form-group">
                               <label>Register</label>
                             </div>
-                            <label>Surgical ID
+                            <label class="p-2">Surgical ID
                               <input type="text" size="5">-
                               <input type="text" size="10"> </label>
                           </div>
@@ -82,36 +82,36 @@
                           <div class="card-body p-2">
                             <div class="row">
                               <div class="col-md-6">
-                                <div>
+                                <div class="p-2">
                                   <label for="firstName">HZ:&nbsp;</label>
-                                  <input type="text"> </div>
+                                  <input type="text" size="27"> </div>
                               </div>
                               <div class="col-md-6">
-                                <div>
+                                <div class="p-2">
                                   <label for="firstName">Name</label>
-                                  <input type="text"> </div>
+                                  <input type="text" size="35"> </div>
                               </div>
                             </div>
                             <div class="row">
                               <div class="col-md-6">
-                                <div>
+                                <div class="p-2">
                                   <label for="firstName">Sex:</label>
-                                  <input type="text"> </div>
+                                  <input type="text" size="27"> </div>
                               </div>
                               <div class="col-md-6">
-                                <div>
+                                <div class="p-2">
                                   <label for="firstName">Age:</label>
-                                  <label for="firstName">Year(s):</label>
+                                  <label for="firstName">Year(s)</label>
+                                  <input type="text" size="1" placeholder="0" class="">
+                                  <label for="firstName">Month(s)</label>
                                   <input type="text" size="1" placeholder="0">
-                                  <label for="firstName">Month(s):</label>
-                                  <input type="text" size="1" placeholder="0">
-                                  <label for="firstName">Day(s):</label>
+                                  <label for="firstName">Day(s)</label>
                                   <input type="text" size="1" placeholder="0"> </div>
                               </div>
                             </div>
                             <div class="row">
                               <div class="col-md-6">
-                                <div>
+                                <div class="p-2">
                                   <label for="firstName">Ethnic:</label>
                                   <input type="text" size="5">
                                   <label for="firstName" contenteditable="true">&nbsp; Marital
@@ -119,10 +119,10 @@
                                 </div>
                               </div>
                               <div class="col-md-6">
-                                <div>
+                                <div class="p-2">
                                   <label for="firstName">Surgeon</label>
-                                  <input type="text" size="2">
-                                  <input type="text" size="3"> </div>
+                                  <input type="text" size="10">
+                                  <input type="text" size="17"> </div>
                               </div>
                             </div>
                           </div>
@@ -279,97 +279,105 @@
                             </div>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div class="card ">
-                              <div class="row">
-                                <div class="col-md-12">
-                                  <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th>No.</th>
-                                        <th>Status</th>
-                                        <th>ผู้ตัด</th>
-                                        <th>ผู้ช่วยตัด</th>
-                                        <th>วันเวลาที่ตัดเสร็จ</th>
-                                        <th>คำสั่ง</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>
-                                          <button class="btn btn-info btn-xs">
-                                            <i class="fa fa-list"></i>
-                                          </button>
-                                          <button class="btn btn-warning btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                          </button>
-                                          <button class="btn btn-danger btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                          </button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>
-                                          <button class="btn btn-info btn-xs">
-                                            <i class="fa fa-list"></i>
-                                          </button>
-                                          <button class="btn btn-warning btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                          </button>
-                                          <button class="btn btn-danger btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                          </button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>
-                                          <button class="btn btn-info btn-xs">
-                                            <i class="fa fa-list"></i>
-                                          </button>
-                                          <button class="btn btn-warning btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                          </button>
-                                          <button class="btn btn-danger btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                          </button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>
-                                          <button class="btn btn-info btn-xs">
-                                            <i class="fa fa-list"></i>
-                                          </button>
-                                          <button class="btn btn-warning btn-xs">
-                                            <i class="fa fa-edit"></i>
-                                          </button>
-                                          <button class="btn btn-danger btn-xs">
-                                            <i class="fa fa-trash"></i>
-                                          </button>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
+                        <div class="card">
+                          <div class="card-body p-2">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <div class="card ">
+                                      <div class="row">
+                                        <div class="col-md-12">
+                                          <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th>No.</th>
+                                                <th>Status</th>
+                                                <th>ผู้ตัด</th>
+                                                <th>ผู้ช่วยตัด</th>
+                                                <th>วันเวลาที่ตัดเสร็จ</th>
+                                                <th>คำสั่ง</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                  <button class="btn btn-info btn-xs">
+                                                    <i class="fa fa-list"></i>
+                                                  </button>
+                                                  <button class="btn btn-warning btn-xs">
+                                                    <i class="fa fa-edit"></i>
+                                                  </button>
+                                                  <button class="btn btn-danger btn-xs">
+                                                    <i class="fa fa-trash"></i>
+                                                  </button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                  <button class="btn btn-info btn-xs">
+                                                    <i class="fa fa-list"></i>
+                                                  </button>
+                                                  <button class="btn btn-warning btn-xs">
+                                                    <i class="fa fa-edit"></i>
+                                                  </button>
+                                                  <button class="btn btn-danger btn-xs">
+                                                    <i class="fa fa-trash"></i>
+                                                  </button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                  <button class="btn btn-info btn-xs">
+                                                    <i class="fa fa-list"></i>
+                                                  </button>
+                                                  <button class="btn btn-warning btn-xs">
+                                                    <i class="fa fa-edit"></i>
+                                                  </button>
+                                                  <button class="btn btn-danger btn-xs">
+                                                    <i class="fa fa-trash"></i>
+                                                  </button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                  <button class="btn btn-info btn-xs">
+                                                    <i class="fa fa-list"></i>
+                                                  </button>
+                                                  <button class="btn btn-warning btn-xs">
+                                                    <i class="fa fa-edit"></i>
+                                                  </button>
+                                                  <button class="btn btn-danger btn-xs">
+                                                    <i class="fa fa-trash"></i>
+                                                  </button>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
