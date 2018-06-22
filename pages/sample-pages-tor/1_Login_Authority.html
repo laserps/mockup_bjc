@@ -184,8 +184,13 @@
                                     <div class="col-md-2 p-2">
                                       <label class="p-">Surgical ID</label>
                                     </div>
-                                    <div class="col-md-10 p-2">
+                                    <div class="col-md-4 p-2">
                                       <label>xxxx-xxxxx</label>
+                                    </div>
+                                    <div class="col-md-5">
+                                      <select class="form-control">
+                                        <option value="เลือก">ความเร่งด่วน</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -256,7 +261,7 @@
                                     </div>
                                   </div>
                                   <div class="col-md-2">
-                                    <a href="#" class="btn btn-outline-primary p-2 pull-right">Add test</a>
+                                    <button class="btn pull-right" data-target="#example" type="button" data-toggle="modal"> Add test </button>
                                   </div>
                                 </div>
                               </div>
@@ -341,9 +346,6 @@
                           </div>
                         </div>
                         <div class="card">
-                          <div class="card-body p-2"> </div>
-                        </div>
-                        <div class="card">
                           <div class="card-body p-2">
                             <div class="row">
                               <div class="col-md-12">
@@ -383,7 +385,7 @@
                                                 <td>
                                                   <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
                                                 <td>
-                                                  <button class="btn btn-warning btn-xs">
+                                                  <button class="btn btn-warning btn-xs" data-target="#exampleModalLong" type="button" data-toggle="modal">
                                                     <i class="fa fa-edit"></i>
                                                   </button>
                                                   <button class="btn btn-danger btn-xs">
@@ -404,7 +406,7 @@
                                                 <td>
                                                   <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
                                                 <td>
-                                                  <button class="btn btn-warning btn-xs">
+                                                  <button class="btn btn-warning btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
                                                     <i class="fa fa-edit"></i>
                                                   </button>
                                                   <button class="btn btn-danger btn-xs">
@@ -425,7 +427,7 @@
                                                 <td>
                                                   <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
                                                 <td>
-                                                  <button class="btn btn-warning btn-xs">
+                                                  <button class="btn btn-warning btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
                                                     <i class="fa fa-edit"></i>
                                                   </button>
                                                   <button class="btn btn-danger btn-xs">
@@ -446,7 +448,7 @@
                                                 <td>
                                                   <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
                                                 <td>
-                                                  <button class="btn btn-warning btn-xs">
+                                                  <button class="btn btn-warning btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
                                                     <i class="fa fa-edit"></i>
                                                   </button>
                                                   <button class="btn btn-danger btn-xs">
@@ -589,6 +591,74 @@
     <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
       <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
     </pingendo>
+  </div>
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-3 p-2">
+              <label>ผู้ตัด</label>
+            </div>
+            <div class="col-md-9">
+              <input type="text" class="form-control"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 p-2">
+              <label>ผู้ช่วยตัด</label>
+            </div>
+            <div class="col-md-9">
+              <input type="text" class="form-control"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 p-2">
+              <label>วันเวลาที่เริ่มตัด</label>
+            </div>
+            <div class="col-md-9">
+              <input type="text" class="form-control"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 p-2">
+              <label>วันเวลาที่ตัดเสร็จ</label>
+            </div>
+            <div class="col-md-9">
+              <input type="text" class="form-control"> </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">บันทึก</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="example" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="checkbox" aria-label="Checkbox for following text input" value="on"> item 1 </div>
+            <div class="col-md-6">
+              <input type="checkbox" aria-label="Checkbox for following text input" value="on"> item 2 </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="checkbox" aria-label="Checkbox for following text input" value="on"> item 3 </div>
+            <div class="col-md-6">
+              <input type="checkbox" aria-label="Checkbox for following text input" value="on"> item 4 </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="checkbox" aria-label="Checkbox for following text input" value="on"> item 5 </div>
+            <div class="col-md-6">
+              <input type="checkbox" aria-label="Checkbox for following text input" value="on"> item 6 </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">บันทึก</button>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 
