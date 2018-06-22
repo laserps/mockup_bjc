@@ -37,7 +37,7 @@
           <li class="d-flex flex-column">
             <a href="0_Register.html">
               <i class="nav-icon"></i>
-              <p>ลงทะเบียนผู้ป่วย</p>
+              <p>ลงทะเบียนผู้ป่วยใหม่</p>
             </a>
           </li>
           <li class="d-flex flex-column active">
@@ -143,33 +143,12 @@
                                 </div>
                               </div>
                               <div class="col-md-6">
-                                <div class="p-2">
-                                  <div class="row p-2">
-                                    <div class="col-md-12 p-2">
-                                      <label for="firstName">Age</label>
-                                    </div>
+                                <div class="row p-2">
+                                  <div class="col-md-2 p-2">
+                                    <label for="firstName">Age</label>
                                   </div>
-                                  <div class="row p-2">
-                                    <div class="col-md-2 p-2">
-                                      <label for="firstName">Year(s)</label>
-                                    </div>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                  <div class="row p-2">
-                                    <div class="col-md-2 p-2">
-                                      <label for="firstName">Month(s)</label>
-                                    </div>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                  <div class="row p-2">
-                                    <div class="col-md-2 p-2">
-                                      <label for="firstName">Day(s)</label>
-                                    </div>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
+                                  <div class="col-md-9">
+                                    <input type="date" class="form-control"> </div>
                                 </div>
                               </div>
                             </div>
@@ -194,13 +173,9 @@
                                     <div class="col-md-2 p-2">
                                       <label class="p-">Surgical ID</label>
                                     </div>
-                                    <div class="col-md-3">
-                                      <input type="text" class="form-control"> </div>
-                                    <div class="col-md-0">
-                                      <label class="p-2">-</label>
+                                    <div class="col-md-10 p-2">
+                                      <label>xxxx-xxxxx</label>
                                     </div>
-                                    <div class="col-md-2">
-                                      <input type="text" class="form-control"> </div>
                                   </div>
                                 </div>
                               </div>
@@ -212,10 +187,7 @@
                             <div class="card">
                               <div class="card-body p-2">
                                 <div class="row">
-                                  <div class="col-md-2">
-                                    <a href="#" class="btn btn-outline-primary p-2">Add test</a>
-                                  </div>
-                                  <div class="col-md-8">
+                                  <div class="col-md-10">
                                     <div class="card p-2">
                                       <div class="row">
                                         <div class="col-md-12 text-right"> </div>
@@ -272,6 +244,9 @@
                                       </div>
                                     </div>
                                   </div>
+                                  <div class="col-md-2">
+                                    <a href="#" class="btn btn-outline-primary p-2 pull-right">Add test</a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -283,7 +258,9 @@
                                       <label for="firstName">ผู้ปฏิบัติงาน : Duangkamon Wattanatranon, M.D.</label>
                                     </div>
                                     <div class="col-md-6">
-                                      <button type="submit" class="btn btn-light pull-right">Main nenu</button>
+                                      <button type="submit" class="btn btn-light pull-right">บันทึก</button>
+                                      <button type="submit" class="btn btn-light pull-right">พิมพ์บาร์โค๊ด</button>
+                                      <button type="submit" class="btn btn-light pull-right">พิมพ์ออร์เดอร์</button>
                                     </div>
                                   </div>
                                 </div>
@@ -320,23 +297,21 @@
                                   </div>
                                   <div class="col-md-3">
                                     <input type="text" class="form-control"> </div>
-                                  <div class="col-md-7">
-                                    <input type="text" class="form-control"> </div>
+                                  <div class="col-md-7 p-2">
+                                    <label>xxxxxxxxxxxx</label>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-body p-2">
                             <div class="row">
                               <div class="col-md-6 p-2">
                                 <div class="row">
                                   <div class="col-md-2">
                                     <label for="firstName" class="p-2">Reqistered</label>
                                   </div>
-                                  <div class="col-md-10">
-                                    <input type="text" class="form-control"> </div>
+                                  <div class="col-md-10 p-2">
+                                    <label>xxxxxxxxx xxxxxxxxxxxx</label>
+                                  </div>
                                 </div>
                               </div>
                               <div> </div>
@@ -345,13 +320,17 @@
                                   <div class="col-md-2">
                                     <label for="firstName" class="p-2">Reqistered Bv</label>
                                   </div>
-                                  <div class="col-md-10">
-                                    <input type="text" class="form-control"> </div>
+                                  <div class="col-md-10 p-2">
+                                    <label>xxxxxxxxx xxxxxxxxxxxx</label>
+                                  </div>
                                 </div>
                               </div>
                               <div> </div>
                             </div>
                           </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-body p-2"> </div>
                         </div>
                         <div class="card">
                           <div class="card-body p-2">
@@ -372,6 +351,10 @@
                                                 <th>ผู้ช่วยตัด</th>
                                                 <th>วันเวลาที่เริ่มตัด</th>
                                                 <th>วันเวลาที่ตัดเสร็จ</th>
+                                                <th>
+                                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on">ค้างส่ง</th>
+                                                <th>
+                                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on">ส่งออกนอก</th>
                                                 <th>คำสั่ง</th>
                                               </tr>
                                             </thead>
@@ -385,9 +368,10 @@
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td>
-                                                  <button class="btn btn-info btn-xs">
-                                                    <i class="fa fa-list"></i>
-                                                  </button>
+                                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                                <td>
+                                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                                <td>
                                                   <button class="btn btn-warning btn-xs">
                                                     <i class="fa fa-edit"></i>
                                                   </button>
@@ -405,9 +389,10 @@
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td>
-                                                  <button class="btn btn-info btn-xs">
-                                                    <i class="fa fa-list"></i>
-                                                  </button>
+                                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                                <td>
+                                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                                <td>
                                                   <button class="btn btn-warning btn-xs">
                                                     <i class="fa fa-edit"></i>
                                                   </button>
@@ -425,9 +410,10 @@
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td>
-                                                  <button class="btn btn-info btn-xs">
-                                                    <i class="fa fa-list"></i>
-                                                  </button>
+                                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                                <td>
+                                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                                <td>
                                                   <button class="btn btn-warning btn-xs">
                                                     <i class="fa fa-edit"></i>
                                                   </button>
@@ -445,9 +431,10 @@
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td>
-                                                  <button class="btn btn-info btn-xs">
-                                                    <i class="fa fa-list"></i>
-                                                  </button>
+                                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                                <td>
+                                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                                <td>
                                                   <button class="btn btn-warning btn-xs">
                                                     <i class="fa fa-edit"></i>
                                                   </button>
