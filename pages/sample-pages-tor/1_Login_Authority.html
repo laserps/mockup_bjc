@@ -25,7 +25,7 @@
 <body>
   <form class="form">
     <div class="card">
-      <div class="card-body">
+      <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="row">
             <a href="#" class="simple-text">
@@ -87,101 +87,86 @@
         </ul>
         <div class="tab-content mt-2">
           <div class="tab-pane fade show active" id="tabone" role="tabpanel">
-            <div class="card">
-              <div class="card-body p-2">
+            <div>
+              <div class="p-4 card">
                 <div class="row">
-                  <div class="col-md-5"> </div>
-                  <div class="col-md-2">
-                    <h4>Register</h4>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-3"> </div>
-                  <div class="col-md-2">
-                    <h5> Surgical ID </h5>
-                  </div>
-                  <div class="col-md-2">
-                    <input type="text" class="form-control"> </div>
-                  <div class="col-md-0">
-                    <label class="p-2">-</label>
-                  </div>
-                  <div class="col-md-2">
-                    <input type="text" class="form-control"> </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body p-2">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="row p-2">
-                      <div class="col-md-1 p-2">
-                        <label for="firstName">HN</label>
-                      </div>
-                      <div class="col-md-9">
-                        <input type="text" class="form-control"> </div>
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label for="staticEmail" class="col-sm-2 col-form-label">SID</label>
+                      <div class="col-sm-10">
+                        <input type="text" readonly="" class="form-control" value=""> </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="row p-2">
-                      <div class="col-md-2 p-2">
-                        <label for="firstName">Name</label>
-                      </div>
-                      <div class="col-md-9">
-                        <input type="text" class="form-control"> </div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-2">
+                    <div class="col-md-12">
+                      <select class="form-control">
+                        <option value="เลือก">ความเร่งด่วน</option>
+                      </select>
                     </div>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="row p-2">
-                      <div class="col-md-1 p-2">
-                        <label for="firstName">Sex</label>
-                      </div>
-                      <div class="col-md-9">
-                        <input type="text" class="form-control"> </div>
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label for="staticEmail" class="col-sm-2 col-form-label">HN</label>
+                      <div class="col-sm-10">
+                        <input type="text" readonly="" class="form-control" value=""> </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="row p-2">
-                      <div class="col-md-2 p-2">
-                        <label for="firstName">Age</label>
-                      </div>
-                      <div class="col-md-9">
-                        <input type="date" class="form-control"> </div>
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label for="staticEmail" class="col-sm-2 col-form-label">ชื่อ</label>
+                      <div class="col-sm-10">
+                        <input type="text" readonly="" class="form-control" value=""> </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label for="staticEmail" class="col-sm-2 col-form-label">นามสกุล</label>
+                      <div class="col-sm-10">
+                        <input type="text" readonly="" class="form-control" value=""> </div>
                     </div>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="row p-2">
-                      <div class="col-md-1 p-2">
-                        <label for="firstName">Ethnic:</label>
-                      </div>
-                      <div class="col-md-5">
-                        <input type="text" class="form-control"> </div>
-                      <div class="col-md-1 p-2">
-                        <label for="firstName">Marital </label>
-                      </div>
-                      <div class="col-md-5">
-                        <input type="text" class="form-control"> </div>
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label for="staticEmail" class="col-sm-2 col-form-label">เพศ</label>
+                      <div class="col-sm-10">
+                        <input type="text" readonly="" class="form-control" value=""> </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="card-body p-2">
-                      <div class="row">
-                        <div class="col-md-2 p-2">
-                          <label class="p-">Surgical ID</label>
-                        </div>
-                        <div class="col-md-4 p-2">
-                          <label>xxxx-xxxxx</label>
-                        </div>
-                        <div class="col-md-5">
-                          <select class="form-control">
-                            <option value="เลือก">ความเร่งด่วน</option>
-                          </select>
-                        </div>
-                      </div>
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label for="staticEmail" class="col-sm-2 col-form-label">อายุ</label>
+                      <div class="col-sm-10">
+                        <input type="text" readonly="" class="form-control" value=""> </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4"></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label for="staticEmail" class="col-sm-2 col-form-label">Ethnic</label>
+                      <div class="col-sm-10">
+                        <input type="text" readonly="" class="form-control" value=""> </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label for="staticEmail" class="col-sm-2 col-form-label">Marital</label>
+                      <div class="col-sm-10">
+                        <input type="text" readonly="" class="form-control" value=""> </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label for="staticEmail" class="col-sm-2 col-form-label">Surgical ID</label>
+                      <div class="col-sm-10">
+                        <input type="text" readonly="" class="form-control" value=""> </div>
                     </div>
                   </div>
                 </div>
@@ -189,14 +174,22 @@
             </div>
             <div class="row">
               <div class="col-md-12">
-                <div class="card">
-                  <div class="card-body p-2">
+                <div>
+                  <div class="p-2 card">
                     <div class="row">
-                      <div class="col-md-10">
-                        <div class="card p-2">
+                      <div class="col-md-12">
+                        <div class="p-2">
                           <div class="row">
-                            <div class="col-md-12 text-right"> </div>
+                            <div class="col-md-12">
+                              <button class="btn pull-right" data-target="#example" type="button" data-toggle="modal"> Add test </button>
+                            </div>
                           </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 p-3">
+                        <div class="p-4">
                           <div class="row">
                             <div class="col-md-12">
                               <table class="table">
@@ -249,20 +242,17 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-2">
-                        <button class="btn pull-right" data-target="#example" type="button" data-toggle="modal"> Add test </button>
-                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="card-body p-2">
+                <div>
+                  <div class="p-2">
                     <div class="form-group">
                       <div class="row">
                         <div class="col-md-6">
                           <label for="firstName">ผู้ปฏิบัติงาน : Duangkamon Wattanatranon, M.D.</label>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 p-4">
                           <button type="submit" class="btn btn-light pull-right">บันทึก</button>
                           <button type="submit" class="btn btn-light pull-right">พิมพ์บาร์โค๊ด</button>
                           <button type="submit" class="btn btn-light pull-right">พิมพ์ออร์เดอร์</button>
@@ -281,30 +271,23 @@
             <div class="card">
               <div class="card-body p-2">
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="row">
-                      <div class="col-md-2">
-                        <label class="p-2">Surgical ID</label>
-                      </div>
-                      <div class="col-md-3">
-                        <input type="text" class="form-control"> </div>
-                      <div class="col-md-1">
-                        <label class="p-2">-</label>
-                      </div>
-                      <div class="col-md-6">
-                        <input type="text" class="form-control"> </div>
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label for="staticEmail" class="col-sm-2 col-form-label">SID</label>
+                      <div class="col-sm-10">
+                        <input type="text" readonly="" class="form-control" value=""> </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="row">
-                      <div class="col-md-2">
-                        <label class="p-2">HN</label>
-                      </div>
-                      <div class="col-md-3">
-                        <input type="text" class="form-control"> </div>
-                      <div class="col-md-7 p-2">
-                        <label>xxxxxxxxxxxx</label>
-                      </div>
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label for="staticEmail" class="col-sm-2 col-form-label">HN</label>
+                      <div class="col-sm-10">
+                        <input type="text" readonly="" class="form-control" value=""> </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-2">
+                    <div class="form-group row">
+                      <label for="staticEmail">ชื่อ ทดสอบ &nbsp;นามกสุล ทดสอบ</label>
                     </div>
                   </div>
                 </div>
@@ -315,7 +298,7 @@
                         <label for="firstName" class="p-2">Reqistered</label>
                       </div>
                       <div class="col-md-10 p-2">
-                        <label>xxxxxxxxx xxxxxxxxxxxx</label>
+                        <label>12 Dec 2018</label>
                       </div>
                     </div>
                   </div>
@@ -326,7 +309,7 @@
                         <label for="firstName" class="p-2">Reqistered Bv</label>
                       </div>
                       <div class="col-md-10 p-2">
-                        <label>xxxxxxxxx xxxxxxxxxxxx</label>
+                        <label>นายหนึ่ง สมมติ</label>
                       </div>
                     </div>
                   </div>
@@ -352,21 +335,21 @@
                                 <th>วันเวลาที่เริ่มตัด</th>
                                 <th>วันเวลาที่ตัดเสร็จ</th>
                                 <th>
-                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on">ค้างส่ง</th>
+                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;ค้างส่ง</th>
                                 <th>
-                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on">ส่งออกนอก</th>
+                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;ส่งออกนอก</th>
                                 <th>คำสั่ง</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
+                                <td>1</td>
+                                <td>A</td>
+                                <td>new</td>
+                                <td>พน.1</td>
+                                <td>ผช.1</td>
+                                <td>12/12/2018 07:00:00</td>
+                                <td>12/12/2018 07:30:00</td>
                                 <td>
                                   <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
                                 <td>
@@ -381,13 +364,13 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
+                                <td>2</td>
+                                <td>A</td>
+                                <td>new</td>
+                                <td>พน.1</td>
+                                <td>ผช.1</td>
+                                <td>12/12/2018 08:00:00</td>
+                                <td>12/12/2018 08:30:00</td>
                                 <td>
                                   <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
                                 <td>
@@ -402,13 +385,13 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
+                                <td>3</td>
+                                <td>C</td>
+                                <td>new</td>
+                                <td>พน.2</td>
+                                <td>ผช.1</td>
+                                <td>12/12/2018 09:00:00</td>
+                                <td>12/12/2018 09:30:00</td>
                                 <td>
                                   <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
                                 <td>
@@ -423,13 +406,13 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
+                                <td>4</td>
+                                <td>G</td>
+                                <td>new</td>
+                                <td>พน.2</td>
+                                <td>ผช.1</td>
+                                <td>12/12/2018 09:00:00</td>
+                                <td>12/12/2018 09:30:00</td>
                                 <td>
                                   <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
                                 <td>
@@ -461,49 +444,49 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Year.</th>
-                          <th>Sid</th>
-                          <th>Block</th>
-                          <th>Bone</th>
-                          <th>พร้อมส่ง</th>
+                          <th class="text-center">Year.</th>
+                          <th class="text-center">Sid</th>
+                          <th class="text-center">Block</th>
+                          <th class="text-center">Bone</th>
+                          <th class="text-center">พร้อมส่ง</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>2018</td>
-                          <td>007006</td>
-                          <td>C</td>
-                          <td>
-                            <input class="form-check-input" type="checkbox" value="" style="width: 20px; height: 20px;"> </td>
-                          <td>
-                            <input class="form-check-input" type="checkbox" value="" style="width: 20px; height: 20px;"> </td>
+                          <td class="text-center">2018</td>
+                          <td class="text-center">S007006</td>
+                          <td class="text-center">C</td>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" value="" style="width: 20px; height: 20px;" draggable="true"> </td>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" value="" style="width: 20px; height: 20px;" draggable="true"> </td>
                         </tr>
                         <tr>
-                          <td>2018</td>
-                          <td>007039</td>
-                          <td>P</td>
-                          <td>
-                            <input class="form-check-input" type="checkbox" value="" style="width: 20px; height: 20px;"> </td>
-                          <td>
-                            <input class="form-check-input" type="checkbox" value="" style="width: 20px; height: 20px;"> </td>
+                          <td class="text-center">2018</td>
+                          <td class="text-center">S007039</td>
+                          <td class="text-center">P</td>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" value="" style="width: 20px; height: 20px;" draggable="true"> </td>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" value="" style="width: 20px; height: 20px;" draggable="true"> </td>
                         </tr>
                         <tr>
-                          <td>2018</td>
-                          <td>007042</td>
-                          <td>F</td>
-                          <td>
-                            <input class="form-check-input" type="checkbox" value="" style="width: 20px; height: 20px;"> </td>
-                          <td>
-                            <input class="form-check-input" type="checkbox" value="" style="width: 20px; height: 20px;"> </td>
+                          <td class="text-center">2018</td>
+                          <td class="text-center">S007042</td>
+                          <td class="text-center">F</td>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" value="" style="width: 20px; height: 20px;" draggable="true"> </td>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" value="" style="width: 20px; height: 20px;" draggable="true"> </td>
                         </tr>
                         <tr>
-                          <td>2018</td>
-                          <td>007042</td>
-                          <td>G</td>
-                          <td>
-                            <input class="form-check-input" type="checkbox" value="" style="width: 20px; height: 20px;"> </td>
-                          <td>
-                            <input class="form-check-input" type="checkbox" value="" style="width: 20px; height: 20px;"> </td>
+                          <td class="text-center">2018</td>
+                          <td class="text-center">S007042</td>
+                          <td class="text-center">G</td>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" value="" style="width: 20px; height: 20px;" draggable="true"> </td>
+                          <td class="text-center">
+                            <input class="form-check-input" type="checkbox" value="" style="width: 20px; height: 20px;" draggable="true"> </td>
                         </tr>
                       </tbody>
                     </table>
