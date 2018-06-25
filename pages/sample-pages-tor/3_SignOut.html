@@ -23,329 +23,319 @@
   <link href="./mui.css" rel="stylesheet"> </head>
 
 <body>
-  <div class="container-fluid">
+  <form class="form">
+    <div class="card">
+      <div class="card-body">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="row">
+            <a href="#" class="simple-text">
+              <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
+            <ul class="nav nav-tabs">
+              <li class="d-flex flex-column p-2">
+                <a href="0_Register.html">
+                  <i class="nav-icon"></i>
+                  <p>ลงทะเบียนผู้ป่วยใหม่</p>
+                </a>
+              </li>
+              <li class="nav-item d-flex flex-column p-2 active">
+                <a href="1_Login_Authority.html">
+                  <i class="nav-icon"></i>
+                  <p>บันทุกรายละเอียดตัดเนื้อ</p>
+                </a>
+              </li>
+              <li class="d-flex flex-column p-2">
+                <a href="2_Cassette.html">
+                  <i class="nav-icon"></i>
+                  <p>Cassattle </p>
+                </a>
+              </li>
+              <li class="d-flex flex-column p-2">
+                <a href="8_Finance.html">
+                  <i class="nav-icon"></i>
+                  <p>การเงิน </p>
+                </a>
+              </li>
+              <li class="d-flex flex-column p-2">
+                <a href="9_Import.html">
+                  <i class="nav-icon"></i>
+                  <p>การนำเข้าข้อมูลจากไฟล์</p>
+                </a>
+              </li>
+              <li class="d-flex flex-column p-2">
+                <a href="3_SignOut.html">
+                  <i class="nav-icon"></i>
+                  <p>Signout</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
     <div class="row">
-      <div class="col-md-12">
-        <!--
-              <div class="card">
-                <div class="card-body p-2">
--->
-        <form class="form">
-          <div class="card">
-            <div class="card-body">
-              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="col-md-9">
+        <div class="card p-2">
+          <div class="card-body p-2">
+            <div class="row">
+              <div class="col-md-6">
                 <div class="row">
-                  <a href="#" class="simple-text">
-                    <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
-                  <ul class="nav nav-tabs">
-                    <li class="d-flex flex-column p-2">
-                      <a href="0_Register.html">
-                        <i class="nav-icon"></i>
-                        <p>ลงทะเบียนผู้ป่วยใหม่</p>
-                      </a>
-                    </li>
-                    <li class="nav-item d-flex flex-column p-2 active">
-                      <a href="1_Login_Authority.html">
-                        <i class="nav-icon"></i>
-                        <p>บันทุกรายละเอียดตัดเนื้อ</p>
-                      </a>
-                    </li>
-                    <li class="d-flex flex-column p-2">
-                      <a href="2_Cassette.html">
-                        <i class="nav-icon"></i>
-                        <p>Cassattle </p>
-                      </a>
-                    </li>
-                    <li class="d-flex flex-column p-2">
-                      <a href="8_Finance.html">
-                        <i class="nav-icon"></i>
-                        <p>การเงิน </p>
-                      </a>
-                    </li>
-                    <li class="d-flex flex-column p-2">
-                      <a href="9_Import.html">
-                        <i class="nav-icon"></i>
-                        <p>การนำเข้าข้อมูลจากไฟล์</p>
-                      </a>
-                    </li>
-                    <li class="d-flex flex-column p-2">
-                      <a href="3_SignOut.html">
-                        <i class="nav-icon"></i>
-                        <p>Signout</p>
-                      </a>
-                    </li>
-                  </ul>
+                  <div class="col-md-2">
+                    <label for="firstName" class="p-2">Year</label>
+                  </div>
+                  <div class="col-md-4">
+                    <input type="text" class="form-control"> </div>
+                  <div class="col-md-2">
+                    <label for="firstName" class="p-2">SID</label>
+                  </div>
+                  <div class="col-md-4">
+                    <input type="text" class="form-control"> </div>
                 </div>
-              </nav>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-3">
+                    <label for="firstName" class="p-2">Sign</label>
+                  </div>
+                  <div class="col-md-3">
+                    <select class="form-control">
+                      <option value="1"></option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-2">
+                    <label for="firstName" class="p-2">Staff</label>
+                  </div>
+                  <div class="col-md-10">
+                    <input type="text" class="form-control"> </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-3">
+                    <label for="firstName" class="p-2">Consult</label>
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" class="form-control"> </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control"> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body p-2">
+                <div class="form-group">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Year</th>
+                        <th>Sid</th>
+                        <th>Staff</th>
+                        <th>Sign</th>
+                        <th>Reason</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body p-2">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="firstName">ผู้ปฏิบัติงาน : Duangkamon Wattanatranon, M.D.</label>
+                    </div>
+                    <div class="col-md-6">
+                      <button type="submit" class="btn btn-light pull-right">Main nenu</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-9">
-              <div class="card p-2">
-                <div class="card-body p-2">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="row">
-                        <div class="col-md-2">
-                          <label for="firstName" class="p-2">Year</label>
-                        </div>
-                        <div class="col-md-4">
-                          <input type="text" class="form-control"> </div>
-                        <div class="col-md-2">
-                          <label for="firstName" class="p-2">SID</label>
-                        </div>
-                        <div class="col-md-4">
-                          <input type="text" class="form-control"> </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="row">
-                        <div class="col-md-3">
-                          <label for="firstName" class="p-2">Sign</label>
-                        </div>
-                        <div class="col-md-3">
-                          <select class="form-control">
-                            <option value="1"></option>
-                          </select>
-                        </div>
-                        <div class="col-md-6">
-                          <input type="text" class="form-control"> </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="row">
-                        <div class="col-md-2">
-                          <label for="firstName" class="p-2">Staff</label>
-                        </div>
-                        <div class="col-md-10">
-                          <input type="text" class="form-control"> </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="row">
-                        <div class="col-md-3">
-                          <label for="firstName" class="p-2">Consult</label>
-                        </div>
-                        <div class="col-md-3">
-                          <input type="text" class="form-control"> </div>
-                        <div class="col-md-6">
-                          <input type="text" class="form-control"> </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="card">
-                    <div class="card-body p-2">
-                      <div class="form-group">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th>Year</th>
-                              <th>Sid</th>
-                              <th>Staff</th>
-                              <th>Sign</th>
-                              <th>Reason</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-body p-2">
-                      <div class="form-group">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <label for="firstName">ผู้ปฏิบัติงาน : Duangkamon Wattanatranon, M.D.</label>
-                          </div>
-                          <div class="col-md-6">
-                            <button type="submit" class="btn btn-light pull-right">Main nenu</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12"> </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card ">
-                <div class="row">
-                  <div class="card-body p-2">
-                    <div class="col-md-12">
-                      <label for="firstName">Reason</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body p-2">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label for="firstName">0 Sign out</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label for="firstName">1 Specia stain/recut</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label for="firstName">2 Immuno Stain</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label for="firstName">3 FA</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label for="firstName">4 Gross review/add section</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label for="firstName">5 More clinical info</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label for="firstName">6 Consult</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label for="firstName">7 Refer</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label for="firstName">8 Conference,spc.etc</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label for="firstName">9 Double check(CA)</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label for="firstName">11 TEM,SEM,Molecular</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label for="firstName">12 QA</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label for="firstName">13 PD</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label for="firstName">14 Museum</label>
-                    </div>
-                  </div>
-                </div>
+            <div class="col-md-12"> </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card ">
+          <div class="row">
+            <div class="card-body p-2">
+              <div class="col-md-12">
+                <label for="firstName">Reason</label>
               </div>
             </div>
           </div>
-        </form>
-      </div>
-      <footer class="footer">
-        <div class="container">
-          <p class="copyright float-right"> ©
-            <script>
-              document.write(new Date().getFullYear())
-            </script>
-            <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
-          </p>
+          <div class="card-body p-2">
+            <div class="row">
+              <div class="col-md-12">
+                <label for="firstName">0 Sign out</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="firstName">1 Specia stain/recut</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="firstName">2 Immuno Stain</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="firstName">3 FA</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="firstName">4 Gross review/add section</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="firstName">5 More clinical info</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="firstName">6 Consult</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="firstName">7 Refer</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="firstName">8 Conference,spc.etc</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="firstName">9 Double check(CA)</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="firstName">11 TEM,SEM,Molecular</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="firstName">12 QA</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="firstName">13 PD</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label for="firstName">14 Museum</label>
+              </div>
+            </div>
+          </div>
         </div>
-      </footer>
+      </div>
     </div>
-  </div>
+  </form>
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright float-right"> ©
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
+      </p>
+    </div>
+  </footer>
   <!--   Core JS Files   -->
   <script src="../../assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
   <script src="../../assets/vendors/jquery-ui.min.js" type="text/javascript"></script>
