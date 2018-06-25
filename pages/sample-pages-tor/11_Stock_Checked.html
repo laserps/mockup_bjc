@@ -23,403 +23,380 @@
   <link href="./mui.css" rel="stylesheet"> </head>
 
 <body>
-  <div class="wrapper">
-    <div class="sidebar">
-      <div class="logo">
-        <a href="#" class="simple-text">
-          <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
-      </div>
-      <div class="logo logo-mini">
-        <a href="#" class="simple-text"> Work </a>
-      </div>
-      <div class="sidebar-wrapper">
-        <ul class="nav flex-column">
-          <li class="d-flex flex-column">
-            <a href="0_Register.html">
-              <i class="nav-icon"></i>
-              <p>ลงทะเบียนผู้ป่วยใหม่</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="1_Login_Authority.html">
-              <i class="nav-icon"></i>
-              <p>บันทุกรายละเอียดตัดเนื้อ</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="2_Cassette.html">
-              <i class="nav-icon"></i>
-              <p>Cassattle </p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="8_Finance.html">
-              <i class="nav-icon"></i>
-              <p>การเงิน </p>
-            </a>
-          </li>
-          <li class="d-flex flex-column active">
-            <a href="8_Finance.html">
-              <i class="nav-icon"></i>
-              <p>การนำเข้าข้อมูลจากไฟล์</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="3_SignOut.html">
-              <i class="nav-icon"></i>
-              <p>Signout</p>
-            </a>
-          </li>
-        </ul>
+  <form class="form">
+    <div class="card">
+      <div class="card-body">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="row">
+            <a href="#" class="simple-text">
+              <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
+            <ul class="nav nav-tabs">
+              <li class="d-flex flex-column p-2">
+                <a href="0_Register.html">
+                  <i class="nav-icon"></i>
+                  <p>ลงทะเบียนผู้ป่วยใหม่</p>
+                </a>
+              </li>
+              <li class="nav-item d-flex flex-column p-2 active">
+                <a href="1_Login_Authority.html">
+                  <i class="nav-icon"></i>
+                  <p>บันทุกรายละเอียดตัดเนื้อ</p>
+                </a>
+              </li>
+              <li class="d-flex flex-column p-2">
+                <a href="2_Cassette.html">
+                  <i class="nav-icon"></i>
+                  <p>Cassattle </p>
+                </a>
+              </li>
+              <li class="d-flex flex-column p-2">
+                <a href="8_Finance.html">
+                  <i class="nav-icon"></i>
+                  <p>การเงิน </p>
+                </a>
+              </li>
+              <li class="d-flex flex-column p-2">
+                <a href="9_Import.html">
+                  <i class="nav-icon"></i>
+                  <p>การนำเข้าข้อมูลจากไฟล์</p>
+                </a>
+              </li>
+              <li class="d-flex flex-column p-2">
+                <a href="3_SignOut.html">
+                  <i class="nav-icon"></i>
+                  <p>Signout</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
-    <div class="main-panel">
-      <div class="">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <a href="1_Login_Authority.html">
-                <!--
-              <div class="card">
-                <div class="card-body p-2">
--->
-              </a>
-              <form class="form">
-                <div class="card">
-                  <div class="card-body p-2">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <h4> ตัวอย่างส่งตรวจที่อยู่ในคลัง </h4>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="form-inline">
-                          <select class="form-control">
-                            <option value="เลือก">แก้ไขหลายรายการ</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-5 p-2">
-                        <button class="btn pull-right" data-target="#example" type="button" data-toggle="modal">นำเข้า</button>
-                      </div>
-                      <div class="col-md-3">
-                        <div class="form-inline p-2">
-                          <input type="text" class="form-control" placeholder="ค้นหา">
-                          <a href="#" class="btn btn-outline-primary pull-right">ค้นหา</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <table class="table">
-                              <thead>
-                                <tr>
-                                  <th>No.</th>
-                                  <th>
-                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </th>
-                                  <th>วันที่นำเข้า</th>
-                                  <th>วันที่ฝากถึง</th>
-                                  <th>Batch No.</th>
-                                  <th>Item</th>
-                                  <th>ตึก</th>
-                                  <th>เลขห้อง</th>
-                                  <th>ตู้</th>
-                                  <th>ชั้น</th>
-                                  <th>SID</th>
-                                  <th>ชื่อผู้ป่วย</th>
-                                  <th>การกระทำ</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>1</td>
-                                  <td>
-                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td>
-                                    <button class="btn btn-xs btn-info">
-                                      <i class="fa fa-file-text-o"></i>
-                                    </button>
-                                    <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
-                                      <i class="fa fa-trash"></i>
-                                    </button>
-                                  </td>
-                                  <td></td>
-                                </tr>
-                                <tr>
-                                  <td>1</td>
-                                  <td>
-                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td>
-                                    <button class="btn btn-xs btn-info">
-                                      <i class="fa fa-file-text-o"></i>
-                                    </button>
-                                    <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
-                                      <i class="fa fa-trash"></i>
-                                    </button>
-                                  </td>
-                                  <td></td>
-                                </tr>
-                                <tr>
-                                  <td>1</td>
-                                  <td>
-                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td>
-                                    <button class="btn btn-xs btn-info">
-                                      <i class="fa fa-file-text-o"></i>
-                                    </button>
-                                    <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
-                                      <i class="fa fa-trash"></i>
-                                    </button>
-                                  </td>
-                                  <td></td>
-                                </tr>
-                                <tr>
-                                  <td>1</td>
-                                  <td>
-                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td>
-                                    <button class="btn btn-xs btn-info">
-                                      <i class="fa fa-file-text-o"></i>
-                                    </button>
-                                    <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
-                                      <i class="fa fa-trash"></i>
-                                    </button>
-                                  </td>
-                                  <td></td>
-                                </tr>
-                                <tr>
-                                  <td>1</td>
-                                  <td>
-                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td>
-                                    <button class="btn btn-xs btn-info">
-                                      <i class="fa fa-file-text-o"></i>
-                                    </button>
-                                    <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
-                                      <i class="fa fa-trash"></i>
-                                    </button>
-                                  </td>
-                                  <td></td>
-                                </tr>
-                                <tr>
-                                  <td>1</td>
-                                  <td>
-                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td>
-                                    <button class="btn btn-xs btn-info">
-                                      <i class="fa fa-file-text-o"></i>
-                                    </button>
-                                    <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
-                                      <i class="fa fa-trash"></i>
-                                    </button>
-                                  </td>
-                                  <td></td>
-                                </tr>
-                                <tr>
-                                  <td>1</td>
-                                  <td>
-                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td>
-                                    <button class="btn btn-xs btn-info">
-                                      <i class="fa fa-file-text-o"></i>
-                                    </button>
-                                    <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
-                                      <i class="fa fa-trash"></i>
-                                    </button>
-                                  </td>
-                                  <td></td>
-                                </tr>
-                                <tr>
-                                  <td>1</td>
-                                  <td>
-                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td>
-                                    <button class="btn btn-xs btn-info">
-                                      <i class="fa fa-file-text-o"></i>
-                                    </button>
-                                    <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
-                                      <i class="fa fa-trash"></i>
-                                    </button>
-                                  </td>
-                                  <td></td>
-                                </tr>
-                                <tr>
-                                  <td>1</td>
-                                  <td>
-                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td>
-                                    <button class="btn btn-xs btn-info">
-                                      <i class="fa fa-file-text-o"></i>
-                                    </button>
-                                    <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
-                                      <i class="fa fa-trash"></i>
-                                    </button>
-                                  </td>
-                                  <td></td>
-                                </tr>
-                                <tr>
-                                  <td>1</td>
-                                  <td>
-                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td>
-                                    <button class="btn btn-xs btn-info">
-                                      <i class="fa fa-file-text-o"></i>
-                                    </button>
-                                    <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
-                                      <i class="fa fa-trash"></i>
-                                    </button>
-                                  </td>
-                                  <td></td>
-                                </tr>
-                                <tr>
-                                  <td>1</td>
-                                  <td>
-                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>12/12/2018(00.00)</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td> - </td>
-                                  <td>
-                                    <button class="btn btn-xs btn-info">
-                                      <i class="fa fa-file-text-o"></i>
-                                    </button>
-                                    <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
-                                      <i class="fa fa-trash"></i>
-                                    </button>
-                                  </td>
-                                  <td></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12"> </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
+    <div class="card">
+      <div class="card-body p-2">
+        <div class="row">
+          <div class="col-md-12">
+            <h4> ตัวอย่างส่งตรวจที่อยู่ในคลัง </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-inline">
+              <select class="form-control">
+                <option value="เลือก">แก้ไขหลายรายการ</option>
+              </select>
             </div>
           </div>
-          <!--
-                </div>   
+          <div class="col-md-5 p-2">
+            <button class="btn pull-right" data-target="#example" type="button" data-toggle="modal">นำเข้า</button>
+          </div>
+          <div class="col-md-3">
+            <div class="form-inline p-2">
+              <input type="text" class="form-control" placeholder="ค้นหา">
+              <a href="#" class="btn btn-outline-primary pull-right">ค้นหา</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>No.</th>
+                      <th>
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </th>
+                      <th>วันที่นำเข้า</th>
+                      <th>วันที่ฝากถึง</th>
+                      <th>Batch No.</th>
+                      <th>Item</th>
+                      <th>ตึก</th>
+                      <th>เลขห้อง</th>
+                      <th>ตู้</th>
+                      <th>ชั้น</th>
+                      <th>SID</th>
+                      <th>ชื่อผู้ป่วย</th>
+                      <th>การกระทำ</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td>
+                        <button class="btn btn-xs btn-info">
+                          <i class="fa fa-file-text-o"></i>
+                        </button>
+                        <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td>
+                        <button class="btn btn-xs btn-info">
+                          <i class="fa fa-file-text-o"></i>
+                        </button>
+                        <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td>
+                        <button class="btn btn-xs btn-info">
+                          <i class="fa fa-file-text-o"></i>
+                        </button>
+                        <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td>
+                        <button class="btn btn-xs btn-info">
+                          <i class="fa fa-file-text-o"></i>
+                        </button>
+                        <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td>
+                        <button class="btn btn-xs btn-info">
+                          <i class="fa fa-file-text-o"></i>
+                        </button>
+                        <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td>
+                        <button class="btn btn-xs btn-info">
+                          <i class="fa fa-file-text-o"></i>
+                        </button>
+                        <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td>
+                        <button class="btn btn-xs btn-info">
+                          <i class="fa fa-file-text-o"></i>
+                        </button>
+                        <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td>
+                        <button class="btn btn-xs btn-info">
+                          <i class="fa fa-file-text-o"></i>
+                        </button>
+                        <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td>
+                        <button class="btn btn-xs btn-info">
+                          <i class="fa fa-file-text-o"></i>
+                        </button>
+                        <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td>
+                        <button class="btn btn-xs btn-info">
+                          <i class="fa fa-file-text-o"></i>
+                        </button>
+                        <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>12/12/2018(00.00)</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td> - </td>
+                      <td>
+                        <button class="btn btn-xs btn-info">
+                          <i class="fa fa-file-text-o"></i>
+                        </button>
+                        <button class="btn btn-danger btn-xs" data-target="#exampleModalLong" data-toggle="modal" type="button">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
--->
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12"> </div>
         </div>
       </div>
     </div>
-  </div>
+  </form>
   <footer class="footer">
     <div class="container">
       <p class="copyright float-right"> ©

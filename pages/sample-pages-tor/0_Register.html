@@ -23,772 +23,741 @@
   <link href="./mui.css" rel="stylesheet"> </head>
 
 <body>
-  <div class="wrapper">
-    <div class="sidebar">
-      <div class="logo">
-        <a href="#" class="simple-text">
-          <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
-      </div>
-      <div class="logo logo-mini">
-        <a href="#" class="simple-text"> Work </a>
-      </div>
-      <div class="sidebar-wrapper">
-        <ul class="nav flex-column">
-          <li class="d-flex flex-column active">
-            <a href="0_Register.html">
-              <i class="nav-icon"></i>
-              <p>ลงทะเบียนผู้ป่วยใหม่</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="1_Login_Authority.html">
-              <i class="nav-icon"></i>
-              <p>บันทุกรายละเอียดตัดเนื้อ</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="2_Cassette.html">
-              <i class="nav-icon"></i>
-              <p>Cassattle </p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="8_Finance.html">
-              <i class="nav-icon"></i>
-              <p>การเงิน </p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="9_Import.html">
-              <i class="nav-icon"></i>
-              <p>การนำเข้าข้อมูลจากไฟล์</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="3_SignOut.html">
-              <i class="nav-icon"></i>
-              <p>Signout</p>
-            </a>
-          </li>
-        </ul>
+  <form class="form">
+    <div class="card">
+      <div class="card-body">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="row">
+            <a href="#" class="simple-text">
+              <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
+            <ul class="nav nav-tabs">
+              <li class="d-flex flex-column p-2">
+                <a href="0_Register.html">
+                  <i class="nav-icon"></i>
+                  <p>ลงทะเบียนผู้ป่วยใหม่</p>
+                </a>
+              </li>
+              <li class="nav-item d-flex flex-column p-2 active">
+                <a href="1_Login_Authority.html">
+                  <i class="nav-icon"></i>
+                  <p>บันทุกรายละเอียดตัดเนื้อ</p>
+                </a>
+              </li>
+              <li class="d-flex flex-column p-2">
+                <a href="2_Cassette.html">
+                  <i class="nav-icon"></i>
+                  <p>Cassattle </p>
+                </a>
+              </li>
+              <li class="d-flex flex-column p-2">
+                <a href="8_Finance.html">
+                  <i class="nav-icon"></i>
+                  <p>การเงิน </p>
+                </a>
+              </li>
+              <li class="d-flex flex-column p-2">
+                <a href="9_Import.html">
+                  <i class="nav-icon"></i>
+                  <p>การนำเข้าข้อมูลจากไฟล์</p>
+                </a>
+              </li>
+              <li class="d-flex flex-column p-2">
+                <a href="3_SignOut.html">
+                  <i class="nav-icon"></i>
+                  <p>Signout</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
-    <div class="main-panel">
-      <div class="">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <a href="1_Login_Authority.html">
-                <!--
-              <div class="card">
-                <div class="card-body p-2">
--->
-              </a>
-              <form class="form">
-                <div class="card">
-                  <div class="content">
-                    <div class="row">
-                      <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item">
-                          <a href="#tab1" class="nav-link active" data-toggle="tab">ทั่วไป 1</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="#tab2" class="nav-link " data-toggle="tab">ทั่วไป 2</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="#tab3" class="nav-link" data-toggle="tab">ทั่วไป 3</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="#tab4" class="nav-link" data-toggle="tab">ครอบครัว</a>
-                        </li>
-                        <li class="nav-item">
-                          <a href="#tab5" class="nav-link" data-toggle="tab">สถานภาพ</a>
-                        </li>
-                      </ul>
+    <div class="card">
+      <div class="content">
+        <div class="row">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a href="#tab1" class="nav-link  active" data-toggle="tab">ทั่วไป 1</a>
+            </li>
+            <li class="nav-item">
+              <a href="#tab2" class="nav-link" data-toggle="tab">ทั่วไป 2</a>
+            </li>
+            <li class="nav-item">
+              <a href="#tab3" class="nav-link" data-toggle="tab">ทั่วไป 3</a>
+            </li>
+            <li class="nav-item">
+              <a href="#tab4" class="nav-link" data-toggle="tab">ครอบครัว</a>
+            </li>
+            <li class="nav-item">
+              <a href="#tab5" class="nav-link" data-toggle="tab">สถานภาพ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <!--<div class="right-text-tabs" >-->
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane  active" id="tab1">
+                <div class="header card-header-text">
+                  <h4 class="title">ทั่วไป 1</h4>
+                </div>
+                <div class="content">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ชื่อ</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <!--<div class="right-text-tabs" >-->
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                          <div class="tab-pane active" id="tab1">
-                            <div class="header card-header-text">
-                              <h4 class="title">ทั่วไป 1</h4>
-                            </div>
-                            <div class="content">
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ชื่อ</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">นามสกุล</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ชื่อกลาง</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">เพศ</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                        <option value="ชาย">ชาย</option>
-                                        <option value="หญิง">หญิง</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">วันเกิด</label>
-                                    <div class="col-md-9">
-                                      <input type="date" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">สถานภาพสมรส</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                        <option value="โสด">โสด</option>
-                                        <option value="แต่งงานแล้ว">แต่งงานแล้ว</option>
-                                        <option value="หย่าร้าง">หย่าร้าง</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ชื่อเล่น</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">อาชีพ</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ภาษา</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">เชื้อชาติ</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">สัณชาติ</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ศาสนา</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">หมู่เลือด</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">RH</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ศาสนา</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">เลขที่บัตรประชาชน</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">เลขที่บัตรต่างด่าว</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-8"> </div>
-                                <div class="col-md-4">
-                                  <a href="#" class="btn btn-outline-primary pull-right">บันทึก</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="tab-pane" id="tab2">
-                            <div class="header card-header-text">
-                              <h4 class="title">ทั่วไป 2</h4>
-                            </div>
-                            <div class="content">
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">บ้านเลขที่</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">หมู่</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ตรอก/ซอย/ถนน</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ประเทศ</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                        <option value="ชาย">ชาย</option>
-                                        <option value="หญิง">หญิง</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">จังหวัด</label>
-                                    <div class="col-md-9">
-                                      <input type="date" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">อำเภอ</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                        <option value="โสด">โสด</option>
-                                        <option value="แต่งงานแล้ว">แต่งงานแล้ว</option>
-                                        <option value="หย่าร้าง">หย่าร้าง</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ตำบล</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">รัหสไปรษณีย์</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ภาษา</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">เบอร์โทรศัพท์</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <div class="col-md-12">
-                                      <div class="form-check">
-                                        <label class="checkbox form-check-label">
-                                          <span class="icons">
-                                            <span class="first-icon fa fa-square"></span>
-                                            <span class="second-icon fa fa-check-square "></span>
-                                          </span>
-                                          <input type="checkbox" class="form-check-input" data-toggle="checkbox" value="">อยู่ในเขตรับผิดชอบ</label>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <div class="col-md-12">
-                                      <div class="form-check">
-                                        <label class="checkbox form-check-label">
-                                          <span class="icons">
-                                            <span class="first-icon fa fa-square"></span>
-                                            <span class="second-icon fa fa-check-square "></span>
-                                          </span>
-                                          <input type="checkbox" class="form-check-input" data-toggle="checkbox" value="">อยู่ใน CUP</label>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">สังกัดหลัก</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">สังกัดรอง</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">เลขที่ ขรก.</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">เลขที่ กบก.</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Passport</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ข้อมูลนายจ้าง</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ประเภทนายจ้าง</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">หน่วยขึ้นทะเบียน</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">เลขประจำตัวนายจ้าง</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-8"> </div>
-                                <div class="col-md-4">
-                                  <a href="#" class="btn btn-outline-primary pull-right">บันทึก</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="tab-pane" id="tab3">
-                            <div class="header card-header-text">
-                              <h4 class="title">ทั่วไป 3</h4>
-                            </div>
-                            <div class="content">
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ชื่อผู้ติดต่อ</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">นามสกุล</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ที่อยู่ผู้ติดต่อ</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">เบอร์โทร </label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ความสัมพันธ์กับผู้ป่วย</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">HN มารดา</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ชื่อบิดา</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">นามสกุล</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">CID</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ชื่อมารดา</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">นามสกุล</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">CID</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ชื่อคู่สมรส</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">นามสกุล</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">CID</label>
-                                    <div class="col-md-9">
-                                      <input type="text" class="form-control"> </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-8"> </div>
-                                <div class="col-md-4">
-                                  <a href="#" class="btn btn-outline-primary pull-right">บันทึก</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="tab-pane" id="tab4" aria-expanded="true">
-                            <div class="header card-header-text">
-                              <h4 class="title">ครอบครัว</h4>
-                            </div>
-                            <div class="content">
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">สถานะในครอบครับ</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">สถานะบุคคล</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">การศึกษา</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ประเภทบุคคล</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ตำแหน่งในชุมชน</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ประเภทบุคคล</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-8"> </div>
-                                <div class="col-md-4">
-                                  <a href="#" class="btn btn-outline-primary pull-right">บันทึก</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="tab-pane" id="tab5" aria-expanded="true">
-                            <div class="header card-header-text">
-                              <h4 class="title">สถานภาพ</h4>
-                            </div>
-                            <div class="content">
-                              <div class="form-check">
-                                <label class="checkbox form-check-label">
-                                  <span class="icons">
-                                    <span class="first-icon fa fa-square"></span>
-                                    <span class="second-icon fa fa-check-square "></span>
-                                  </span>
-                                  <span class="icons">
-                                    <span class="first-icon fa fa-square"></span>
-                                    <span class="second-icon fa fa-check-square "></span>
-                                  </span>
-                                  <input type="checkbox" class="form-check-input" data-toggle="checkbox" value="">ผู้ป่วยเสียชีวิตแล้ว</label>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">การศึกษา</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ประเภทบุคคล</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ตำแหน่งในชุมชน</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">ประเภทบุคคล</label>
-                                    <div class="col-md-9">
-                                      <select class="form-control">
-                                        <option value="เลือก">เลือก</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-md-8"> </div>
-                                    <div class="col-md-4">
-                                      <a href="#" class="btn btn-outline-primary pull-right">บันทึก</a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">นามสกุล</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ชื่อกลาง</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">เพศ</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                            <option value="ชาย">ชาย</option>
+                            <option value="หญิง">หญิง</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">วันเกิด</label>
+                        <div class="col-md-9">
+                          <input type="date" class="form-control"> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">สถานภาพสมรส</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                            <option value="โสด">โสด</option>
+                            <option value="แต่งงานแล้ว">แต่งงานแล้ว</option>
+                            <option value="หย่าร้าง">หย่าร้าง</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ชื่อเล่น</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">อาชีพ</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ภาษา</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">เชื้อชาติ</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">สัณชาติ</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ศาสนา</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">หมู่เลือด</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">RH</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ศาสนา</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">เลขที่บัตรประชาชน</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">เลขที่บัตรต่างด่าว</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8"> </div>
+                    <div class="col-md-4">
+                      <a href="#" class="btn btn-outline-primary pull-right">บันทึก</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab2">
+                <div class="header card-header-text">
+                  <h4 class="title">ทั่วไป 2</h4>
+                </div>
+                <div class="content">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">บ้านเลขที่</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">หมู่</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ตรอก/ซอย/ถนน</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ประเทศ</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                            <option value="ชาย">ชาย</option>
+                            <option value="หญิง">หญิง</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">จังหวัด</label>
+                        <div class="col-md-9">
+                          <input type="date" class="form-control"> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">อำเภอ</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                            <option value="โสด">โสด</option>
+                            <option value="แต่งงานแล้ว">แต่งงานแล้ว</option>
+                            <option value="หย่าร้าง">หย่าร้าง</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ตำบล</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">รัหสไปรษณีย์</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ภาษา</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">เบอร์โทรศัพท์</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <div class="col-md-12">
+                          <div class="form-check">
+                            <label class="checkbox form-check-label">
+                              <span class="icons">
+                                <span class="first-icon fa fa-square"></span>
+                                <span class="second-icon fa fa-check-square "></span>
+                              </span>
+                              <input type="checkbox" class="form-check-input" data-toggle="checkbox" value="">อยู่ในเขตรับผิดชอบ</label>
                           </div>
                         </div>
-                        <!--</div>-->
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <div class="col-md-12">
+                          <div class="form-check">
+                            <label class="checkbox form-check-label">
+                              <span class="icons">
+                                <span class="first-icon fa fa-square"></span>
+                                <span class="second-icon fa fa-check-square "></span>
+                              </span>
+                              <input type="checkbox" class="form-check-input" data-toggle="checkbox" value="">อยู่ใน CUP</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">สังกัดหลัก</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">สังกัดรอง</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">เลขที่ ขรก.</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">เลขที่ กบก.</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Passport</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ข้อมูลนายจ้าง</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ประเภทนายจ้าง</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">หน่วยขึ้นทะเบียน</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">เลขประจำตัวนายจ้าง</label>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8"> </div>
+                    <div class="col-md-4">
+                      <a href="#" class="btn btn-outline-primary pull-right">บันทึก</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab3">
+                <div class="header card-header-text">
+                  <h4 class="title">ทั่วไป 3</h4>
+                </div>
+                <!--<div class="content">-->
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label">ชื่อ นามสกุล ผู้ติดต่อ</label>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control"> </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label">HN มารดา</label>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control"> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <div class="col-md-3">
+                    <label class="col-md-3 col-form-label">ที่อยู่ผู้ติดต่อ</label>
+                  </div>
+                  <div class="col-md-9">
+                    <input type="text" class="form-control"> </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label">ความสัมพันธ์กับผู้ป่วย</label>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control"> </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label">เบอร์โทร
+                        <br> </label>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control"> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label">ชื่อบิดา</label>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control"> </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label">นามสกุล</label>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control"> </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label">CID</label>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control"> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label">ชื่อมารดา</label>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control"> </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label">นามสกุล</label>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control"> </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label">CID</label>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control"> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label">ชื่อคู่สมรส</label>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control"> </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label">นามสกุล</label>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control"> </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label">CID</label>
+                      <div class="col-md-9">
+                        <input type="text" class="form-control"> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-8"> </div>
+                  <div class="col-md-4">
+                    <a href="#" class="btn btn-outline-primary pull-right">บันทึก</a>
+                  </div>
+                </div>
+                <!--</div>-->
+              </div>
+              <div class="tab-pane" id="tab4" aria-expanded="true">
+                <div class="header card-header-text">
+                  <h4 class="title">ครอบครัว</h4>
+                </div>
+                <div class="content">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">สถานะในครอบครับ</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">สถานะบุคคล</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">การศึกษา</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ประเภทบุคคล</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ตำแหน่งในชุมชน</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ประเภทบุคคล</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8"> </div>
+                    <div class="col-md-4">
+                      <a href="#" class="btn btn-outline-primary pull-right">บันทึก</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab5" aria-expanded="true">
+                <div class="header card-header-text">
+                  <h4 class="title">สถานภาพ</h4>
+                </div>
+                <div class="content">
+                  <div class="form-check">
+                    <label class="checkbox form-check-label">
+                      <span class="icons">
+                        <span class="first-icon fa fa-square"></span>
+                        <span class="second-icon fa fa-check-square "></span>
+                      </span>
+                      <span class="icons">
+                        <span class="first-icon fa fa-square"></span>
+                        <span class="second-icon fa fa-check-square "></span>
+                      </span>
+                      <input type="checkbox" class="form-check-input" data-toggle="checkbox" value="">ผู้ป่วยเสียชีวิตแล้ว</label>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">การศึกษา</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ประเภทบุคคล</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ตำแหน่งในชุมชน</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-md-3 col-form-label">ประเภทบุคคล</label>
+                        <div class="col-md-9">
+                          <select class="form-control">
+                            <option value="เลือก">เลือก</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-8"> </div>
+                        <div class="col-md-4">
+                          <a href="#" class="btn btn-outline-primary pull-right">บันทึก</a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </form>
-            </div>
-          </div>
-          <!--
-                </div>   
               </div>
--->
+            </div>
+            <!--</div>-->
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </form>
   <footer class="footer">
     <div class="container">
       <p class="copyright float-right"> ©

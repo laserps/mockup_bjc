@@ -23,238 +23,215 @@
   <link href="./mui.css" rel="stylesheet"> </head>
 
 <body>
-  <div class="wrapper">
-    <div class="sidebar">
-      <div class="logo">
-        <a href="#" class="simple-text">
-          <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
-      </div>
-      <div class="logo logo-mini">
-        <a href="#" class="simple-text"> Work </a>
-      </div>
-      <div class="sidebar-wrapper">
-        <ul class="nav flex-column">
-          <li class="d-flex flex-column">
-            <a href="0_Register.html">
-              <i class="nav-icon"></i>
-              <p>ลงทะเบียนผู้ป่วยใหม่</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="1_Login_Authority.html">
-              <i class="nav-icon"></i>
-              <p>บันทุกรายละเอียดตัดเนื้อ</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="2_Cassette.html">
-              <i class="nav-icon"></i>
-              <p>Cassattle </p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="8_Finance.html">
-              <i class="nav-icon"></i>
-              <p>การเงิน </p>
-            </a>
-          </li>
-          <li class="d-flex flex-column active">
-            <a href="8_Finance.html">
-              <i class="nav-icon"></i>
-              <p>การนำเข้าข้อมูลจากไฟล์</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="3_SignOut.html">
-              <i class="nav-icon"></i>
-              <p>Signout</p>
-            </a>
-          </li>
-        </ul>
+  <form class="form">
+    <div class="card">
+      <div class="card-body">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="row">
+            <a href="#" class="simple-text">
+              <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
+            <ul class="nav nav-tabs">
+              <li class="d-flex flex-column p-2">
+                <a href="0_Register.html">
+                  <i class="nav-icon"></i>
+                  <p>ลงทะเบียนผู้ป่วยใหม่</p>
+                </a>
+              </li>
+              <li class="nav-item d-flex flex-column p-2 active">
+                <a href="1_Login_Authority.html">
+                  <i class="nav-icon"></i>
+                  <p>บันทุกรายละเอียดตัดเนื้อ</p>
+                </a>
+              </li>
+              <li class="d-flex flex-column p-2">
+                <a href="2_Cassette.html">
+                  <i class="nav-icon"></i>
+                  <p>Cassattle </p>
+                </a>
+              </li>
+              <li class="d-flex flex-column p-2">
+                <a href="8_Finance.html">
+                  <i class="nav-icon"></i>
+                  <p>การเงิน </p>
+                </a>
+              </li>
+              <li class="d-flex flex-column p-2">
+                <a href="9_Import.html">
+                  <i class="nav-icon"></i>
+                  <p>การนำเข้าข้อมูลจากไฟล์</p>
+                </a>
+              </li>
+              <li class="d-flex flex-column p-2">
+                <a href="3_SignOut.html">
+                  <i class="nav-icon"></i>
+                  <p>Signout</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
-    <div class="main-panel">
-      <div class="">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <a href="1_Login_Authority.html">
-                <!--
-              <div class="card">
-                <div class="card-body p-2">
--->
-              </a>
-              <form class="form">
-                <div class="card">
-                  <div class="card-body p-2">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <h4> ตัวอย่างส่งตรวจที่อยู่ในคลัง </h4>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-4 p-2">
-                        <button class="btn" data-target="#ModalLong1" type="button" data-toggle="modal"> นำเข้า </button>
-                        <button class="btn" data-target="#ModalLong2" type="button" data-toggle="modal"> นำออก </button>
-                        <button class="btn" data-target="#ModalLong3" type="button" data-toggle="modal">ยืม </button>
-                        <button class="btn" data-target="#ModalLong4" type="button" data-toggle="modal">คืน </button>
-                      </div>
-                      <div class="col-md-3"> </div>
-                      <div class="col-md-2 p-2">
-                        <select class="form-control">
-                          <option value="เลือก">เลือก</option>
-                          <option value="เลือก">นำเข้า</option>
-                          <option value="เลือก">นำออก</option>
-                          <option value="เลือก">ยืม</option>
-                          <option value="เลือก">คืน</option>
-                        </select>
-                      </div>
-                      <div class="col-md-3">
-                        <div class="form-inline p-2">
-                          <input type="text" class="form-control" placeholder="ค้นหา">
-                          <a href="#" class="btn btn-outline-primary pull-right">ค้นหา</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <table class="table">
-                              <thead>
-                                <tr>
-                                  <th>No.</th>
-                                  <th>วันที่</th>
-                                  <th>เลขที่ยิม</th>
-                                  <th>ชื่อผู้ยืม</th>
-                                  <th>ประเภท</th>
-                                  <th>ชิ่อวัสดุ</th>
-                                  <th>จำนวน</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>1</td>
-                                  <td>12/12/2561</td>
-                                  <td>xxxxxxxxxxxxx</td>
-                                  <td>xxxxx xxxxxx</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                  <td></td>
-                                </tr>
-                                <tr>
-                                  <td>2</td>
-                                  <td>12/12/2561</td>
-                                  <td>xxxxxxxxxxxxx</td>
-                                  <td>xxxxx xxxxxx</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                </tr>
-                                <tr>
-                                  <td>3</td>
-                                  <td>12/12/2561</td>
-                                  <td>xxxxxxxxxxxxx</td>
-                                  <td>xxxxx xxxxxx</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                </tr>
-                                <tr>
-                                  <td>4</td>
-                                  <td>12/12/2561</td>
-                                  <td>xxxxxxxxxxxxx</td>
-                                  <td>xxxxx xxxxxx</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                </tr>
-                                <tr>
-                                  <td>5</td>
-                                  <td>12/12/2561</td>
-                                  <td>xxxxxxxxxxxxx</td>
-                                  <td>xxxxx xxxxxx</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                </tr>
-                                <tr>
-                                  <td>6</td>
-                                  <td>12/12/2561</td>
-                                  <td>xxxxxxxxxxxxx</td>
-                                  <td>xxxxx xxxxxx</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                </tr>
-                                <tr>
-                                  <td>7</td>
-                                  <td>12/12/2561</td>
-                                  <td>xxxxxxxxxxxxx</td>
-                                  <td>xxxxx xxxxxx</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                </tr>
-                                <tr>
-                                  <td>8</td>
-                                  <td>12/12/2561</td>
-                                  <td>xxxxxxxxxxxxx</td>
-                                  <td>xxxxx xxxxxx</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                </tr>
-                                <tr>
-                                  <td>9</td>
-                                  <td>12/12/2561</td>
-                                  <td>xxxxxxxxxxxxx</td>
-                                  <td>xxxxx xxxxxx</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                </tr>
-                                <tr>
-                                  <td>10</td>
-                                  <td>12/12/2561</td>
-                                  <td>xxxxxxxxxxxxx</td>
-                                  <td>xxxxx xxxxxx</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                </tr>
-                                <tr>
-                                  <td>11</td>
-                                  <td>12/12/2561</td>
-                                  <td>xxxxxxxxxxxxx</td>
-                                  <td>xxxxx xxxxxx</td>
-                                  <td>-</td>
-                                  <td>xxxx</td>
-                                  <td>-</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12"> </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
+    <div class="card">
+      <div class="card-body p-2">
+        <div class="row">
+          <div class="col-md-12">
+            <h4> ตัวอย่างส่งตรวจที่อยู่ในคลัง </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 p-2">
+            <button class="btn" data-target="#ModalLong1" type="button" data-toggle="modal"> นำเข้า </button>
+            <button class="btn" data-target="#ModalLong2" type="button" data-toggle="modal"> นำออก </button>
+            <button class="btn" data-target="#ModalLong3" type="button" data-toggle="modal">ยืม </button>
+            <button class="btn" data-target="#ModalLong4" type="button" data-toggle="modal">คืน </button>
+          </div>
+          <div class="col-md-3"> </div>
+          <div class="col-md-2 p-2">
+            <select class="form-control">
+              <option value="เลือก">เลือก</option>
+              <option value="เลือก">นำเข้า</option>
+              <option value="เลือก">นำออก</option>
+              <option value="เลือก">ยืม</option>
+              <option value="เลือก">คืน</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <div class="form-inline p-2">
+              <input type="text" class="form-control" placeholder="ค้นหา">
+              <a href="#" class="btn btn-outline-primary pull-right">ค้นหา</a>
             </div>
           </div>
-          <!--
-                </div>   
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>No.</th>
+                      <th>วันที่</th>
+                      <th>เลขที่ยิม</th>
+                      <th>ชื่อผู้ยืม</th>
+                      <th>ประเภท</th>
+                      <th>ชิ่อวัสดุ</th>
+                      <th>จำนวน</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>12/12/2561</td>
+                      <td>xxxxxxxxxxxxx</td>
+                      <td>xxxxx xxxxxx</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>12/12/2561</td>
+                      <td>xxxxxxxxxxxxx</td>
+                      <td>xxxxx xxxxxx</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>12/12/2561</td>
+                      <td>xxxxxxxxxxxxx</td>
+                      <td>xxxxx xxxxxx</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>12/12/2561</td>
+                      <td>xxxxxxxxxxxxx</td>
+                      <td>xxxxx xxxxxx</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>12/12/2561</td>
+                      <td>xxxxxxxxxxxxx</td>
+                      <td>xxxxx xxxxxx</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>12/12/2561</td>
+                      <td>xxxxxxxxxxxxx</td>
+                      <td>xxxxx xxxxxx</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>12/12/2561</td>
+                      <td>xxxxxxxxxxxxx</td>
+                      <td>xxxxx xxxxxx</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>12/12/2561</td>
+                      <td>xxxxxxxxxxxxx</td>
+                      <td>xxxxx xxxxxx</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>12/12/2561</td>
+                      <td>xxxxxxxxxxxxx</td>
+                      <td>xxxxx xxxxxx</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>12/12/2561</td>
+                      <td>xxxxxxxxxxxxx</td>
+                      <td>xxxxx xxxxxx</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>12/12/2561</td>
+                      <td>xxxxxxxxxxxxx</td>
+                      <td>xxxxx xxxxxx</td>
+                      <td>-</td>
+                      <td>xxxx</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
--->
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12"> </div>
         </div>
       </div>
     </div>
-  </div>
+  </form>
   <footer class="footer">
     <div class="container">
       <p class="copyright float-right"> ©

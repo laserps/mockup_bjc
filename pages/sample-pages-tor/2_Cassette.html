@@ -23,456 +23,408 @@
   <link href="./mui.css" rel="stylesheet"> </head>
 
 <body>
-  <div class="wrapper">
-    <div class="sidebar">
-      <div class="logo">
-        <a href="#" class="simple-text">
-          <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
-      </div>
-      <div class="logo logo-mini">
-        <a href="#" class="simple-text"> Work </a>
-      </div>
-      <div class="sidebar-wrapper">
-        <ul class="nav flex-column">
-          <li class="d-flex flex-column">
-            <a href="0_Register.html">
-              <i class="nav-icon"></i>
-              <p>ลงทะเบียนผู้ป่วยใหม่</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="1_Login_Authority.html">
-              <i class="nav-icon"></i>
-              <p>บันทุกรายละเอียดตัดเนื้อ</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column active">
-            <a href="2_Cassette.html">
-              <i class="nav-icon"></i>
-              <p>Cassattle </p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="8_Finance.html">
-              <i class="nav-icon"></i>
-              <p>การเงิน </p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="9_Import.html">
-              <i class="nav-icon"></i>
-              <p>การนำเข้าข้อมูลจากไฟล์</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column">
-            <a href="3_SignOut.html">
-              <i class="nav-icon"></i>
-              <p>Signout</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="main-panel">
-      <div class="">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <!--
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <!--
               <div class="card">
                 <div class="card-body p-2">
 -->
-              <form class="form">
+        <form class="form">
+          <div class="card">
+            <div class="card-body">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="row">
-                  <div class="col-md-12">
-                    <ul class="nav nav-tabs">
-                      <li class="nav-item">
-                        <a href="" class="active nav-link" data-toggle="tab" data-target="#tabone">Cassette ที่พร้อมส่ง Histo</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="" class="nav-link" data-toggle="tab" data-target="#tabtwo">Cassette ที่พร้อมส่ง Immuno</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="" data-toggle="tab" data-target="#tabthree">Delay classete</a>
-                      </li>
-                    </ul>
-                    <div class="tab-content mt-2">
-                      <div class="tab-pane fade show active" id="tabone" role="tabpanel">
-                        <div class="card">
-                          <div class="card-body p-2">
-                            <div class="row">
-                              <div class="col-md-9">
-                                <div class="row">
-                                  <div class="col-md-6"> </div>
-                                  <div class="col-md-2 p-2">
-                                    <select class="form-control">
-                                      <option value="เลือก">ตัวกรอง</option>
-                                      <option value="เลือก">Delay</option>
-                                      <option value="เลือก">รายการที่ส่งแล้ว</option>
-                                      <option value="เลือก">ส่งมอบ Casstte</option>
-                                    </select>
-                                  </div>
-                                  <div class="col-md-4">
-                                    <div class="form-inline p-2">
-                                      <input type="text" class="form-control" placeholder="ค้นหา">
-                                      <a href="#" class="btn btn-outline-primary pull-right">ค้นหา</a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="card">
-                                  <div class="card-body">
-                                    <table class="table">
-                                      <thead>
-                                        <tr>
-                                          <th>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </th>
-                                          <th>
-                                            <select class="form-control">
-                                              <option value="เลือก">เลือก</option>
-                                            </select>
-                                          </th>
-                                          <th>No.</th>
-                                          <th>Sid</th>
-                                          <th>Cassette</th>
-                                          <th>วันเวลาเริ่มตัด</th>
-                                          <th>วันเวลาทำเสร็จ</th>
-                                          <th>Bone</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                        <tr>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                          <th>
-                                            <select class="form-control">
-                                              <option value="เลือก">เลือก</option>
-                                            </select>
-                                          </th>
-                                          <td>2018</td>
-                                          <td>006781</td>
-                                          <td>G</td>
-                                          <td>28/02/2018(13.32)</td>
-                                          <td>28/02/2018(16.11)</td>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                          <td>
-                                            <select class="form-control">
-                                              <option value="เลือก">เลือก</option>
-                                            </select>
-                                          </td>
-                                          <td></td>
-                                          <td></td>
-                                          <td>H</td>
-                                          <td>28/02/2018(13.32)</td>
-                                          <td>28/02/2018(16.11)</td>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                          <th>
-                                            <select class="form-control">
-                                              <option value="เลือก">เลือก</option>
-                                            </select>
-                                          </th>
-                                          <td></td>
-                                          <td></td>
-                                          <td>L</td>
-                                          <td>28/02/2018(13.32)</td>
-                                          <td>28/02/2018(16.11)</td>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                          <th>
-                                            <select class="form-control">
-                                              <option value="เลือก">เลือก</option>
-                                            </select>
-                                          </th>
-                                          <td>2018</td>
-                                          <td>006882</td>
-                                          <td>E</td>
-                                          <td>28/02/2018(13.32)</td>
-                                          <td>28/02/2018(16.11)</td>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                          <th>
-                                            <select class="form-control">
-                                              <option value="เลือก">เลือก</option>
-                                            </select>
-                                          </th>
-                                          <td></td>
-                                          <td></td>
-                                          <td>F</td>
-                                          <td>28/02/2018(13.32)</td>
-                                          <td>28/02/2018(16.11)</td>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                          <th>
-                                            <select class="form-control">
-                                              <option value="เลือก">เลือก</option>
-                                            </select>
-                                          </th>
-                                          <td></td>
-                                          <td></td>
-                                          <td>G</td>
-                                          <td>28/02/2018(13.32)</td>
-                                          <td>28/02/2018(16.11)</td>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                          <th>
-                                            <select class="form-control">
-                                              <option value="เลือก">เลือก</option>
-                                            </select>
-                                          </th>
-                                          <td></td>
-                                          <td></td>
-                                          <td>H</td>
-                                          <td>28/02/2018(13.32)</td>
-                                          <td>28/02/2018(16.11)</td>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                          <th>
-                                            <select class="form-control">
-                                              <option value="เลือก">เลือก</option>
-                                            </select>
-                                          </th>
-                                          <td></td>
-                                          <td></td>
-                                          <td>I</td>
-                                          <td>28/02/2018(13.32)</td>
-                                          <td>28/02/2018(16.11)</td>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                          <th>
-                                            <select class="form-control">
-                                              <option value="เลือก">เลือก</option>
-                                            </select>
-                                          </th>
-                                          <td></td>
-                                          <td></td>
-                                          <td>J</td>
-                                          <td>28/02/2018(13.32)</td>
-                                          <td>28/02/2018(16.11)</td>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                          <th>
-                                            <select class="form-control">
-                                              <option value="เลือก">เลือก</option>
-                                            </select>
-                                          </th>
-                                          <td></td>
-                                          <td></td>
-                                          <td>K</td>
-                                          <td>28/02/2018(13.32)</td>
-                                          <td>28/02/2018(16.11)</td>
-                                          <td>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </div>
+                  <a href="#" class="simple-text">
+                    <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
+                  <ul class="nav nav-tabs">
+                    <li class="d-flex flex-column p-2">
+                      <a href="0_Register.html">
+                        <i class="nav-icon"></i>
+                        <p>ลงทะเบียนผู้ป่วยใหม่</p>
+                      </a>
+                    </li>
+                    <li class="nav-item d-flex flex-column p-2 active">
+                      <a href="1_Login_Authority.html">
+                        <i class="nav-icon"></i>
+                        <p>บันทุกรายละเอียดตัดเนื้อ</p>
+                      </a>
+                    </li>
+                    <li class="d-flex flex-column p-2">
+                      <a href="2_Cassette.html">
+                        <i class="nav-icon"></i>
+                        <p>Cassattle </p>
+                      </a>
+                    </li>
+                    <li class="d-flex flex-column p-2">
+                      <a href="8_Finance.html">
+                        <i class="nav-icon"></i>
+                        <p>การเงิน </p>
+                      </a>
+                    </li>
+                    <li class="d-flex flex-column p-2">
+                      <a href="9_Import.html">
+                        <i class="nav-icon"></i>
+                        <p>การนำเข้าข้อมูลจากไฟล์</p>
+                      </a>
+                    </li>
+                    <li class="d-flex flex-column p-2">
+                      <a href="3_SignOut.html">
+                        <i class="nav-icon"></i>
+                        <p>Signout</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a href="" class="active nav-link" data-toggle="tab" data-target="#tabone">Cassette ที่พร้อมส่ง Histo</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link" data-toggle="tab" data-target="#tabtwo">Cassette ที่พร้อมส่ง Immuno</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="" data-toggle="tab" data-target="#tabthree">Delay classete</a>
+                </li>
+              </ul>
+              <div class="tab-content mt-2">
+                <div class="tab-pane fade show active" id="tabone" role="tabpanel">
+                  <div class="card">
+                    <div class="card-body p-2">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <div class="row">
+                            <div class="col-md-6"> </div>
+                            <div class="col-md-2 p-2">
+                              <select class="form-control">
+                                <option value="เลือก">ตัวกรอง</option>
+                                <option value="เลือก">Delay</option>
+                                <option value="เลือก">รายการที่ส่งแล้ว</option>
+                                <option value="เลือก">ส่งมอบ Casstte</option>
+                              </select>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="form-inline p-2">
+                                <input type="text" class="form-control" placeholder="ค้นหา">
+                                <a href="#" class="btn btn-outline-primary pull-right">ค้นหา</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </th>
+                                    <th>
+                                      <select class="form-control">
+                                        <option value="เลือก">เลือก</option>
+                                      </select>
+                                    </th>
+                                    <th>No.</th>
+                                    <th>Sid</th>
+                                    <th>Cassette</th>
+                                    <th>วันเวลาเริ่มตัด</th>
+                                    <th>วันเวลาทำเสร็จ</th>
+                                    <th>Bone</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                    <th>
+                                      <select class="form-control">
+                                        <option value="เลือก">เลือก</option>
+                                      </select>
+                                    </th>
+                                    <td>2018</td>
+                                    <td>006781</td>
+                                    <td>G</td>
+                                    <td>28/02/2018(13.32)</td>
+                                    <td>28/02/2018(16.11)</td>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                    <td>
+                                      <select class="form-control">
+                                        <option value="เลือก">เลือก</option>
+                                      </select>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>H</td>
+                                    <td>28/02/2018(13.32)</td>
+                                    <td>28/02/2018(16.11)</td>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                    <th>
+                                      <select class="form-control">
+                                        <option value="เลือก">เลือก</option>
+                                      </select>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>L</td>
+                                    <td>28/02/2018(13.32)</td>
+                                    <td>28/02/2018(16.11)</td>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                    <th>
+                                      <select class="form-control">
+                                        <option value="เลือก">เลือก</option>
+                                      </select>
+                                    </th>
+                                    <td>2018</td>
+                                    <td>006882</td>
+                                    <td>E</td>
+                                    <td>28/02/2018(13.32)</td>
+                                    <td>28/02/2018(16.11)</td>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                    <th>
+                                      <select class="form-control">
+                                        <option value="เลือก">เลือก</option>
+                                      </select>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>F</td>
+                                    <td>28/02/2018(13.32)</td>
+                                    <td>28/02/2018(16.11)</td>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                    <th>
+                                      <select class="form-control">
+                                        <option value="เลือก">เลือก</option>
+                                      </select>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>G</td>
+                                    <td>28/02/2018(13.32)</td>
+                                    <td>28/02/2018(16.11)</td>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                    <th>
+                                      <select class="form-control">
+                                        <option value="เลือก">เลือก</option>
+                                      </select>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>H</td>
+                                    <td>28/02/2018(13.32)</td>
+                                    <td>28/02/2018(16.11)</td>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                    <th>
+                                      <select class="form-control">
+                                        <option value="เลือก">เลือก</option>
+                                      </select>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>28/02/2018(13.32)</td>
+                                    <td>28/02/2018(16.11)</td>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                    <th>
+                                      <select class="form-control">
+                                        <option value="เลือก">เลือก</option>
+                                      </select>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>J</td>
+                                    <td>28/02/2018(13.32)</td>
+                                    <td>28/02/2018(16.11)</td>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                    <th>
+                                      <select class="form-control">
+                                        <option value="เลือก">เลือก</option>
+                                      </select>
+                                    </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>K</td>
+                                    <td>28/02/2018(13.32)</td>
+                                    <td>28/02/2018(16.11)</td>
+                                    <td>
+                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 p-2">
+                          <div class="row">
+                            <div class="col-md-12 text-primary">
+                              <label for="firstName">สรุปรวม</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-5 text-success">
+                              <label for="firstName">ข้อมูลของวันที่</label>
+                            </div>
+                            <div class="col-md-7 ">
+                              <input type="date" class="form-control"> </div>
+                          </div>
+                          <div class="card p-2">
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-md-12 text-primary">
+                                  <label for="firstName">จำนวนที่พร้อมส่ง</label>
                                 </div>
                               </div>
-                              <div class="col-md-3 p-2">
-                                <div class="row">
-                                  <div class="col-md-12 text-primary">
-                                    <label for="firstName">สรุปรวม</label>
-                                  </div>
+                              <div class="row">
+                                <div class="col-md-6 text-danger">
+                                  <label for="firstName">จำนวนที่พร้อมส่ง Histo</label>
                                 </div>
-                                <div class="row">
-                                  <div class="col-md-5 text-success">
-                                    <label for="firstName">ข้อมูลของวันที่</label>
-                                  </div>
-                                  <div class="col-md-7 ">
-                                    <input type="date" class="form-control"> </div>
+                                <div class="col-md-6 text-warning">
+                                  <label for="firstName">Classect</label>
                                 </div>
-                                <div class="card p-2">
-                                  <div class="card-body">
-                                    <div class="row">
-                                      <div class="col-md-12 text-primary">
-                                        <label for="firstName">จำนวนที่พร้อมส่ง</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6 text-danger">
-                                        <label for="firstName">จำนวนที่พร้อมส่ง Histo</label>
-                                      </div>
-                                      <div class="col-md-6 text-warning">
-                                        <label for="firstName">Classect</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6 text-warning">
-                                        <label for="firstName">วันนี้</label>
-                                      </div>
-                                      <div class="col-md-6 text-primary">
-                                        <label for="firstName">241</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6 text-warning">
-                                        <label for="firstName">ข้อมูลวันเก่า</label>
-                                      </div>
-                                      <div class="col-md-6 text-primary">
-                                        <label for="firstName">18</label>
-                                      </div>
-                                    </div>
-                                    <div class="row bg-warning">
-                                      <div class="col-md-6 text-danger">
-                                        <label for="firstName">รวม</label>
-                                      </div>
-                                      <div class="col-md-6 text-primary">
-                                        <label for="firstName">259</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6 text-danger">
-                                        <label for="firstName">จำนวนที่พร้อมส่ง Immuno</label>
-                                      </div>
-                                      <div class="col-md-6 text-warning">
-                                        <label for="firstName">Classect</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6 text-warning">
-                                        <label for="firstName">วันนี้</label>
-                                      </div>
-                                      <div class="col-md-6 text-primary">
-                                        <label for="firstName">2</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6 text-warning">
-                                        <label for="firstName">ข้อมูลวันเก่า</label>
-                                      </div>
-                                      <div class="col-md-6 text-primary">
-                                        <label for="firstName">0</label>
-                                      </div>
-                                    </div>
-                                    <div class="row bg-warning">
-                                      <div class="col-md-6 text-danger">
-                                        <label for="firstName">รวม</label>
-                                      </div>
-                                      <div class="col-md-6 text-primary">
-                                        <label for="firstName">2</label>
-                                      </div>
-                                    </div>
-                                  </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6 text-warning">
+                                  <label for="firstName">วันนี้</label>
                                 </div>
-                                <div class="card p-2">
-                                  <div class="card-body">
-                                    <div class="row">
-                                      <div class="col-md-12 text-primary">
-                                        <label for="firstName">จำนวนที่ Delay</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6 text-warning">
-                                        <label for="firstName">วันนี้</label>
-                                      </div>
-                                      <div class="col-md-6 text-primary">
-                                        <label for="firstName">241</label>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6 text-warning">
-                                        <label for="firstName">ข้อมูลวันเก่า</label>
-                                      </div>
-                                      <div class="col-md-6 text-primary">
-                                        <label for="firstName">18</label>
-                                      </div>
-                                    </div>
-                                  </div>
+                                <div class="col-md-6 text-primary">
+                                  <label for="firstName">241</label>
                                 </div>
-                                <div class="card p-2">
-                                  <div class="card-body">
-                                    <div class="row">
-                                      <div class="col-md-12 text-primary">
-                                        <input type="text" class="form-control">
-                                        <a href="#" class="btn btn-outline-primary p-2">ผู้ส่ง</a>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-12 text-primary">
-                                        <input type="text" class="form-control">
-                                        <a href="#" class="btn btn-outline-primary p-2">ผู้รับ</a>
-                                      </div>
-                                    </div>
-                                  </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6 text-warning">
+                                  <label for="firstName">ข้อมูลวันเก่า</label>
+                                </div>
+                                <div class="col-md-6 text-primary">
+                                  <label for="firstName">18</label>
+                                </div>
+                              </div>
+                              <div class="row bg-warning">
+                                <div class="col-md-6 text-danger">
+                                  <label for="firstName">รวม</label>
+                                </div>
+                                <div class="col-md-6 text-primary">
+                                  <label for="firstName">259</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6 text-danger">
+                                  <label for="firstName">จำนวนที่พร้อมส่ง Immuno</label>
+                                </div>
+                                <div class="col-md-6 text-warning">
+                                  <label for="firstName">Classect</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6 text-warning">
+                                  <label for="firstName">วันนี้</label>
+                                </div>
+                                <div class="col-md-6 text-primary">
+                                  <label for="firstName">2</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6 text-warning">
+                                  <label for="firstName">ข้อมูลวันเก่า</label>
+                                </div>
+                                <div class="col-md-6 text-primary">
+                                  <label for="firstName">0</label>
+                                </div>
+                              </div>
+                              <div class="row bg-warning">
+                                <div class="col-md-6 text-danger">
+                                  <label for="firstName">รวม</label>
+                                </div>
+                                <div class="col-md-6 text-primary">
+                                  <label for="firstName">2</label>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div class="card">
-                              <div class="card-body p-2">
-                                <div class="form-group">
-                                  <div class="row">
-                                    <div class="col-md-12">
-                                      <label for="firstName">Register By :&nbsp;</label>
-                                      <label for="firstName">Dvangkamon Wattanatranon, M.D</label>
-                                    </div>
-                                  </div>
+                          <div class="card p-2">
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-md-12 text-primary">
+                                  <label for="firstName">จำนวนที่ Delay</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6 text-warning">
+                                  <label for="firstName">วันนี้</label>
+                                </div>
+                                <div class="col-md-6 text-primary">
+                                  <label for="firstName">241</label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6 text-warning">
+                                  <label for="firstName">ข้อมูลวันเก่า</label>
+                                </div>
+                                <div class="col-md-6 text-primary">
+                                  <label for="firstName">18</label>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12"> </div>
-                        </div>
-                      </div>
-                      <div class="tab-pane fade" id="tabtwo" role="tabpanel">
-                        <div class="card">
-                          <div class="card-body p-2">
-                            <div class="row">
-                              <div class="col-md-6">
-                                <label>2</label>
+                          <div class="card p-2">
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-md-12 text-primary">
+                                  <input type="text" class="form-control">
+                                  <a href="#" class="btn btn-outline-primary p-2">ผู้ส่ง</a>
+                                </div>
                               </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="tab-pane fade" id="tabthree" role="tabpanel">
-                        <div class="col-md-12">
-                          <div class="card ">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <label>3</label>
+                              <div class="row">
+                                <div class="col-md-12 text-primary">
+                                  <input type="text" class="form-control">
+                                  <a href="#" class="btn btn-outline-primary p-2">ผู้รับ</a>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -480,69 +432,110 @@
                       </div>
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="card">
+                        <div class="card-body p-2">
+                          <div class="form-group">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <label for="firstName">Register By :&nbsp;</label>
+                                <label for="firstName">Dvangkamon Wattanatranon, M.D</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12"> </div>
+                  </div>
                 </div>
-              </form>
+                <div class="tab-pane fade" id="tabtwo" role="tabpanel">
+                  <div class="card">
+                    <div class="card-body p-2">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label>2</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tabthree" role="tabpanel">
+                  <div class="col-md-12">
+                    <div class="card ">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <label>3</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!--
+          </div>
+        </form>
+      </div>
+      <!--
                 </div>   
               </div>
 -->
-          </div>
-        </div>
-      </div>
     </div>
-    <footer class="footer">
-      <div class="container">
-        <p class="copyright float-right"> ©
-          <script>
-            document.write(new Date().getFullYear())
-          </script>
-          <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
-        </p>
-      </div>
-    </footer>
-    <!--   Core JS Files   -->
-    <script src="../../assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
-    <script src="../../assets/vendors/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="../../assets/vendors/tether.min.js" type="text/javascript"></script>
-    <script src="../../assets/vendors/bootstrap.min.js" type="text/javascript"></script>
-    <script src="../../assets/vendors/material.min.js" type="text/javascript"></script>
-    <script src="../../assets/vendors/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
-    <!-- Forms Validations Plugin -->
-    <script src="../../assets/vendors/jquery.validate.min.js"></script>
-    <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
-    <script src="../../assets/vendors/moment.min.js"></script>
-    <!--  Charts Plugin -->
-    <script src="../../assets/vendors/chartist.min.js"></script>
-    <!--  Plugin for the Wizard -->
-    <script src="../../assets/vendors/jquery.bootstrap-wizard.js"></script>
-    <!--  Notifications Plugin    -->
-    <script src="../../assets/vendors/bootstrap-notify.js"></script>
-    <!-- DateTimePicker Plugin -->
-    <script src="../../assets/vendors/bootstrap-datepicker.min.js"></script>
-    <!-- Vector Map plugin -->
-    <script src="../../assets/vendors/jquery-jvectormap.js"></script>
-    <!-- Sliders Plugin -->
-    <script src="../../assets/vendors/nouislider.min.js"></script>
-    <!-- Select Plugin -->
-    <script src="../../assets/vendors/jquery.select-bootstrap.js"></script>
-    <!--  DataTables.net Plugin    -->
-    <script src="../../assets/vendors/jquery.dataTables.min.js"></script>
-    <script src="../../assets/vendors/dataTables.bootstrap4.js"></script>
-    <!-- Sweet Alert 2 plugin -->
-    <script src="../../assets/vendors/sweetalert/js/sweetalert2.min.js"></script>
-    <!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
-    <script src="../../assets/vendors/jasny-bootstrap.min.js"></script>
-    <!--  Full Calendar Plugin    -->
-    <script src="../../assets/vendors/fullcalendar.min.js"></script>
-    <!-- TagsInput Plugin -->
-    <script src="../../assets/vendors/jquery.tagsinput.js"></script>
-    <!-- Material Dashboard javascript methods -->
-    <script src="../../assets/js/inspire.js"></script>
-    <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
-      <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
-    </pingendo>
   </div>
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright float-right"> ©
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
+      </p>
+    </div>
+  </footer>
+  <!--   Core JS Files   -->
+  <script src="../../assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/tether.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/material.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+  <!-- Forms Validations Plugin -->
+  <script src="../../assets/vendors/jquery.validate.min.js"></script>
+  <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+  <script src="../../assets/vendors/moment.min.js"></script>
+  <!--  Charts Plugin -->
+  <script src="../../assets/vendors/chartist.min.js"></script>
+  <!--  Plugin for the Wizard -->
+  <script src="../../assets/vendors/jquery.bootstrap-wizard.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../../assets/vendors/bootstrap-notify.js"></script>
+  <!-- DateTimePicker Plugin -->
+  <script src="../../assets/vendors/bootstrap-datepicker.min.js"></script>
+  <!-- Vector Map plugin -->
+  <script src="../../assets/vendors/jquery-jvectormap.js"></script>
+  <!-- Sliders Plugin -->
+  <script src="../../assets/vendors/nouislider.min.js"></script>
+  <!-- Select Plugin -->
+  <script src="../../assets/vendors/jquery.select-bootstrap.js"></script>
+  <!--  DataTables.net Plugin    -->
+  <script src="../../assets/vendors/jquery.dataTables.min.js"></script>
+  <script src="../../assets/vendors/dataTables.bootstrap4.js"></script>
+  <!-- Sweet Alert 2 plugin -->
+  <script src="../../assets/vendors/sweetalert/js/sweetalert2.min.js"></script>
+  <!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+  <script src="../../assets/vendors/jasny-bootstrap.min.js"></script>
+  <!--  Full Calendar Plugin    -->
+  <script src="../../assets/vendors/fullcalendar.min.js"></script>
+  <!-- TagsInput Plugin -->
+  <script src="../../assets/vendors/jquery.tagsinput.js"></script>
+  <!-- Material Dashboard javascript methods -->
+  <script src="../../assets/js/inspire.js"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
 </body>
 
 </html>
