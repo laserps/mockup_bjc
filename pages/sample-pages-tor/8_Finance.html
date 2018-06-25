@@ -22,7 +22,7 @@
   <link href="../../assets/css/themify-icons.css" rel="stylesheet">
   <link href="./mui.css" rel="stylesheet"> </head>
 
-<body>
+<body class="">
   <form class="form">
     <div class="card">
       <div class="card-body">
@@ -73,53 +73,58 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-7">
-        <div class="card">
+      <div class="col-md-12">
+        <div>
           <div class="row">
             <div class="col-md-12">
-              <h3> การเงิน</h3>
+              <h3>&nbsp;ระบบห้องเก็บเงิน</h3>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
               <div class="row">
-                <div class="col-md-12">
-                  <div class="card">
-                    <div class="card-body p-2">
-                      <h5> การสั่ง </h5>
+                <div class="col-md-6">
+                  <div>
+                    <div class="p-2">
+                      <h4>&nbsp;ประวัติการเรียกเก็บเงิน</h4>
                       <table class="table table-hover">
                         <thead>
                           <tr>
-                            <th>ลำดับ</th>
-                            <th>แผนก</th>
-                            <th>วันที่สั่ง</th>
-                            <th>ยืนยันผล</th>
+                            <th class="text-center">ลำดับ</th>
+                            <th class="text-center">วันที่เวลาสั่ง</th>
+                            <th class="text-center">ผู้สั่ง</th>
+                            <th class="text-center">สถานะ</th>
+                            <th class="text-center">เรียกเก็บ</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td>1</td>
-                            <td>OPD</td>
-                            <td>19/9/2555</td>
-                            <td>✓</td>
+                            <td class="text-center">1</td>
+                            <td class="text-center">19/9/2555 07:00:00</td>
+                            <th class="text-center">opd</th>
+                            <td class="text-center">argent</td>
+                            <th class="text-center">✓</th>
                           </tr>
                           <tr>
-                            <td>2</td>
-                            <td>OPD</td>
-                            <td>18/9/2555</td>
-                            <td>✓</td>
+                            <td class="text-center">2</td>
+                            <td class="text-center">18/9/2555 07:00:00</td>
+                            <th class="text-center">opd</th>
+                            <td class="text-center">argent</td>
+                            <th class="text-center">-</th>
                           </tr>
                           <tr>
-                            <td>3</td>
-                            <td>OPD</td>
-                            <td>8/9/2555</td>
-                            <td>✓</td>
+                            <td class="text-center">3</td>
+                            <td class="text-center">8/9/2555 07:00:00</td>
+                            <th class="text-center">card</th>
+                            <td class="text-center">argent</td>
+                            <th class="text-center">-</th>
                           </tr>
                           <tr>
-                            <td>4</td>
-                            <td>OPD</td>
-                            <td>7/9/2555</td>
-                            <td>✓</td>
+                            <td class="text-center">4</td>
+                            <td class="text-center">7/9/2555 07:00:00</td>
+                            <th class="text-center">card</th>
+                            <td class="text-center">argent</td>
+                            <th class="text-center">✓</th>
                           </tr>
                           <tr></tr>
                           <tr></tr>
@@ -131,68 +136,58 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="card p-2">
-                        <div class="row">
-                          <div class="col-md-12 text-right"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <table class="table table-hover">
-                              <thead>
-                                <tr>
-                                  <th>Item No.</th>
-                                  <th>Approved Date</th>
-                                  <th>Serial No.</th>
-                                  <th>Test Name</th>
-                                  <th>Price</th>
-                                  <th>Paid</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>-</td>
-                                  <td>-</td>
-                                  <td>-</td>
-                                  <td>-</td>
-                                  <td>-</td>
-                                  <td>-</td>
-                                </tr>
-                                <tr>
-                                  <td>-</td>
-                                  <td>-</td>
-                                  <td>-</td>
-                                  <td>-</td>
-                                  <td>-</td>
-                                  <td>-</td>
-                                </tr>
-                                <tr>
-                                  <td>-</td>
-                                  <td>-</td>
-                                  <td>-</td>
-                                  <td>-</td>
-                                  <td>-</td>
-                                  <td>-</td>
-                                </tr>
-                                <tr>
-                                  <td>-</td>
-                                  <td>-</td>
-                                  <td>-</td>
-                                  <td>-</td>
-                                  <td>-</td>
-                                  <td>-</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
+                <div class="col-md-6">
+                  <div class="col-md-12">
+                    <h4>รายละเอียด</h4>
+                    <div class="p-2">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th>Item No.</th>
+                                <th>Approved Date</th>
+                                <th>Serial No.</th>
+                                <th>Test Name</th>
+                                <th>Price</th>
+                                <th>Paid</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                              </tr>
+                              <tr>
+                                <td colspan="4" class="text-center">รวม</td>
+                                <td>
+                                  <input type="text" class="form-control"> </td>
+                                <td>
+                                  <button type="submit" class="btn btn-light">บันทึก</button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
                     </div>
@@ -202,14 +197,12 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-5"> </div>
-            <div class="col-md-3">
-              <input type="text" class="form-control" placeholder="ยอดที่จ่าย"> </div>
-            <div class="col-md-2">
-              <button type="submit" class="btn btn-light">บันทึก</button>
-            </div>
-            <div class="col-md-2">
-              <button type="submit" class="btn btn-light">พิมพ์</button>
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="row"> </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -221,107 +214,106 @@
           </div>
         </div>
       </div>
-      <div class="col-md-5">
-        <div class="card p-2">
-          <div class="row">
-            <div class="col-md-12 text-right"> </div>
-          </div>
-          <h3>ประวัติการบันทึก</h3>
-          <div class="row">
-            <div class="col-md-12">
-              <table class="table-responsive">
-                <thead>
-                  <tr>
-                    <th>No.</th>
-                    <th>Date Time</th>
-                    <th>แผนก</th>
-                    <th>Finant No.</th>
-                    <th>HN</th>
-                    <th>ชื่อผู้ป่วย</th>
-                    <th>สิทธิ์รักษา</th>
-                    <th>รหัสสิทธิ์รักษา</th>
-                    <th>อายุ</th>
-                    <th>ยอดทั้งหมด</th>
-                    <th>ส่วนลด</th>
-                    <th>ชำระเงินสด</th>
-                    <th>บัตรเครดิต</th>
-                    <th>เลขที่ใบเสร็จ</th>
-                    <th>pcode</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                  </tr>
-                  <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                  </tr>
-                  <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                  </tr>
-                  <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-12">
+          <h4>&nbsp;ประวัติการเรียกเก็บเงิน</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Date Time</th>
+                <th>แผนก</th>
+                <th>Finant No.</th>
+                <th>HN</th>
+                <th>ชื่อผู้ป่วย</th>
+                <th>สิทธิ์รักษา</th>
+                <th>รหัสสิทธิ์รักษา</th>
+                <th>อายุ</th>
+                <th>ยอดทั้งหมด</th>
+                <th>ส่วนลด</th>
+                <th>ชำระเงินสด</th>
+                <th>บัตรเครดิต</th>
+                <th>เลขที่ใบเสร็จ</th>
+                <th>pcode</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
