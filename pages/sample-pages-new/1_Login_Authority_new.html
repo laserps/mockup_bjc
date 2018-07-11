@@ -32,87 +32,70 @@
               <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
             <ul class="nav nav-tabs">
               <li class="d-flex flex-column p-2">
-                <a href="0_Register.html">
+                <a href="0_Register_new.html">
                   <i class="nav-icon"></i>
-                  <p>ลงทะเบียนผู้ป่วย</p>
+                  <p>Partient Register</p>
                 </a>
               </li>
-              <li class="nav-item d-flex flex-column p-2 active">
-                <a href="1_Login_Authority.html">
-                  <i class="nav-icon"></i>
-                  <p>ลงทะเบียน</p>
-                </a>
+              <li class="dropdown d-flex flex-column">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Order Entry </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="1_Login_Authority_new.html">ลงทะเบียนสิ่งส่งตรวจ</a>
+                  <a class="dropdown-item" href="2_Resive_new.html"> Recive</a>
+                </div>
               </li>
               <li class="d-flex flex-column p-2">
                 <a href="2_Cassette.html">
                   <i class="nav-icon"></i>
-                  <p>Cassattle </p>
+                  <p>Billing</p>
                 </a>
               </li>
               <li class="d-flex flex-column p-2">
                 <a href="8_Finance.html">
                   <i class="nav-icon"></i>
-                  <p>การเงิน </p>
+                  <p>Specimen Recaption</p>
                 </a>
               </li>
               <li class="d-flex flex-column p-2">
                 <a href="9_Import.html">
                   <i class="nav-icon"></i>
-                  <p>การนำเข้าข้อมูลจากไฟล์</p>
+                  <p>Cassete Preparation</p>
                 </a>
               </li>
               <li class="d-flex flex-column p-2">
                 <a href="3_SignOut.html">
                   <i class="nav-icon"></i>
-                  <p>Signout</p>
+                  <p>Slide Preparaion</p>
                 </a>
               </li>
               <li class="d-flex flex-column p-2">
                 <a href="4_Conclude.html">
                   <i class="nav-icon"></i>
-                  <p contenteditable="true">Conclude</p>
+                  <p>Result Rntry</p>
                 </a>
               </li>
               <li class="d-flex flex-column p-2">
                 <a href="5_Patient_Table.html">
                   <i class="nav-icon"></i>
-                  <p contenteditable="true">Patient</p>
+                  <p>Patient Search</p>
                 </a>
               </li>
               <li class="d-flex flex-column p-2">
                 <a href="6_AccessHistory_Table.html">
                   <i class="nav-icon"></i>
-                  <p contenteditable="true">Access History</p>
+                  <p>Imported File</p>
                 </a>
               </li>
               <li class="d-flex flex-column p-2">
                 <a href="7_Recive.html">
                   <i class="nav-icon"></i>
-                  <p contenteditable="true">Recive</p>
+                  <p>Calender of Pathologist</p>
                 </a>
               </li>
               <li class="d-flex flex-column p-2">
                 <a href="10_DashBoard.html">
                   <i class="nav-icon"></i>
-                  <p>Dash Board</p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="11_Stock_Checked.html">
-                  <i class="nav-icon"></i>
-                  <p>ตรวจของที่อยู่ในคลัง</p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="12_Stock_Normal(1).html">
-                  <i class="nav-icon"></i>
-                  <p>จัดการของที่อยู่ในคลัง(แอดมิน)</p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="12_Stock_Normal(2).html">
-                  <i class="nav-icon"></i>
-                  <p>จัดการของที่อยู่ในคลัง</p>
+                  <p>Material Management</p>
                 </a>
               </li>
             </ul>
@@ -280,10 +263,12 @@
               <div class="col-md-6">
                 <label class="p-2">Doctor</label>
               </div>
-              <div class="col-md-6 form-inline">
+              <div class="col-md-4 ">
                 <select class="form-control">
                   <option value="MR">DEFDOC</option>
                 </select>
+              </div>
+              <div class="col-md-2">
                 <button class="btn btn-outline-secondary form-control" type="button">
                   <i class="ti-plus"></i>
                 </button>
@@ -333,21 +318,17 @@
                 <input type="text" class="form-control"> </div>
             </div>
             <div class="row">
-              <div class="col-md-12 p-2 form-inline">
-                <input type="checkbox" aria-label="Checkbox for following text input" value="on">
-                <label class="p-2">Print speciment</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 p-2 form-inline">
+              <div class="col-md-4 p-2 form-inline">
                 <input type="checkbox" aria-label="Checkbox for following text input" value="on">
                 <label class="p-2">Print request</label>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 p-2 form-inline">
+              <div class="col-md-4 p-2 form-inline">
                 <input type="checkbox" aria-label="Checkbox for following text input" value="on">
                 <label class="p-2">Print bill</label>
+              </div>
+              <div class="col-md-4 p-2 form-inline">
+                <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                <label class="p-2">Print speciment</label>
               </div>
             </div>
           </div>
@@ -360,7 +341,7 @@
               <div class="row text-right form-group">
                 <div class="col-sm-12 col-md-11"> </div>
                 <div class="col-sm-12 col-md-1">
-                  <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal"> add </button>
+                  <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal"> Add </button>
                 </div>
               </div>
             </div>
@@ -411,9 +392,6 @@
                               <td>
                                 <input type="text"> </td>
                               <td class="text-right">
-                                <button class="btn btn-success btn-xs">
-                                  <i class="fa fa-plus"></i>
-                                </button>
                                 <button class="btn btn-warning btn-xs">
                                   <i class="fa fa-edit"></i>
                                 </button>
@@ -431,9 +409,6 @@
                               <td>
                                 <input type="text"> </td>
                               <td class="text-right">
-                                <button class="btn btn-success btn-xs">
-                                  <i class="fa fa-plus"></i>
-                                </button>
                                 <button class="btn btn-warning btn-xs">
                                   <i class="fa fa-edit"></i>
                                 </button>
@@ -451,9 +426,6 @@
                               <td>
                                 <input type="text"> </td>
                               <td class="text-right">
-                                <button class="btn btn-success btn-xs">
-                                  <i class="fa fa-plus"></i>
-                                </button>
                                 <button class="btn btn-warning btn-xs">
                                   <i class="fa fa-edit"></i>
                                 </button>
@@ -471,9 +443,6 @@
                               <td>
                                 <input type="text"> </td>
                               <td class="text-right">
-                                <button class="btn btn-success btn-xs">
-                                  <i class="fa fa-plus"></i>
-                                </button>
                                 <button class="btn btn-warning btn-xs">
                                   <i class="fa fa-edit"></i>
                                 </button>
@@ -491,9 +460,6 @@
                               <td>
                                 <input type="text"> </td>
                               <td class="text-right">
-                                <button class="btn btn-success btn-xs">
-                                  <i class="fa fa-plus"></i>
-                                </button>
                                 <button class="btn btn-warning btn-xs">
                                   <i class="fa fa-edit"></i>
                                 </button>
@@ -594,9 +560,7 @@
               <div class="col-md-1 text-right">
                 <label class="p-2">SID</label>
               </div>
-              <div class="col-md-1">
-                <input type="text" class="form-control"> </div>
-              <div class="col-md-2">
+              <div class="col-md-3">
                 <input type="text" class="form-control"> </div>
             </div>
             <div class="row">
@@ -684,9 +648,9 @@
   <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
     <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
   </pingendo>
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
+  <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content ">
         <div class="modal-body">
           <div class="row">
             <div class="col-md-4" style="border:1px solid #000;">
