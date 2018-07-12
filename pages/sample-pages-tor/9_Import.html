@@ -23,429 +23,439 @@
   <link href="./mui.css" rel="stylesheet"> </head>
 
 <body>
-  <form class="form">
-    <div class="card">
-      <div class="card-body">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="row">
-            <a href="#" class="simple-text">
-              <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
-            <ul class="nav nav-tabs">
-              <li class="d-flex flex-column p-2">
-                <a href="10_DashBoard.html">
-                  <i class="nav-icon"></i>
-                  <p>Dash Board</p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="0_Register.html">
-                  <i class="nav-icon"></i>
-                  <p>ลงทะเบียนผู้ป่วยใหม่</p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="7_Recive.html">
-                  <i class="nav-icon"></i>
-                  <p contenteditable="true">ลงทะเบียนส่งตรวจ</p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="9_Import.html">
-                  <i class="nav-icon"></i>
-                  <p>ลงทะเบียนส่งตรวจ(ไฟล์)</p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="8_Finance.html">
-                  <i class="nav-icon"></i>
-                  <p>การเงิน </p>
-                </a>
-              </li>
-              <li class="nav-item d-flex flex-column p-2 active">
-                <a href="1_Login_Authority.html">
-                  <i class="nav-icon"></i>
-                  <p>บันทึกการตัดชิ้นเนื้อ</p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="2_Cassette.html">
-                  <i class="nav-icon"></i>
-                  <p>Cassattle </p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="2_slide.html">
-                  <i class="nav-icon"></i>
-                  <p>slide </p>
-                </a>
-              </li>
-              <!--
-              <li class="d-flex flex-column p-2">
-                <a href="3_SignOut.html">
-                  <i class="nav-icon"></i>
-                  <p>Signout</p>
-                </a>
-              </li>
--->
-              <!--
-              <li class="d-flex flex-column p-2">
-                <a href="4_Conclude.html">
-                  <i class="nav-icon"></i>
-                  <p contenteditable="true">Conclude</p>
-                </a>
-              </li>
--->
-              <!--
-              <li class="d-flex flex-column p-2">
-                <a href="5_Patient_Table.html">
-                  <i class="nav-icon"></i>
-                  <p contenteditable="true">Patient</p>
-                </a>
-              </li>
--->
-              <li class="d-flex flex-column p-2">
-                <a href="11_Stock_Checked.html">
-                  <i class="nav-icon"></i>
-                  <p>คลังเก็บตัวอย่าง</p>
-                </a>
-              </li>
-              <!--
-              <li class="d-flex flex-column p-2">
-                <a href="12_Stock_Normal(1).html">
-                  <i class="nav-icon"></i>
-                  <p>จัดการของที่อยู่ในคลัง(แอดมิน)</p>
-                </a>
-              </li>
--->
-              <li class="d-flex flex-column p-2">
-                <a href="12_Stock_Normal(2).html">
-                  <i class="nav-icon"></i>
-                  <p>คลังอุปกรณ์</p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="6_AccessHistory_Table.html">
-                  <i class="nav-icon"></i>
-                  <p contenteditable="true">Access History</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+  <div class="wrapper">
+    <div class="sidebar">
+      <div class="logo">
+        <a href="#" class="simple-text">
+          <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
+      </div>
+      <div class="logo logo-mini">
+        <a href="#" class="simple-text"> Work </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav flex-column">
+          <li class="d-flex flex-column active">
+            <a href="6_1_3_profile.html">
+              <i class="nav-icon"></i>
+              <p>Import</p>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="card">
-      <div class="card-body p-2">
-        <div class="row">
-          <div class="col-md-12">
-            <h3> นำเข้าข้อมูลจากไฟล์</h3>
-          </div>
+    <div class="main-panel">
+      <nav class="navbar navbar-default navbar-toggleable-md navbar-inverse">
+        <div class="navbar-minimize">
+          <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+            <i class="ti-arrow-left"></i>
+          </button>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-body p-2">
-                <div class="form-inline p-2 pull-right">
-                  <input type="text" class="form-control" placeholder="ค้นหา">
-                  <a href="#" class="btn btn-outline-primary pull-right">ค้นหา</a>
-                </div>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>ลำดับ</th>
-                      <th>รายการ</th>
-                      <th>Date</th>
-                      <th>การกระทำ</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>xxxxxxxxxx</td>
-                      <td>12/12/2018</td>
-                      <td>
-                        <button class="btn btn-info btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>xxxxxxxxxx</td>
-                      <td>12/12/2018</td>
-                      <td>
-                        <button class="btn btn-info btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>xxxxxxxxxx</td>
-                      <td>12/12/2018</td>
-                      <td>
-                        <button class="btn btn-info btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>xxxxxxxxxx</td>
-                      <td>12/12/2018</td>
-                      <td>
-                        <button class="btn btn-info btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>xxxxxxxxxx</td>
-                      <td>12/12/2018</td>
-                      <td>
-                        <button class="btn btn-info btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>6</td>
-                      <td>xxxxxxxxxx</td>
-                      <td>12/12/2018</td>
-                      <td>
-                        <button class="btn btn-info btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>7</td>
-                      <td>xxxxxxxxxx</td>
-                      <td>12/12/2018</td>
-                      <td>
-                        <button class="btn btn-info btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>8</td>
-                      <td>xxxxxxxxxx</td>
-                      <td>12/12/2018</td>
-                      <td>
-                        <button class="btn btn-info btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>9</td>
-                      <td>xxxxxxxxxx</td>
-                      <td>12/12/2018</td>
-                      <td>
-                        <button class="btn btn-info btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>10</td>
-                      <td>xxxxxxxxxx</td>
-                      <td>12/12/2018</td>
-                      <td>
-                        <button class="btn btn-info btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>11</td>
-                      <td>xxxxxxxxxx</td>
-                      <td>12/12/2018</td>
-                      <td>
-                        <button class="btn btn-info btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                          <i class="fa fa-file-text-o"></i>
-                        </button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Import</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarItems">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle nav-link" id="notificationList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="ti-bell nav-icon"></i>
+                <span class="notification">6</span>
+                <p class="hidden-lg-up"> Notifications
+                  <i class="fa fa-sort-desc submenu-toggle"></i>
+                </p>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="notificationList">
+                <a class="dropdown-item" href="#">You have 5 new messages</a>
+                <a class="dropdown-item" href="#">You're now friend with Mike</a>
+                <a class="dropdown-item" href="#">Wish Mary on her birthday!</a>
+                <a class="dropdown-item" href="#">5 warnings in Server Console</a>
+                <a class="dropdown-item" href="#">Jane completed 'Induction Training'</a>
+                <a class="dropdown-item" href="#">'Prepare Marketing Report' is overdue</a>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="card">
-                  <div class="card-body p-2">
-                    <div class="row">
-                      <div class="col-md-10">
-                        <input type="file" class="form-group p-2 pull-left"> </div>
-                      <div class="col-md-2">
-                        <a href="#" class="btn btn-outline-primary pull-left">Read</a>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-layout-grid3-alt nav-icon"></i>
+                <p class="hidden-lg-up">Apps</p>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-user nav-icon"></i>
+                <p class="hidden-lg-up">Profile</p>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-settings nav-icon"></i>
+                <p class="hidden-lg-up">Settings</p>
+              </a>
+            </li>
+            <li class="separator hidden-lg-up"></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <!--
+              <div class="card">
+                <div class="card-body p-2">
+-->
+              <form class="form">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-body p-2">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h3> Import</h3>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>ลำดับ</th>
-                          <th>Date</th>
-                          <th>รายละเอียด</th>
-                          <th>
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">เลือกไอเทม</th>
-                          <th>หมายเหตุ</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>12/12/2018</td>
-                          <td>xxx</td>
-                          <td>
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                          <td> - </td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>12/12/2018</td>
-                          <td>xxx</td>
-                          <td>
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>12/12/2018</td>
-                          <td>xxx</td>
-                          <td>
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>12/12/2018</td>
-                          <td>xxx</td>
-                          <td>
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <td>5</td>
-                          <td>12/12/2018</td>
-                          <td>xxx</td>
-                          <td>
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <td>6</td>
-                          <td>12/12/2018</td>
-                          <td>xxx</td>
-                          <td>
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <td>7</td>
-                          <td>12/12/2018</td>
-                          <td>xxx</td>
-                          <td>
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <td>8</td>
-                          <td>12/12/2018</td>
-                          <td>xxx</td>
-                          <td>
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <td>9</td>
-                          <td>12/12/2018</td>
-                          <td>xxx</td>
-                          <td>
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <td>10</td>
-                          <td>12/12/2018</td>
-                          <td>xxx</td>
-                          <td>
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <td>11</td>
-                          <td>12/12/2018</td>
-                          <td>xxx</td>
-                          <td>
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                          <td>-</td>
-                        </tr>
-                      </tbody>
-                    </table>
                     <div class="row">
-                      <div class="col-md-12">
-                        <a href="#" class="btn btn-outline-primary pull-right">ยืนยันการนำเข้า</a>
+                      <div class="col-md-6">
+                        <div class="card">
+                          <div class="card-body p-2">
+                            <div class="form-inline p-2 pull-right">
+                              <input type="text" class="form-control" placeholder="ค้นหา">
+                              <a href="#" class="btn btn-outline-primary pull-right">ค้นหา</a>
+                            </div>
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>ลำดับ</th>
+                                  <th>รายการ</th>
+                                  <th>Date</th>
+                                  <th>การกระทำ</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>xxxxxxxxxx</td>
+                                  <td>12/12/2018</td>
+                                  <td>
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>xxxxxxxxxx</td>
+                                  <td>12/12/2018</td>
+                                  <td>
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td>xxxxxxxxxx</td>
+                                  <td>12/12/2018</td>
+                                  <td>
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>4</td>
+                                  <td>xxxxxxxxxx</td>
+                                  <td>12/12/2018</td>
+                                  <td>
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>5</td>
+                                  <td>xxxxxxxxxx</td>
+                                  <td>12/12/2018</td>
+                                  <td>
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>6</td>
+                                  <td>xxxxxxxxxx</td>
+                                  <td>12/12/2018</td>
+                                  <td>
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>7</td>
+                                  <td>xxxxxxxxxx</td>
+                                  <td>12/12/2018</td>
+                                  <td>
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>8</td>
+                                  <td>xxxxxxxxxx</td>
+                                  <td>12/12/2018</td>
+                                  <td>
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>9</td>
+                                  <td>xxxxxxxxxx</td>
+                                  <td>12/12/2018</td>
+                                  <td>
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>10</td>
+                                  <td>xxxxxxxxxx</td>
+                                  <td>12/12/2018</td>
+                                  <td>
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>11</td>
+                                  <td>xxxxxxxxxx</td>
+                                  <td>12/12/2018</td>
+                                  <td>
+                                    <button class="btn btn-info btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                      <i class="fa fa-file-text-o"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="card-body p-2">
+                                <div class="row">
+                                  <div class="col-md-10">
+                                    <input type="file" class="form-group p-2 pull-left"> </div>
+                                  <div class="col-md-2">
+                                    <a href="#" class="btn btn-outline-primary pull-left">Read</a>
+                                  </div>
+                                </div>
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <th>No</th>
+                                      <th>Date</th>
+                                      <th>รายละเอียด</th>
+                                      <th>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on">เลือกไอเทม</th>
+                                      <th>หมายเหตุ</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>1</td>
+                                      <td>12/12/2018</td>
+                                      <td>xxx</td>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td> - </td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>2</td>
+                                      <td>12/12/2018</td>
+                                      <td>xxx</td>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>3</td>
+                                      <td>12/12/2018</td>
+                                      <td>xxx</td>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>4</td>
+                                      <td>12/12/2018</td>
+                                      <td>xxx</td>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>5</td>
+                                      <td>12/12/2018</td>
+                                      <td>xxx</td>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>6</td>
+                                      <td>12/12/2018</td>
+                                      <td>xxx</td>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>7</td>
+                                      <td>12/12/2018</td>
+                                      <td>xxx</td>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>8</td>
+                                      <td>12/12/2018</td>
+                                      <td>xxx</td>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>9</td>
+                                      <td>12/12/2018</td>
+                                      <td>xxx</td>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>10</td>
+                                      <td>12/12/2018</td>
+                                      <td>xxx</td>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>11</td>
+                                      <td>12/12/2018</td>
+                                      <td>xxx</td>
+                                      <td>
+                                        <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                      <td>-</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <a href="#" class="btn btn-outline-primary pull-right">ยืนยันการนำเข้า</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </form>
+              <!--
+                </div>   
               </div>
+-->
             </div>
           </div>
         </div>
       </div>
+      <footer class="footer">
+        <div class="container">
+          <p class="copyright float-right"> ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
+          </p>
+        </div>
+      </footer>
     </div>
-  </form>
-  <footer class="footer">
-    <div class="container">
-      <p class="copyright float-right"> ©
-        <script>
-          document.write(new Date().getFullYear())
-        </script>
-        <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
-      </p>
-    </div>
-  </footer>
+  </div>
   <!--   Core JS Files   -->
   <script src="../../assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
   <script src="../../assets/vendors/jquery-ui.min.js" type="text/javascript"></script>
