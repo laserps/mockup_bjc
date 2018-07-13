@@ -37,7 +37,7 @@
           <li class="d-flex flex-column active">
             <a href="0_Register_new.html">
               <i class="nav-icon"></i>
-              <p>Partient Register</p>
+              <p>Result Entry</p>
             </a>
           </li>
         </ul>
@@ -54,7 +54,7 @@
           <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">Partient Register</a>
+          <a class="navbar-brand" href="#">Result Entry</a>
         </div>
         <div class="collapse navbar-collapse" id="navbarItems">
           <ul class="nav navbar-nav ml-auto">
@@ -109,6 +109,17 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="card">
+                      <div class="card-header">
+                        <div class="row">
+                          <div class="col-md-10">
+                            <label class="p-2">
+                              <b>AP</b>
+                            </label>
+                          </div>
+                          <div class="col-md-2">
+                            <input class="form-control" type="text" placeholder="Search records"> </div>
+                        </div>
+                      </div>
                       <div class="card-body p-2">
                         <div class="row">
                           <div class="col-md-1">
@@ -124,8 +135,6 @@
                             <label class="p-2">999999999</label>
                           </div>
                           <div class="col-md-2"> </div>
-                          <div class="col-md-2">
-                            <input type="text" class="form-control" placeholder="Search"> </div>
                         </div>
                         <div class="row">
                           <div class="col-md-1">
@@ -265,11 +274,12 @@
                                         <tr role="row">
                                           <th class="sorting_asc" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="width: 158px;" aria-sort="ascending">No</th>
                                           <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 244px;">Specimen</th>
-                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 110px;">Test name</th>
-                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 60px;">Price</th>
-                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending" style="width: 83px;">Paid</th>
-                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending" style="width: 83px;">comment</th>
-                                          <th class="disabled-sorting text-right sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 147px;">Actions</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 110px;">Cassette number</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 60px;">Topography</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending" style="width: 83px;">Result1</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending" style="width: 83px;">Result2</th>
+                                          <th class="disabled-sorting text-right sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 147px;">Result3</th>
+                                          <th class="disabled-sorting text-right sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 147px;">Result4</th>
                                         </tr>
                                       </thead>
                                       <tbody>
@@ -279,19 +289,9 @@
                                           <td>T0P0</td>
                                           <td></td>
                                           <td></td>
-                                          <td>
-                                            <input type="text"> </td>
-                                          <td class="text-right">
-                                            <button class="btn btn-warning btn-xs">
-                                              <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button class="btn btn-danger btn-xs">
-                                              <i class="fa fa-trash"></i>
-                                            </button>
-                                            <button class="btn btn-danger btn-xs" data-target="#example" data-toggle="modal" type="button">
-                                              <i class="fa fa-close"></i>
-                                            </button>
-                                          </td>
+                                          <td></td>
+                                          <td class="text-right"></td>
+                                          <td class="text-right"></td>
                                         </tr>
                                         <tr role="row" class="even">
                                           <td class="sorting_1">2</td>
@@ -299,19 +299,9 @@
                                           <td>T0P0</td>
                                           <td></td>
                                           <td></td>
-                                          <td>
-                                            <input type="text"> </td>
-                                          <td class="text-right">
-                                            <button class="btn btn-warning btn-xs">
-                                              <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button class="btn btn-danger btn-xs">
-                                              <i class="fa fa-trash"></i>
-                                            </button>
-                                            <button class="btn btn-danger btn-xs" data-target="#example" data-toggle="modal" type="button">
-                                              <i class="fa fa-close"></i>
-                                            </button>
-                                          </td>
+                                          <td></td>
+                                          <td class="text-right"></td>
+                                          <td class="text-right"></td>
                                         </tr>
                                         <tr role="row" class="odd">
                                           <td class="sorting_1">3</td>
@@ -319,19 +309,9 @@
                                           <td>T0P0</td>
                                           <td></td>
                                           <td></td>
-                                          <td>
-                                            <input type="text"> </td>
-                                          <td class="text-right">
-                                            <button class="btn btn-warning btn-xs">
-                                              <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button class="btn btn-danger btn-xs">
-                                              <i class="fa fa-trash"></i>
-                                            </button>
-                                            <button class="btn btn-danger btn-xs" data-target="#example" data-toggle="modal" type="button">
-                                              <i class="fa fa-close"></i>
-                                            </button>
-                                          </td>
+                                          <td></td>
+                                          <td class="text-right"></td>
+                                          <td class="text-right"></td>
                                         </tr>
                                         <tr role="row" class="even">
                                           <td class="sorting_1">4</td>
@@ -339,19 +319,9 @@
                                           <td>T0P0</td>
                                           <td></td>
                                           <td></td>
-                                          <td>
-                                            <input type="text"> </td>
-                                          <td class="text-right">
-                                            <button class="btn btn-warning btn-xs">
-                                              <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button class="btn btn-danger btn-xs">
-                                              <i class="fa fa-trash"></i>
-                                            </button>
-                                            <button class="btn btn-danger btn-xs" data-target="#example" data-toggle="modal" type="button">
-                                              <i class="fa fa-close"></i>
-                                            </button>
-                                          </td>
+                                          <td></td>
+                                          <td class="text-right"></td>
+                                          <td class="text-right"></td>
                                         </tr>
                                         <tr role="row" class="odd">
                                           <td class="sorting_1">5</td>
@@ -359,30 +329,21 @@
                                           <td>T0P0</td>
                                           <td></td>
                                           <td></td>
-                                          <td>
-                                            <input type="text"> </td>
-                                          <td class="text-right">
-                                            <button class="btn btn-warning btn-xs">
-                                              <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button class="btn btn-danger btn-xs">
-                                              <i class="fa fa-trash"></i>
-                                            </button>
-                                            <button class="btn btn-danger btn-xs" data-target="#example" data-toggle="modal" type="button">
-                                              <i class="fa fa-close"></i>
-                                            </button>
-                                          </td>
+                                          <td></td>
+                                          <td class="text-right"></td>
+                                          <td class="text-right"></td>
                                         </tr>
                                       </tbody>
                                       <tfoot>
                                         <tr>
                                           <th>No</th>
                                           <th>Specimen</th>
-                                          <th>Test name</th>
-                                          <th>Price</th>
-                                          <th>Paid</th>
-                                          <th aria-controls="datatables" aria-label="Date: activate to sort column ascending" class="sorting" colspan="1" rowspan="1" style="width: 83px;" tabindex="0">comment</th>
-                                          <th class="text-right">Actions</th>
+                                          <th>Cassette number</th>
+                                          <th>Topography</th>
+                                          <th>Result1</th>
+                                          <th aria-controls="datatables" aria-label="Date: activate to sort column ascending" class="sorting" colspan="1" rowspan="1" style="width: 83px;" tabindex="0">Result2</th>
+                                          <th class="text-right">Result3</th>
+                                          <th class="disabled-sorting text-right sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 147px;">Result4</th>
                                         </tr>
                                       </tfoot>
                                     </table>
@@ -390,7 +351,7 @@
                                 </div>
                                 <div class="row">
                                   <div class="col-sm-12 col-md-5">
-                                    <div class="dataTables_info" id="datatables_info" role="status" aria-live="polite">Showing 1 to 10 of 40 entries</div>
+                                    <div class="dataTables_info" id="datatables_info" role="status" aria-live="polite">Showing 1 to 5 of 40 entries</div>
                                   </div>
                                   <div class="col-sm-12 col-md-7">
                                     <div class="dataTables_paginate paging_full_numbers" id="datatables_paginate">
@@ -425,44 +386,6 @@
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-body p-3">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <label class="p-2">Comment</label>
-                          </div>
-                        </div>
-                        <div class="row form-group">
-                          <div class="col-md-12">
-                            <input type="text" class="form-control"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-4"> </div>
-                          <div class="col-md-2">
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
-                            <label class="p-2">Print request</label>
-                          </div>
-                          <div class="col-md-2">
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
-                            <label class="p-2">Print bill</label>
-                          </div>
-                          <div class="col-md-2">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input type="checkbox" aria-label="Checkbox for following text input" value="on">
-                                <label class="p-2">Print speciment</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-1">
-                            <button class="btn btn-outline-secondary form-control" type="button"> Save</button>
-                          </div>
-                          <div class="col-md-1">
-                            <button class="btn btn-outline-secondary form-control" type="button"> Cancel </button>
                           </div>
                         </div>
                       </div>
