@@ -145,7 +145,7 @@
                             </div>
                             <div class="row">
                               <div class="col-md-4">
-                                <label class="p-2">Firstname</label>
+                                <label class="p-2">Lastname</label>
                               </div>
                               <div class="col-md-8">
                                 <input class="form-control" type="text"> </div>
@@ -190,14 +190,7 @@
                             </div>
                             <div class="row">
                               <div class="col-md-6">
-                                <label class="p-2">HN</label>
-                              </div>
-                              <div class="col-md-6">
-                                <input class="form-control" type="text"> </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <select class="form-control"> </select>
+                                <label class="p-2">Hos. number</label>
                               </div>
                               <div class="col-md-6">
                                 <input class="form-control" type="text"> </div>
@@ -215,7 +208,7 @@
                                 </div>
                                 <div class="col-md-3">
                                   <label class="p-2">
-                                    <input type="radio" aria-label="Radio button for following text input" value="on"> Yesr</label>
+                                    <input type="radio" aria-label="Radio button for following text input" value="on"> Year</label>
                                 </div>
                                 <div class="col-md-3">
                                   <label class="p-2">
@@ -285,7 +278,7 @@
                                 </div>
                               </div>
                               <div class="col-md-6">
-                                <div style="border:1px solid #000;">
+                                <div style="border:1px solid #000;" class="form-group">
                                   <div class="row">
                                     <div class="col-md-12 text-left">
                                       <label class="p-2">Creation date</label>
@@ -306,12 +299,6 @@
                                     <div class="col-md-6">
                                       <select class="form-control"> </select>
                                     </div>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-md-10">
-                                    <label class="p-2">
-                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> With images</label>
                                   </div>
                                 </div>
                                 <div class="row">
@@ -359,7 +346,7 @@
                                           <thead>
                                             <tr role="row">
                                               <th tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending"> No.</th>
-                                              <th tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending"> Date time </th>
+                                              <th tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending"> Request date </th>
                                               <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">HN</th>
                                               <th tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" class="sorting">SID</th>
                                               <th tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" class="sorting">Name</th>
@@ -456,7 +443,7 @@
                                           <tfoot>
                                             <tr>
                                               <th>No.</th>
-                                              <th>Date time </th>
+                                              <th>Request date </th>
                                               <th>HN</th>
                                               <th aria-controls="datatables" aria-label="Office: activate to sort column ascending" class="sorting" colspan="1" rowspan="1" tabindex="0">SID</th>
                                               <th aria-controls="datatables" aria-label="Office: activate to sort column ascending" class="sorting" colspan="1" rowspan="1" tabindex="0">Name</th>
@@ -515,7 +502,7 @@
                               <div class="dataTables_wrapper container-fluid dt-bootstrap4" id="datatables_wrapper">
                                 <div class="row">
                                   <div class="col-sm-12 col-md-6">
-                                    <div class="dataTables_length" id="datatables_length">
+                                    <div id="datatables_length" class="dataTables_length">
                                       <label class="form-group">Show
                                         <select name="datatables_length" aria-controls="datatables" class="form-control input-sm">
                                           <option value="5">5</option>
@@ -523,12 +510,6 @@
                                           <option value="50">50</option>
                                           <option value="-1">All</option>
                                         </select> entries</label>
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-12 col-md-6">
-                                    <div id="datatables_filter" class="dataTables_filter">
-                                      <label class="form-group">
-                                        <input type="search" class="form-control input-sm" placeholder="Search records" aria-controls="datatables"> </label>
                                     </div>
                                   </div>
                                 </div>
@@ -593,7 +574,7 @@
                                           <th>Specimen</th>
                                           <th>Test name</th>
                                           <th>Price</th>
-                                          <th>Start date</th>
+                                          <th>Paid</th>
                                           <th aria-controls="datatables" aria-label="Date: activate to sort column ascending" class="sorting" colspan="1" rowspan="1" style="width: 83px;" tabindex="0">comment</th>
                                         </tr>
                                       </tfoot>
