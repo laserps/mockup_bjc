@@ -109,11 +109,11 @@
                 <div class="card">
                   <div class="card-header">
                     <div class="row">
-                      <div class="col-md-10">
+                      <div class="col-md-4">
                         <label class="p-2">AP</label>
                       </div>
-                      <div class="col-md-2">
-                        <input class="form-control" type="text"> </div>
+                      <div class="col-md-4">
+                        <input class="form-control" type="text" placeholder="Search"> </div>
                     </div>
                   </div>
                   <div class="card-body p-2">
@@ -124,7 +124,31 @@
                       <div class="col-md-3">
                         <input class="form-control" type="text"> </div>
                       <div class="col-md-2">
+                        <label class="p-2">Lastname</label>
+                      </div>
+                      <div class="col-md-3">
+                        <input class="form-control" type="text"> </div>
+                    </div>
+                    <div class="row text-right">
+                      <div class="col-md-3">
+                        <label class="p-2">Sex</label>
+                      </div>
+                      <div class="col-md-3">
+                        <input class="form-control" type="text"> </div>
+                      <div class="col-md-2">
                         <label class="p-2">Age</label>
+                      </div>
+                      <div class="col-md-3">
+                        <input class="form-control" type="text"> </div>
+                    </div>
+                    <div class="row text-right">
+                      <div class="col-md-3">
+                        <label class="p-2">HN</label>
+                      </div>
+                      <div class="col-md-3">
+                        <input class="form-control" type="text"> </div>
+                      <div class="col-md-2">
+                        <label class="p-2">SID</label>
                       </div>
                       <div class="col-md-3">
                         <input class="form-control" type="text"> </div>
@@ -170,37 +194,93 @@
                         <label class="p-2">Storage location</label>
                       </div>
                       <div class="col-md-2">
-                        <select class="form-control">
-                          <option>Building</option>
-                        </select>
-                      </div>
+                        <input class="form-control" type="text" placeholder="Bulding"> </div>
                       <div class="col-md-2">
-                        <select class="form-control">
-                          <option>Floor</option>
-                        </select>
-                      </div>
+                        <input class="form-control" type="text" placeholder="Floor"> </div>
                       <div class="col-md-2">
-                        <select class="form-control">
-                          <option>Room</option>
-                        </select>
-                      </div>
+                        <input class="form-control" type="text" placeholder="Room"> </div>
                       <div class="col-md-2">
-                        <select class="form-control">
-                          <option>Locker</option>
-                        </select>
-                      </div>
+                        <input type="text" class="form-control" placeholder="Position"> </div>
                     </div>
                     <div class="row text-right">
                       <div class="col-md-3">
-                        <label class="p-2">relative</label>
+                        <label class="p-2">Contract person</label>
                       </div>
                       <div class="col-md-3">
                         <input type="text" class="form-control"> </div>
                       <div class="col-md-2">
-                        <label class="p-2">Note</label>
+                        <label class="p-2">Relationship</label>
+                      </div>
+                      <div class="col-md-3">
+                        <input class="form-control"> </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3 text-right">
+                        <label class="p-2">Comment</label>
+                      </div>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text"> </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3 text-right">
+                        <label class="p-2">Register by</label>
                       </div>
                       <div class="col-md-3">
                         <input class="form-control" type="text"> </div>
+                      <div class="col-md-2 text-right">
+                        <label class="p-2">Date and time</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input class="form-control" type="date"> </div>
+                      <div class="col-md-1">
+                        <input class="form-control" type="time"> </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-8"> </div>
+                      <div class="col-md-2">
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                        <label class="p-2">ฉีดยารักษาสภาพศพ</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                        <label class="p-2">Print ป้ายติดข้อมือ</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6"> </div>
+                      <div class="col-md-2">
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                        <label class="p-2">Print ใบส่งศพประเภทที่ 1</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                        <label class="p-2">Print ใบส่งศพประเภทที่ 2</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                        <label class="p-2">Print ใบส่งศพประเภทที่ 3</label>
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-md-6"> </div>
+                      <div class="col-md-2">
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                        <label class="p-2">Print request form</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                        <label class="p-2">Print speciment label</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                        <label class="p-2">Print billing form</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-11"> </div>
+                      <div class="col-md-1">
+                        <button class="btn btn-outline-secondary form-control" type="button"> Save </button>
+                      </div>
                     </div>
                   </div>
                 </div>
