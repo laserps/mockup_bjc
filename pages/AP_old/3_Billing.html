@@ -23,423 +23,369 @@
   <link href="./mui.css" rel="stylesheet"> </head>
 
 <body>
-  <form class="form">
-    <div class="card">
-      <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="row">
-            <a href="#" class="simple-text">
-              <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
-            <ul class="nav nav-tabs">
-              <li class="d-flex flex-column p-2">
-                <a href="0_Register_new.html">
-                  <i class="nav-icon"></i>
-                  <p>Partient Register</p>
-                </a>
-              </li>
-              <li class="dropdown d-flex flex-column">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Order Entry </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="1_Login_Authority_new.html">ลงทะเบียนสิ่งส่งตรวจ</a>
-                  <a class="dropdown-item" href="2_Resive_new.html"> Recive</a>
-                </div>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="2_Cassette.html">
-                  <i class="nav-icon"></i>
-                  <p>Billing</p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="8_Finance.html">
-                  <i class="nav-icon"></i>
-                  <p>Specimen Recaption</p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="9_Import.html">
-                  <i class="nav-icon"></i>
-                  <p>Cassete Preparation</p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="3_SignOut.html">
-                  <i class="nav-icon"></i>
-                  <p>Slide Preparaion</p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="4_Conclude.html">
-                  <i class="nav-icon"></i>
-                  <p>Result Rntry</p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="5_Patient_Table.html">
-                  <i class="nav-icon"></i>
-                  <p>Patient Search</p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="6_AccessHistory_Table.html">
-                  <i class="nav-icon"></i>
-                  <p>Imported File</p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="7_Recive.html">
-                  <i class="nav-icon"></i>
-                  <p>Calender of Pathologist</p>
-                </a>
-              </li>
-              <li class="d-flex flex-column p-2">
-                <a href="10_DashBoard.html">
-                  <i class="nav-icon"></i>
-                  <p>Material Management</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+  <div class="wrapper">
+    <div class="sidebar">
+      <div class="logo">
+        <a href="#" class="simple-text">
+          <img class="card-img-top" src="../../assets/img/logo.png" alt="Card image cap" style="width:70%;"> </a>
+      </div>
+      <div class="logo logo-mini">
+        <a href="#" class="simple-text"> Work </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav flex-column">
+          <li class="d-flex flex-column active">
+            <a href="6_1_3_profile.html">
+              <i class="nav-icon"></i>
+              <p>Billing</p>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="card">
-      <div class="card-body p-2">
-        <div class="row">
-          <div class="col-md-1">
-            <label class="p-2">HN</label>
-          </div>
-          <div class="col-md-3">
-            <label class="p-2">111211501711</label>
-          </div>
-          <div class="col-md-2"> </div>
-          <div class="col-md-1">
-            <label class="p-2">Age</label>
-          </div>
-          <div class="col-md-1">
-            <label class="p-2">16</label>
-          </div>
-          <div class="col-md-1">
-            <label class="p-2">ปี</label>
-          </div>
+    <div class="main-panel">
+      <nav class="navbar navbar-default navbar-toggleable-md navbar-inverse">
+        <div class="navbar-minimize">
+          <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+            <i class="ti-arrow-left"></i>
+          </button>
         </div>
-        <div class="row">
-          <div class="col-md-1">
-            <label class="p-2">Name</label>
-          </div>
-          <div class="col-md-3">
-            <label class="p-2">อธรรม</label>
-          </div>
-          <div class="col-md-2"> </div>
-          <div class="col-md-1">
-            <label class="p-2">Address</label>
-          </div>
-          <div class="col-md-1">
-            <label class="p-2">370</label>
-          </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Billing</a>
         </div>
-        <div class="row">
-          <div class="col-md-1">
-            <label class="p-2">Last Name</label>
-          </div>
-          <div class="col-md-3">
-            <label class="p-2">แสนดี</label>
-          </div>
-          <div class="col-md-2"> </div>
-          <div class="col-md-1">
-            <label class="p-2">City</label>
-          </div>
-          <div class="col-md-1">
-            <label class="p-2">-</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-1">
-            <label class="p-2">Sex</label>
-          </div>
-          <div class="col-md-3">
-            <label class="p-2">ชาย</label>
-          </div>
-          <div class="col-md-2"> </div>
-          <div class="col-md-1">
-            <label class="p-2">Country</label>
-          </div>
-          <div class="col-md-1">
-            <label class="p-2">-</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-1">
-            <label class="p-2">Birth Date</label>
-          </div>
-          <div class="col-md-3">
-            <label class="p-2">10 พฤษภาคม 2540</label>
-          </div>
-          <div class="col-md-2"> </div>
-          <div class="col-md-1">
-            <label class="p-2">Phone</label>
-          </div>
-          <div class="col-md-1">
-            <label class="p-2">ไม่รู้</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-1">
-            <label class="p-2">Alternate Number</label>
-          </div>
-          <div class="col-md-3">
-            <label class="p-2">-</label>
-          </div>
-          <div class="col-md-2"> </div>
-          <div class="col-md-1">
-            <label class="p-2">Zipcode</label>
-          </div>
-          <div class="col-md-1">
-            <label class="p-2">40150</label>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card">
-          <div class="card-body p-1">
-            <div id="datatables_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
-              <div class="row text-right form-group">
-                <div class="col-sm-12 col-md-11"> </div>
-                <div class="col-sm-12 col-md-1">
-                  <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal"> Add </button>
-                </div>
+        <div class="collapse navbar-collapse" id="navbarItems">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle nav-link" id="notificationList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="ti-bell nav-icon"></i>
+                <span class="notification">6</span>
+                <p class="hidden-lg-up"> Notifications
+                  <i class="fa fa-sort-desc submenu-toggle"></i>
+                </p>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="notificationList">
+                <a class="dropdown-item" href="#">You have 5 new messages</a>
+                <a class="dropdown-item" href="#">You're now friend with Mike</a>
+                <a class="dropdown-item" href="#">Wish Mary on her birthday!</a>
+                <a class="dropdown-item" href="#">5 warnings in Server Console</a>
+                <a class="dropdown-item" href="#">Jane completed 'Induction Training'</a>
+                <a class="dropdown-item" href="#">'Prepare Marketing Report' is overdue</a>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="material-datatables">
-                  <div id="datatables_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-6">
-                        <div class="dataTables_length" id="datatables_length">
-                          <label>Show
-                            <select name="datatables_length" aria-controls="datatables" class="form-control input-sm">
-                              <option value="10">10</option>
-                              <option value="25">25</option>
-                              <option value="50">50</option>
-                              <option value="-1">All</option>
-                            </select> entries</label>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-layout-grid3-alt nav-icon"></i>
+                <p class="hidden-lg-up">Apps</p>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-user nav-icon"></i>
+                <p class="hidden-lg-up">Profile</p>
+              </a>
+            </li>
+            <li>
+              <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                <i class="ti-settings nav-icon"></i>
+                <p class="hidden-lg-up">Settings</p>
+              </a>
+            </li>
+            <li class="separator hidden-lg-up"></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <!--
+              <div class="card">
+                <div class="card-body p-2">
+-->
+              <form class="form">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <label class="p-2">
+                              <b>AP</b>
+                            </label>
+                          </div>
+                          <div class="col-md-4">
+                            <input class="form-control" type="text" placeholder="Search records"> </div>
+                          <div class="col-md-4">
+                            <label class="p-2">Specimen recaption date and time</label>
+                          </div>
                         </div>
                       </div>
-                      <div class="col-sm-12 col-md-6">
-                        <div id="datatables_filter" class="dataTables_filter">
-                          <label>
-                            <input type="search" class="form-control input-sm" placeholder="Search records" aria-controls="datatables"> </label>
+                      <div class="card-body p-2">
+                        <div class="row">
+                          <div class="col-md-2">
+                            <label class="p-2">Partient number</label>
+                          </div>
+                          <div class="col-md-3">
+                            <input type="text" class="form-control"> </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <table id="datatables" class="table table-striped table-no-bordered table-hover dataTable" style="width: 100%;" role="grid" aria-describedby="datatables_info">
-                          <thead>
-                            <tr role="row">
-                              <th class="sorting_asc" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="width: 158px;" aria-sort="ascending">No</th>
-                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 244px;">Specimen</th>
-                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 110px;">Test name</th>
-                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 60px;">Price</th>
-                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending" style="width: 83px;">Paid</th>
-                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending" style="width: 83px;">comment</th>
-                              <th class="disabled-sorting text-right sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 147px;">Actions</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr role="row" class="odd">
-                              <td class="sorting_1">1</td>
-                              <td>S18-00008-1</td>
-                              <td>T0P0</td>
-                              <td>120</td>
-                              <td></td>
-                              <td>
-                                <label class="p-2">คอมเม้น1</label>
-                              </td>
-                              <td class="text-right">
-                                <button class="btn btn-warning btn-xs">
-                                  <i class="fa fa-edit"></i>
-                                </button>
-                                <button class="btn btn-danger btn-xs">
-                                  <i class="fa fa-trash"></i>
-                                </button>
-                              </td>
-                            </tr>
-                            <tr role="row" class="even">
-                              <td class="sorting_1">2</td>
-                              <td>S18-00008-2</td>
-                              <td>T0P0</td>
-                              <td>110</td>
-                              <td></td>
-                              <td>
-                                <label class="p-2">คอมเม้น2</label>
-                              </td>
-                              <td class="text-right">
-                                <button class="btn btn-warning btn-xs">
-                                  <i class="fa fa-edit"></i>
-                                </button>
-                                <button class="btn btn-danger btn-xs">
-                                  <i class="fa fa-trash"></i>
-                                </button>
-                              </td>
-                            </tr>
-                            <tr role="row" class="odd">
-                              <td class="sorting_1">3</td>
-                              <td>S18-00008-3</td>
-                              <td>T0P0</td>
-                              <td>150</td>
-                              <td></td>
-                              <td>
-                                <label class="p-2">คอมเม้น3</label>
-                              </td>
-                              <td class="text-right">
-                                <button class="btn btn-warning btn-xs">
-                                  <i class="fa fa-edit"></i>
-                                </button>
-                                <button class="btn btn-danger btn-xs">
-                                  <i class="fa fa-trash"></i>
-                                </button>
-                              </td>
-                            </tr>
-                            <tr role="row" class="even">
-                              <td class="sorting_1">4</td>
-                              <td>S18-00008-4</td>
-                              <td>T0P0</td>
-                              <td>130</td>
-                              <td></td>
-                              <td>
-                                <label class="p-2">คอมเม้น4</label>
-                              </td>
-                              <td class="text-right">
-                                <button class="btn btn-warning btn-xs">
-                                  <i class="fa fa-edit"></i>
-                                </button>
-                                <button class="btn btn-danger btn-xs">
-                                  <i class="fa fa-trash"></i>
-                                </button>
-                              </td>
-                            </tr>
-                            <tr role="row" class="odd">
-                              <td class="sorting_1">5</td>
-                              <td>S18-00008-5</td>
-                              <td>T0P0</td>
-                              <td>200</td>
-                              <td></td>
-                              <td>
-                                <label class="p-2">คอมเม้น5</label>
-                              </td>
-                              <td class="text-right">
-                                <button class="btn btn-warning btn-xs">
-                                  <i class="fa fa-edit"></i>
-                                </button>
-                                <button class="btn btn-danger btn-xs">
-                                  <i class="fa fa-trash"></i>
-                                </button>
-                              </td>
-                            </tr>
-                          </tbody>
-                          <tfoot>
-                            <tr>
-                              <th>No</th>
-                              <th>Specimen</th>
-                              <th>Test name</th>
-                              <th>Price</th>
-                              <th>Start date</th>
-                              <th aria-controls="datatables" aria-label="Date: activate to sort column ascending" class="sorting" colspan="1" rowspan="1" style="width: 83px;" tabindex="0">comment</th>
-                              <th class="text-right">Actions</th>
-                            </tr>
-                          </tfoot>
-                        </table>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-12 col-md-5">
-                        <div class="dataTables_info" id="datatables_info" role="status" aria-live="polite">Showing 1 to 10 of 40 entries</div>
-                      </div>
-                      <div class="col-sm-12 col-md-7">
-                        <div class="dataTables_paginate paging_full_numbers" id="datatables_paginate">
-                          <ul class="pagination">
-                            <li class="paginate_button page-item first disabled" id="datatables_first">
-                              <a href="#" aria-controls="datatables" data-dt-idx="0" tabindex="0" class="page-link">First</a>
-                            </li>
-                            <li class="paginate_button page-item previous disabled" id="datatables_previous">
-                              <a href="#" aria-controls="datatables" data-dt-idx="1" tabindex="0" class="page-link">Previous</a>
-                            </li>
-                            <li class="paginate_button page-item active">
-                              <a href="#" aria-controls="datatables" data-dt-idx="2" tabindex="0" class="page-link">1</a>
-                            </li>
-                            <li class="paginate_button page-item ">
-                              <a href="#" aria-controls="datatables" data-dt-idx="3" tabindex="0" class="page-link">2</a>
-                            </li>
-                            <li class="paginate_button page-item ">
-                              <a href="#" aria-controls="datatables" data-dt-idx="4" tabindex="0" class="page-link">3</a>
-                            </li>
-                            <li class="paginate_button page-item ">
-                              <a href="#" aria-controls="datatables" data-dt-idx="5" tabindex="0" class="page-link">4</a>
-                            </li>
-                            <li class="paginate_button page-item next" id="datatables_next">
-                              <a href="#" aria-controls="datatables" data-dt-idx="6" tabindex="0" class="page-link">Next</a>
-                            </li>
-                            <li class="paginate_button page-item last" id="datatables_last">
-                              <a href="#" aria-controls="datatables" data-dt-idx="7" tabindex="0" class="page-link">Last</a>
-                            </li>
-                          </ul>
+                        <div class="row">
+                          <div class="col-md-2">
+                            <label class="p-2">Name</label>
+                          </div>
+                          <div class="col-md-3">
+                            <label class="p-2">อธรรม</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-2">
+                            <label class="p-2">Last Name</label>
+                          </div>
+                          <div class="col-md-3">
+                            <label class="p-2">แสนดี</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-2">
+                            <label class="p-2">Sex</label>
+                          </div>
+                          <div class="col-md-3">
+                            <label class="p-2">ชาย</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-2">
+                            <label class="p-2">Birth Date</label>
+                          </div>
+                          <div class="col-md-3">
+                            <label class="p-2">10 พฤษภาคม 2540 (21 ปี 2 เดือน 8 วัน)</label>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-body p-1">
+                        <div class="dataTables_wrapper container-fluid dt-bootstrap4" id="datatables_wrapper">
+                          <div class="row text-right form-group">
+                            <div class="col-sm-12 col-md-11"> </div>
+                            <div class="col-sm-12 col-md-1">
+                              <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal"> Add </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="material-datatables">
+                              <div id="datatables_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
+                                <div class="row">
+                                  <div class="col-sm-12 col-md-6">
+                                    <div class="dataTables_length" id="datatables_length">
+                                      <label>Show
+                                        <select name="datatables_length" aria-controls="datatables" class="form-control input-sm">
+                                          <option value="10">10</option>
+                                          <option value="25">25</option>
+                                          <option value="50">50</option>
+                                          <option value="-1">All</option>
+                                        </select> entries</label>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-12 col-md-6">
+                                    <div id="datatables_filter" class="dataTables_filter">
+                                      <label>
+                                        <input type="search" class="form-control input-sm" placeholder="Search records" aria-controls="datatables"> </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <table id="datatables" class="table table-striped table-no-bordered table-hover dataTable" style="width: 100%;" role="grid" aria-describedby="datatables_info">
+                                      <thead>
+                                        <tr role="row">
+                                          <th class="sorting_asc" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="width: 158px;" aria-sort="ascending">No</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 244px;">Specimen</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 110px;">Test name</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 60px;">Price</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending" style="width: 83px;">Paid</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending" style="width: 83px;">comment</th>
+                                          <th class="disabled-sorting text-right sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 147px;">Actions</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr role="row" class="odd">
+                                          <td class="sorting_1">1</td>
+                                          <td>S18-00008-1</td>
+                                          <td>T0P0</td>
+                                          <td>120</td>
+                                          <td></td>
+                                          <td>
+                                            <label class="p-2">คอมเม้น1</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <button class="btn btn-warning btn-xs">
+                                              <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class="btn btn-danger btn-xs">
+                                              <i class="fa fa-trash"></i>
+                                            </button>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td class="sorting_1">2</td>
+                                          <td>S18-00008-2</td>
+                                          <td>T0P0</td>
+                                          <td>110</td>
+                                          <td></td>
+                                          <td>
+                                            <label class="p-2">คอมเม้น2</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <button class="btn btn-warning btn-xs">
+                                              <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class="btn btn-danger btn-xs">
+                                              <i class="fa fa-trash"></i>
+                                            </button>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td class="sorting_1">3</td>
+                                          <td>S18-00008-3</td>
+                                          <td>T0P0</td>
+                                          <td>150</td>
+                                          <td></td>
+                                          <td>
+                                            <label class="p-2">คอมเม้น3</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <button class="btn btn-warning btn-xs">
+                                              <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class="btn btn-danger btn-xs">
+                                              <i class="fa fa-trash"></i>
+                                            </button>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td class="sorting_1">4</td>
+                                          <td>S18-00008-4</td>
+                                          <td>T0P0</td>
+                                          <td>130</td>
+                                          <td></td>
+                                          <td>
+                                            <label class="p-2">คอมเม้น4</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <button class="btn btn-warning btn-xs">
+                                              <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class="btn btn-danger btn-xs">
+                                              <i class="fa fa-trash"></i>
+                                            </button>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td class="sorting_1">5</td>
+                                          <td>S18-00008-5</td>
+                                          <td>T0P0</td>
+                                          <td>200</td>
+                                          <td></td>
+                                          <td>
+                                            <label class="p-2">คอมเม้น5</label>
+                                          </td>
+                                          <td class="text-right">
+                                            <button class="btn btn-warning btn-xs">
+                                              <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class="btn btn-danger btn-xs">
+                                              <i class="fa fa-trash"></i>
+                                            </button>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                      <tfoot>
+                                        <tr>
+                                          <th>No</th>
+                                          <th>Specimen</th>
+                                          <th>Test name</th>
+                                          <th>Price</th>
+                                          <th>Start date</th>
+                                          <th aria-controls="datatables" aria-label="Date: activate to sort column ascending" class="sorting" colspan="1" rowspan="1" style="width: 83px;" tabindex="0">comment</th>
+                                          <th class="text-right">Actions</th>
+                                        </tr>
+                                      </tfoot>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-12 col-md-5">
+                                    <div class="dataTables_info" id="datatables_info" role="status" aria-live="polite">Showing 1 to 10 of 40 entries</div>
+                                  </div>
+                                  <div class="col-sm-12 col-md-7">
+                                    <div class="dataTables_paginate paging_full_numbers" id="datatables_paginate">
+                                      <ul class="pagination">
+                                        <li class="paginate_button page-item first disabled" id="datatables_first">
+                                          <a href="#" aria-controls="datatables" data-dt-idx="0" tabindex="0" class="page-link">First</a>
+                                        </li>
+                                        <li class="paginate_button page-item previous disabled" id="datatables_previous">
+                                          <a href="#" aria-controls="datatables" data-dt-idx="1" tabindex="0" class="page-link">Previous</a>
+                                        </li>
+                                        <li class="paginate_button page-item active">
+                                          <a href="#" aria-controls="datatables" data-dt-idx="2" tabindex="0" class="page-link">1</a>
+                                        </li>
+                                        <li class="paginate_button page-item ">
+                                          <a href="#" aria-controls="datatables" data-dt-idx="3" tabindex="0" class="page-link">2</a>
+                                        </li>
+                                        <li class="paginate_button page-item ">
+                                          <a href="#" aria-controls="datatables" data-dt-idx="4" tabindex="0" class="page-link">3</a>
+                                        </li>
+                                        <li class="paginate_button page-item ">
+                                          <a href="#" aria-controls="datatables" data-dt-idx="5" tabindex="0" class="page-link">4</a>
+                                        </li>
+                                        <li class="paginate_button page-item next" id="datatables_next">
+                                          <a href="#" aria-controls="datatables" data-dt-idx="6" tabindex="0" class="page-link">Next</a>
+                                        </li>
+                                        <li class="paginate_button page-item last" id="datatables_last">
+                                          <a href="#" aria-controls="datatables" data-dt-idx="7" tabindex="0" class="page-link">Last</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <!--
+                </div>   
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body p-2">
-            <div class="row">
-              <div class="col-md-12">
-                <label class="p-2">Comment</label>
-              </div>
-            </div>
-            <div class="row form-group">
-              <div class="col-md-12">
-                <textarea class="form-control"></textarea>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-9"> </div>
-              <div class="col-md-1">
-                <input type="checkbox" aria-label="Checkbox for following text input" value="on">
-                <label class="p-2">Print bill</label>
-              </div>
-              <div class="col-md-1">
-                <button class="btn btn-outline-secondary form-control" type="button"> Save</button>
-              </div>
-              <div class="col-md-1">
-                <button class="btn btn-outline-secondary form-control" type="button"> Cancle</button>
-              </div>
+-->
             </div>
           </div>
         </div>
       </div>
+      <footer class="footer">
+        <div class="container">
+          <p class="copyright float-right"> ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
+          </p>
+        </div>
+      </footer>
     </div>
-  </form>
-  <!--
-                </div>   
-              </div>
--->
-  <footer class="footer">
-    <div class="container">
-      <p class="copyright float-right"> ©
-        <script>
-          document.write(new Date().getFullYear())
-        </script>
-        <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
-      </p>
-    </div>
-  </footer>
+  </div>
   <!--   Core JS Files   -->
   <script src="../../assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
   <script src="../../assets/vendors/jquery-ui.min.js" type="text/javascript"></script>
