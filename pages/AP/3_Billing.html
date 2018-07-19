@@ -35,9 +35,9 @@
       <div class="sidebar-wrapper">
         <ul class="nav flex-column">
           <li class="d-flex flex-column">
-            <a href="1_Order_Entry.html">
+            <a href="3_Billing.html">
               <i class="nav-icon"></i>
-              <p>Order entry</p>
+              <p>Billing</p>
             </a>
           </li>
         </ul>
@@ -54,7 +54,7 @@
           <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">Order entry</a>
+          <a class="navbar-brand" href="#">Billing</a>
         </div>
         <div class="collapse navbar-collapse" id="navbarItems">
           <ul class="nav navbar-nav ml-auto">
@@ -110,7 +110,18 @@
                   <div class="col-md-12">
                     <div class="card">
                       <div class="card-header">
-                        <h5> AP </h5>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <label class="p-2">
+                              <b>AP</b>
+                            </label>
+                          </div>
+                          <div class="col-md-4">
+                            <input class="form-control" type="text" placeholder="Search records"> </div>
+                          <div class="col-md-4">
+                            <label class="p-2">Specimen recaption date and time</label>
+                          </div>
+                        </div>
                       </div>
                       <div class="card-body p-2">
                         <div class="row">
@@ -157,134 +168,12 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-4">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <label class="p-2">Urgent</label>
-                          </div>
-                          <div class="col-md-6">
-                            <select class="form-control">
-                              <option>Routine</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <label class="p-2">Specimen request</label>
-                          </div>
-                          <div class="col-md-6">
-                            <input type="date" class="form-control"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6"> </div>
-                          <div class="col-md-6">
-                            <input type="time" class="form-control"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <label class="p-2">Specimen collection</label>
-                          </div>
-                          <div class="col-md-6">
-                            <input type="date" class="form-control"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6"> </div>
-                          <div class="col-md-6">
-                            <input type="time" class="form-control"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <label class="p-2">Specimen recive</label>
-                          </div>
-                          <div class="col-md-6">
-                            <input type="date" class="form-control"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6"> </div>
-                          <div class="col-md-6">
-                            <input type="time" class="form-control"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <label class="p-2">Spec. taker</label>
-                          </div>
-                          <div class="col-md-6">
-                            <select class="form-control">
-                              <option>Specol1</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <label class="p-2">Doctor</label>
-                          </div>
-                          <div class="col-md-4 ">
-                            <select class="form-control">
-                              <option value="MR">DEFDOC</option>
-                            </select>
-                          </div>
-                          <div class="col-md-2">
-                            <button class="btn btn-outline-secondary form-control" type="button">
-                              <i class="ti-plus"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <label class="p-2">Location</label>
-                          </div>
-                          <div class="col-md-6">
-                            <select class="form-control">
-                              <option value="MR">DEFDOC</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <label class="p-2">Hos. number</label>
-                          </div>
-                          <div class="col-md-6">
-                            <input type="text" class="form-control"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12 p-2 form-inline">
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
-                            <label class="p-2">Print request form</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12 p-2 form-inline">
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
-                            <label class="p-2">Print speciment label</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12 p-2 form-inline">
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
-                            <label class="p-2">Print billing form</label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-8">
+                  <div class="col-md-12">
                     <div class="card">
                       <div class="card-body p-1">
                         <div class="dataTables_wrapper container-fluid dt-bootstrap4" id="datatables_wrapper">
                           <div class="row text-right form-group">
-                            <div class="col-sm-12 col-md-3">
-                              <select class="form-control">
-                                <option>Patologis</option>
-                              </select>
-                            </div>
-                            <div class="col-sm-12 col-md-3">
-                              <select class="form-control">
-                                <option>Screener</option>
-                              </select>
-                            </div>
-                            <div class="col-sm-12 col-md-5"> </div>
+                            <div class="col-sm-12 col-md-11"> </div>
                             <div class="col-sm-12 col-md-1">
                               <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal"> Add </button>
                             </div>
@@ -318,29 +207,25 @@
                                     <table id="datatables" class="table table-striped table-no-bordered table-hover dataTable" style="width: 100%;" role="grid" aria-describedby="datatables_info">
                                       <thead>
                                         <tr role="row">
-                                          <th class="sorting_asc" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" aria-sort="ascending">
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">No</th>
-                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">SID</th>
-                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">Specimen code</th>
-                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">Specimen name</th>
-                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending">Price</th>
-                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending">Paid</th>
-                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending">comment</th>
+                                          <th class="sorting_asc" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="width: 158px;" aria-sort="ascending">No</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 244px;">Specimen</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 110px;">Test name</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 60px;">Price</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending" style="width: 83px;">Paid</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending" style="width: 83px;">comment</th>
                                           <th class="disabled-sorting text-right sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 147px;">Actions</th>
                                         </tr>
                                       </thead>
-                                      <tbody> </tbody>
                                       <tbody>
                                         <tr role="row" class="odd">
-                                          <td class="sorting_1">
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">1</td>
+                                          <td class="sorting_1">1</td>
                                           <td>S18-00008-1</td>
-                                          <td>S18-00008-1</td>
-                                          <td>Fname Lname</td>
-                                          <td></td>
+                                          <td>T0P0</td>
+                                          <td>120</td>
                                           <td></td>
                                           <td>
-                                            <input type="text"> </td>
+                                            <label class="p-2">คอมเม้น1</label>
+                                          </td>
                                           <td class="text-right">
                                             <button class="btn btn-warning btn-xs">
                                               <i class="fa fa-edit"></i>
@@ -351,15 +236,14 @@
                                           </td>
                                         </tr>
                                         <tr role="row" class="even">
-                                          <td class="sorting_1">
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">2</td>
-                                          <td>S18-00008-1</td>
-                                          <td>S18-00008-1</td>
-                                          <td>Fname Lname</td>
-                                          <td></td>
+                                          <td class="sorting_1">2</td>
+                                          <td>S18-00008-2</td>
+                                          <td>T0P0</td>
+                                          <td>110</td>
                                           <td></td>
                                           <td>
-                                            <input type="text"> </td>
+                                            <label class="p-2">คอมเม้น2</label>
+                                          </td>
                                           <td class="text-right">
                                             <button class="btn btn-warning btn-xs">
                                               <i class="fa fa-edit"></i>
@@ -370,15 +254,14 @@
                                           </td>
                                         </tr>
                                         <tr role="row" class="odd">
-                                          <td class="sorting_1">
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">3</td>
-                                          <td>S18-00008-1</td>
-                                          <td>S18-00008-1</td>
-                                          <td>Fname Lname</td>
-                                          <td></td>
+                                          <td class="sorting_1">3</td>
+                                          <td>S18-00008-3</td>
+                                          <td>T0P0</td>
+                                          <td>150</td>
                                           <td></td>
                                           <td>
-                                            <input type="text"> </td>
+                                            <label class="p-2">คอมเม้น3</label>
+                                          </td>
                                           <td class="text-right">
                                             <button class="btn btn-warning btn-xs">
                                               <i class="fa fa-edit"></i>
@@ -389,15 +272,14 @@
                                           </td>
                                         </tr>
                                         <tr role="row" class="even">
-                                          <td class="sorting_1">
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">4</td>
-                                          <td>S18-00008-1</td>
-                                          <td>S18-00008-1</td>
-                                          <td>Fname Lname</td>
-                                          <td></td>
+                                          <td class="sorting_1">4</td>
+                                          <td>S18-00008-4</td>
+                                          <td>T0P0</td>
+                                          <td>130</td>
                                           <td></td>
                                           <td>
-                                            <input type="text"> </td>
+                                            <label class="p-2">คอมเม้น4</label>
+                                          </td>
                                           <td class="text-right">
                                             <button class="btn btn-warning btn-xs">
                                               <i class="fa fa-edit"></i>
@@ -408,15 +290,14 @@
                                           </td>
                                         </tr>
                                         <tr role="row" class="odd">
-                                          <td class="sorting_1">
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">5</td>
-                                          <td>S18-00008-1</td>
-                                          <td>S18-00008-1</td>
-                                          <td>Fname Lname</td>
-                                          <td></td>
+                                          <td class="sorting_1">5</td>
+                                          <td>S18-00008-5</td>
+                                          <td>T0P0</td>
+                                          <td>200</td>
                                           <td></td>
                                           <td>
-                                            <input type="text"> </td>
+                                            <label class="p-2">คอมเม้น5</label>
+                                          </td>
                                           <td class="text-right">
                                             <button class="btn btn-warning btn-xs">
                                               <i class="fa fa-edit"></i>
@@ -429,13 +310,11 @@
                                       </tbody>
                                       <tfoot>
                                         <tr>
-                                          <th>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">No</th>
-                                          <th>SID</th>
-                                          <th>Specimen code</th>
-                                          <th>Specimen name</th>
+                                          <th>No</th>
+                                          <th>Specimen</th>
+                                          <th>Test name</th>
                                           <th>Price</th>
-                                          <th>Paid</th>
+                                          <th>Start date</th>
                                           <th aria-controls="datatables" aria-label="Date: activate to sort column ascending" class="sorting" colspan="1" rowspan="1" style="width: 83px;" tabindex="0">comment</th>
                                           <th class="text-right">Actions</th>
                                         </tr>
@@ -480,74 +359,6 @@
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div class="row">
-                          <div class="col-md-2">
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
-                            <label class="p-2">Paraphin blocks</label>
-                          </div>
-                          <div class="col-md-4">
-                            <input type="text" class="form-control"> </div>
-                          <div class="col-md-2 text-right">
-                            <label class="p-2">Original ID</label>
-                          </div>
-                          <div class="col-md-4">
-                            <input type="text" class="form-control"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-2">
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
-                            <label class="p-2">Slide</label>
-                          </div>
-                          <div class="col-md-4">
-                            <input type="text" class="form-control"> </div>
-                          <div class="col-md-2 text-right">
-                            <label class="p-2">แผ่น Original ID</label>
-                          </div>
-                          <div class="col-md-4">
-                            <input type="text" class="form-control"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-2">
-                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">
-                            <label class="p-2">ใช้เนื้อเดิม</label>
-                          </div>
-                          <div class="col-md-1 text-right">
-                            <label class="p-2">SID</label>
-                          </div>
-                          <div class="col-md-3">
-                            <input type="text" class="form-control"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-2"> </div>
-                          <div class="col-md-1 text-right">
-                            <label class="p-2">Block</label>
-                          </div>
-                          <div class="col-md-3">
-                            <input type="text" class="form-control"> </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <label class="p-2">Order comment</label>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <input type="text" class="form-control"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-10"> </div>
-                          <div class="col-md-2">
-                            <button class="btn btn-outline-secondary form-control" type="button"> Save </button>
                           </div>
                         </div>
                       </div>
@@ -619,13 +430,6 @@
   <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content ">
-        <div class="modal-hearder">
-          <div class="row">
-            <div class="col-md-4"> </div>
-            <div class="col-md-4">
-              <input type="text" class="form-control" placeholder="Search"> </div>
-          </div>
-        </div>
         <div class="modal-body">
           <div class="row">
             <div class="col-md-4" style="border:1px solid #000;">
