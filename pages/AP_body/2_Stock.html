@@ -124,12 +124,7 @@
                                   <div class="col-sm-12 col-md-6">
                                     <div class="dataTables_filter" id="datatables_filter">
                                       <label class="form-group">
-                                        <select class="form-control">
-                                          <option>Argent1</option>
-                                          <option>Argent2</option>
-                                          <option>Argent3</option>
-                                          <option>Argent4</option>
-                                        </select>
+                                        <button class="btn form-control" type="button" data-target="#exampleModal" data-toggle="modal">ADD </button>
                                       </label>
                                     </div>
                                   </div>
@@ -166,7 +161,8 @@
                                           <th tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending"> Building</th>
                                           <th tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" class="sorting">Floor</th>
                                           <th tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" class="sorting">Room</th>
-                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">Position</th>
+                                          <th tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" class="sorting">Position</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">Action</th>
                                         </tr>
                                       </thead>
                                       <tbody>
@@ -182,6 +178,17 @@
                                           <td>10</td>
                                           <td>3</td>
                                           <td>A123</td>
+                                          <td>
+                                            <button class="btn btn-warning btn-xs" data-target="#Modal" data-toggle="modal" type="button">
+                                              <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class="btn btn-danger btn-xs" data-target="#ModalExport" data-toggle="modal" type="button">
+                                              <i class="fa ti-export"></i>
+                                            </button>
+                                            <button class="btn btn-danger btn-xs" data-target="#ModalRefuse" data-toggle="modal" type="button">
+                                              <i class="fa ti-file"></i>
+                                            </button>
+                                          </td>
                                         </tr>
                                         <tr role="row" class="even">
                                           <td class="sorting_1">
@@ -195,6 +202,17 @@
                                           <td>10</td>
                                           <td>3</td>
                                           <td>A123</td>
+                                          <td>
+                                            <button class="btn btn-warning btn-xs" data-target="#Modal" data-toggle="modal" type="button">
+                                              <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class="btn btn-danger btn-xs" data-target="#ModalExport" data-toggle="modal" type="button">
+                                              <i class="fa ti-export"></i>
+                                            </button>
+                                            <button class="btn btn-danger btn-xs" data-target="#ModalRefuse" data-toggle="modal" type="button">
+                                              <i class="fa ti-file"></i>
+                                            </button>
+                                          </td>
                                         </tr>
                                         <tr role="row" class="odd">
                                           <td class="sorting_1">
@@ -208,6 +226,17 @@
                                           <td>10</td>
                                           <td>3</td>
                                           <td>A123</td>
+                                          <td>
+                                            <button class="btn btn-warning btn-xs" data-target="#Modal" data-toggle="modal" type="button">
+                                              <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class="btn btn-danger btn-xs" data-target="#ModalExport" data-toggle="modal" type="button">
+                                              <i class="fa ti-export"></i>
+                                            </button>
+                                            <button class="btn btn-danger btn-xs" data-target="#ModalRefuse" data-toggle="modal" type="button">
+                                              <i class="fa ti-file"></i>
+                                            </button>
+                                          </td>
                                         </tr>
                                         <tr role="row" class="even">
                                           <td class="sorting_1">
@@ -221,6 +250,17 @@
                                           <td>10</td>
                                           <td>3</td>
                                           <td>A123</td>
+                                          <td>
+                                            <button class="btn btn-warning btn-xs" data-target="#Modal" data-toggle="modal" type="button">
+                                              <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class="btn btn-danger btn-xs" data-target="#ModalExport" data-toggle="modal" type="button">
+                                              <i class="fa ti-export"></i>
+                                            </button>
+                                            <button class="btn btn-danger btn-xs" data-target="#ModalRefuse" data-toggle="modal" type="button">
+                                              <i class="fa ti-file"></i>
+                                            </button>
+                                          </td>
                                         </tr>
                                         <tr role="row" class="odd">
                                           <td class="sorting_1">
@@ -234,6 +274,17 @@
                                           <td>10</td>
                                           <td>3</td>
                                           <td>A123</td>
+                                          <td>
+                                            <button class="btn btn-warning btn-xs" data-target="#Modal" data-toggle="modal" type="button">
+                                              <i class="fa fa-edit"></i>
+                                            </button>
+                                            <button class="btn btn-danger btn-xs" data-target="#ModalExport" data-toggle="modal" type="button">
+                                              <i class="fa ti-export"></i>
+                                            </button>
+                                            <button class="btn btn-danger btn-xs" data-target="#ModalRefuse" data-toggle="modal" type="button">
+                                              <i class="fa ti-file"></i>
+                                            </button>
+                                          </td>
                                         </tr>
                                       </tbody>
                                       <tfoot>
@@ -241,12 +292,13 @@
                                           <th>No.</th>
                                           <th>Date and time </th>
                                           <th>SID</th>
-                                          <th tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending"> ID number</th>
+                                          <th aria-controls="datatables" aria-label="Position: activate to sort column ascending" colspan="1" rowspan="1" tabindex="0"> ID number</th>
                                           <th>Name</th>
                                           <th>Building</th>
                                           <th>Floor</th>
                                           <th aria-controls="datatables" aria-label="Office: activate to sort column ascending" class="sorting" colspan="1" rowspan="1" tabindex="0">Room</th>
                                           <th aria-controls="datatables" aria-label="Office: activate to sort column ascending" class="sorting" colspan="1" rowspan="1" tabindex="0">Position</th>
+                                          <th aria-controls="datatables" aria-label="Office: activate to sort column ascending" class="sorting" colspan="1" rowspan="1" tabindex="0">Action</th>
                                         </tr>
                                       </tfoot>
                                     </table>
@@ -357,6 +409,381 @@
   <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
     <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
   </pingendo>
+  <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <div class="row">
+            <div class="col-md-6">
+              <h5 class="modal-title"> ADD </h5>
+            </div>
+            <div class="col-md-6">
+              <input class="form-control" type="text" placeholder="Search"> </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-3 text-right">
+              <label class="p-2">Date </label>
+            </div>
+            <div class="col-md-3">
+              <input class="form-control" type="date"> </div>
+            <div class="col-md-1">
+              <label class="p-2">Time</label>
+            </div>
+            <div class="col-md-3">
+              <input class="form-control" type="time"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 text-right">
+              <label class="p-2">Start</label>
+            </div>
+            <div class="col-md-3">
+              <input class="form-control" type="date"> </div>
+            <div class="col-md-1">
+              <label class="p-2">Finish</label>
+            </div>
+            <div class="col-md-3">
+              <input type="date" class="form-control"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> No.</th>
+                    <th>Item</th>
+                    <th>Bulding</th>
+                    <th>Floor</th>
+                    <th>Room</th>
+                    <th>Position</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> 1</td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> 2</td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> 3</td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"> </div>
+            <div class="col-md-2">
+              <button type="button" class="btn btn-secondary form-control" data-dismiss="modal">Add</button>
+            </div>
+            <div class="col-md-2">
+              <button type="button" class="btn btn-secondary form-control" data-dismiss="modal">Edit</button>
+            </div>
+            <div class="col-md-2">
+              <button type="button" class="btn btn-secondary form-control" data-dismiss="modal">Delete</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade bd-example-modal-lg" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <div class="row">
+            <div class="col-md-6">
+              <h5 class="modal-title"> Edit</h5>
+            </div>
+            <div class="col-md-6">
+              <input class="form-control" type="text" placeholder="Search"> </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-3 text-right">
+              <label class="p-2">Date </label>
+            </div>
+            <div class="col-md-3">
+              <input class="form-control" type="date"> </div>
+            <div class="col-md-1">
+              <label class="p-2">Time</label>
+            </div>
+            <div class="col-md-3">
+              <input class="form-control" type="time"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 text-right">
+              <label class="p-2">Start</label>
+            </div>
+            <div class="col-md-3">
+              <input class="form-control" type="date"> </div>
+            <div class="col-md-1">
+              <label class="p-2">Finish</label>
+            </div>
+            <div class="col-md-3">
+              <input type="date" class="form-control"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> No.</th>
+                    <th>Item</th>
+                    <th>Bulding</th>
+                    <th>Floor</th>
+                    <th>Room</th>
+                    <th>Position</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> 1</td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> 2</td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" aria-label="Checkbox for following text input" value="on"> 3</td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                    <td>
+                      <input class="form-control" type="text"> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"> </div>
+            <div class="col-md-2">
+              <button type="button" class="btn btn-secondary form-control" data-dismiss="modal">Add</button>
+            </div>
+            <div class="col-md-2">
+              <button type="button" class="btn btn-secondary form-control" data-dismiss="modal">Edit</button>
+            </div>
+            <div class="col-md-2">
+              <button type="button" class="btn btn-secondary form-control" data-dismiss="modal">Delete</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade bd-example-modal-lg" id="ModalRefuse" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h5 class="modal-title"> Refuse</h5>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-3 text-right">
+              <label class="p-2">สาเหตุที่ปฏิเสธ</label>
+            </div>
+            <div class="col-md-7">
+              <input class="form-control" type="text"> </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade bd-example-modal-lg" id="ModalExport" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h5 class="modal-title"> Export</h5>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-3 text-right">
+              <label class="p-2">วันที่</label>
+            </div>
+            <div class="col-md-7">
+              <input class="form-control" type="date"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 text-right">
+              <label class="p-2">ข้าพเจ้า</label>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" aria-label="Radio button for following text input" value="on">
+              <label class="p-2">นาย</label>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" aria-label="Radio button for following text input" value="on">
+              <label class="p-2">นาง</label>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" aria-label="Radio button for following text input" value="on">
+              <label class="p-2">นางสาว</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 text-right">
+              <label class="p-2">ชื่อ</label>
+            </div>
+            <div class="col-md-7">
+              <input class="form-control" type="text"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 text-right">
+              <label class="p-2">ที่อยู่</label>
+            </div>
+            <div class="col-md-7">
+              <input class="form-control" type="text"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 text-right">
+              <label class="p-2">ประสงค์ขอรับศพ</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2"> </div>
+            <div class="col-md-2">
+              <input type="radio" aria-label="Radio button for following text input" value="on">
+              <label class="p-2">นาย</label>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" aria-label="Radio button for following text input" value="on">
+              <label class="p-2">นาง</label>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" aria-label="Radio button for following text input" value="on">
+              <label class="p-2">นางสาว</label>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" aria-label="Radio button for following text input" value="on">
+              <label class="p-2">เด็กชาย</label>
+            </div>
+            <div class="col-md-2">
+              <input type="radio" aria-label="Radio button for following text input" value="on">
+              <label class="p-2">เด็กหญิง</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 text-right">
+              <label class="p-2">ชื่อ</label>
+            </div>
+            <div class="col-md-7">
+              <input class="form-control" type="text"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 text-right">
+              <label class="p-2">จากหอผู้ป่วย</label>
+            </div>
+            <div class="col-md-7">
+              <input class="form-control" type="text"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 text-right">
+              <label class="p-2">ในวันที่</label>
+            </div>
+            <div class="col-md-3">
+              <input type="date" class="form-control"> </div>
+            <div class="col-md-1">
+              <label class="p-2">เวลา</label>
+            </div>
+            <div class="col-md-3">
+              <input class="form-control" type="time"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 text-right">
+              <label class="p-2">โดยข้าพเจ้าเกี่ยวข้องเป็น</label>
+            </div>
+            <div class="col-md-5">
+              <input class="form-control" type="text"> </div>
+            <div class="col-md-2">
+              <label class="p-2">ของผู้เสียชีวิต</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
