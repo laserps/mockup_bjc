@@ -287,11 +287,21 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-12">
                     <div class="card">
                       <div class="card-body p-2">
                         <div class="row">
+                          <div class="col-md-3">
+                            <label class="p-2">Specialty</label>
+                          </div>
                           <div class="col-md-6">
+                            <select class="form-control">
+                              <option>Specialty</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3">
                             <label class="p-2">Urgent</label>
                           </div>
                           <div class="col-md-6">
@@ -301,44 +311,44 @@
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-6">
+                          <div class="col-md-3">
                             <label class="p-2">Specimen request</label>
                           </div>
                           <div class="col-md-6">
                             <input type="date" class="form-control"> </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-6"> </div>
+                          <div class="col-md-3"> </div>
                           <div class="col-md-6">
                             <input type="time" class="form-control"> </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-6">
+                          <div class="col-md-3">
                             <label class="p-2">Specimen collection</label>
                           </div>
                           <div class="col-md-6">
                             <input type="date" class="form-control"> </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-6"> </div>
+                          <div class="col-md-3"> </div>
                           <div class="col-md-6">
                             <input type="time" class="form-control"> </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-6">
-                            <label class="p-2">Specimen recive</label>
+                          <div class="col-md-3">
+                            <label class="p-2">Reception</label>
                           </div>
                           <div class="col-md-6">
                             <input type="date" class="form-control"> </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-6"> </div>
+                          <div class="col-md-3"> </div>
                           <div class="col-md-6">
                             <input type="time" class="form-control"> </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-6">
-                            <label class="p-2">Spec. taker</label>
+                          <div class="col-md-3">
+                            <label class="p-2">Specimen Taker</label>
                           </div>
                           <div class="col-md-6">
                             <select class="form-control">
@@ -347,7 +357,7 @@
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-6">
+                          <div class="col-md-3">
                             <label class="p-2">Doctor</label>
                           </div>
                           <div class="col-md-4 ">
@@ -362,7 +372,7 @@
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-6">
+                          <div class="col-md-3">
                             <label class="p-2">Location</label>
                           </div>
                           <div class="col-md-6">
@@ -372,7 +382,7 @@
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-md-6">
+                          <div class="col-md-3">
                             <label class="p-2">Hos. number</label>
                           </div>
                           <div class="col-md-6">
@@ -380,8 +390,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-8">
                     <div class="card">
                       <div class="card-body p-1">
                         <div class="dataTables_wrapper container-fluid dt-bootstrap4" id="datatables_wrapper">
@@ -396,9 +404,13 @@
                                 <option>Screener</option>
                               </select>
                             </div>
-                            <div class="col-sm-12 col-md-4"> </div>
-                            <div class="col-sm-12 col-md-2">
+                            <div class="col-sm-12 col-md-3">
                               <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal"> Add </button>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                              <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal">Import Excel
+                                <br>
+                              </button>
                             </div>
                           </div>
                         </div>
@@ -433,11 +445,11 @@
                                           <th class="sorting_asc" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" aria-sort="ascending">
                                             <input type="checkbox" aria-label="Checkbox for following text input" value="on">No</th>
                                           <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">SID</th>
-                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">Specimen code</th>
-                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">Specimen name</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">Test code</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">Test name</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">Organ</th>
                                           <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending">Price</th>
                                           <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending">Paid</th>
-                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending">comment</th>
                                           <th class="disabled-sorting text-right sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 147px;">Actions</th>
                                         </tr>
                                       </thead>
@@ -445,15 +457,14 @@
                                       <tbody>
                                         <tr role="row" class="odd">
                                           <td class="sorting_1">
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">1</td>
+                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;1</td>
                                           <td>S18-00008-1</td>
                                           <td>S18-00008-1</td>
                                           <td>Fname Lname</td>
                                           <td></td>
                                           <td></td>
-                                          <td>
-                                            <input type="text"> </td>
-                                          <td class="text-right">
+                                          <td></td>
+                                          <td class="text-center">
                                             <button class="btn btn-warning btn-xs">
                                               <i class="fa fa-edit"></i>
                                             </button>
@@ -464,15 +475,14 @@
                                         </tr>
                                         <tr role="row" class="even">
                                           <td class="sorting_1">
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">2</td>
+                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;2</td>
                                           <td>S18-00008-1</td>
                                           <td>S18-00008-1</td>
                                           <td>Fname Lname</td>
                                           <td></td>
                                           <td></td>
-                                          <td>
-                                            <input type="text"> </td>
-                                          <td class="text-right">
+                                          <td></td>
+                                          <td class="text-center">
                                             <button class="btn btn-warning btn-xs">
                                               <i class="fa fa-edit"></i>
                                             </button>
@@ -483,15 +493,14 @@
                                         </tr>
                                         <tr role="row" class="odd">
                                           <td class="sorting_1">
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">3</td>
+                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;3</td>
                                           <td>S18-00008-1</td>
                                           <td>S18-00008-1</td>
                                           <td>Fname Lname</td>
                                           <td></td>
                                           <td></td>
-                                          <td>
-                                            <input type="text"> </td>
-                                          <td class="text-right">
+                                          <td></td>
+                                          <td class="text-center">
                                             <button class="btn btn-warning btn-xs">
                                               <i class="fa fa-edit"></i>
                                             </button>
@@ -502,15 +511,14 @@
                                         </tr>
                                         <tr role="row" class="even">
                                           <td class="sorting_1">
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">4</td>
+                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;4</td>
                                           <td>S18-00008-1</td>
                                           <td>S18-00008-1</td>
                                           <td>Fname Lname</td>
                                           <td></td>
                                           <td></td>
-                                          <td>
-                                            <input type="text"> </td>
-                                          <td class="text-right">
+                                          <td></td>
+                                          <td class="text-center">
                                             <button class="btn btn-warning btn-xs">
                                               <i class="fa fa-edit"></i>
                                             </button>
@@ -521,15 +529,14 @@
                                         </tr>
                                         <tr role="row" class="odd">
                                           <td class="sorting_1">
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">5</td>
+                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;5</td>
                                           <td>S18-00008-1</td>
                                           <td>S18-00008-1</td>
                                           <td>Fname Lname</td>
                                           <td></td>
                                           <td></td>
-                                          <td>
-                                            <input type="text"> </td>
-                                          <td class="text-right">
+                                          <td></td>
+                                          <td class="text-center">
                                             <button class="btn btn-warning btn-xs">
                                               <i class="fa fa-edit"></i>
                                             </button>
@@ -542,7 +549,7 @@
                                       <tfoot>
                                         <tr>
                                           <th>
-                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">No</th>
+                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;No</th>
                                           <th>SID</th>
                                           <th>Specimen code</th>
                                           <th>Specimen name</th>
@@ -655,23 +662,22 @@
                           <div class="col-md-3">
                             <input type="text" class="form-control"> </div>
                         </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="col-md-12">
+                              <label class="p-2">Order comment</label>
+                            </div>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-body p-2">
                         <div class="row">
-                          <div class="col-md-12">
-                            <label class="p-2">Order comment</label>
-                          </div>
-                        </div>
-                        <div class="row form-group">
-                          <div class="col-md-12">
-                            <input type="text" class="form-control"> </div>
-                        </div>
-                        <div class="row">
                           <div class="col-md-3">
                             <input type="checkbox" aria-label="Checkbox for following text input" value="on">
-                            <label class="p-2">Print request form</label>
+                            <label class="p-2">Print Sammary Order</label>
                           </div>
                           <div class="col-md-3">
                             <input type="checkbox" aria-label="Checkbox for following text input" value="on">
