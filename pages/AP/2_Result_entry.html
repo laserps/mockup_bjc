@@ -218,65 +218,253 @@
                 <div class="card-body p-2">
 -->
               <form class="form">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="card">
-                      <div class="card-header">
-                        <div class="row">
-                          <div class="col-md-1">
-                            <label class="p-2">
-                              <b>AP</b>
-                            </label>
+                  <div class="row">
+                      <div class="col-md-12">
+                        <div class="card">
+                          <div class="card-header">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <label class="p-2">
+                                  <b>AP</b>
+                                </label>
+                              </div>
+                              <div class="col-md-6">
+                                <label class="pull-right">
+                                  <a class="btn btn-primary" data-toggle="collapse" data-target="#search"><i class="fa fa-search"></i></a>
+                                </label>
+                              </div>
+                            </div>
                           </div>
-                          <div class="col-md-3">
-                            <input class="form-control" type="text" placeholder="Search records"> </div>
-                          <div class="col-md-2">
-                            <label class="p-2">Specimen recaption</label>
-                          </div>
-                          <div class="col-md-2">
-                            <input type="date" class="form-control"> </div>
-                          <div class="col-md-1">
-                            <label class="p-2"> and </label>
-                          </div>
-                          <div class="col-md-2">
-                            <input class="form-control" type="time"> </div>
-                        </div>
-                      </div>
-                      <div class="card-body p-2">
-                        <div class="row">
-                          <div class="col-md-1">
-                            <label class="p-2">HN</label>
-                          </div>
-                          <div class="col-md-3">
-                            <input type="text" class="form-control input-sm"> </div>
-                          <div class="col-md-2"> </div>
-                          <div class="col-md-1">
-                            <label class="p-2">Pat. number</label>
-                          </div>
-                          <div class="col-md-1">
-                            <label class="p-2">999999999</label>
-                          </div>
-                          <div class="col-md-2"> </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-1">
-                            <label class="p-2">Name</label>
-                          </div>
-                          <div class="col-md-3">
-                            <label class="p-2">ทดสอบ อยู่นะ</label>
-                          </div>
-                          <div class="col-md-2"> </div>
-                          <div class="col-md-1">
-                            <label class="p-2">Sex</label>
-                          </div>
-                          <div class="col-md-1">
-                            <label class="p-2">Male</label>
+                          <div class="card-body p-2">
+                            <div class="row collapse" id="search">
+                              <div class="col-md-12 p-2">
+                                <div class="row text-right">
+                                  <div class="col-md-2">
+                                    <label class="p-2">Specialty</label>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <select class="form-control"> </select>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-6 text-right">
+                                    <div class="row">
+                                      <div class="col-md-4">
+                                        <label class="p-2">Request number</label>
+                                      </div>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text"> </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-4">
+                                        <label class="p-2">Name</label>
+                                      </div>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text"> </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-4">
+                                        <label class="p-2">Lastname</label>
+                                      </div>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text"> </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-4">
+                                        <label class="p-2">Maiden name</label>
+                                      </div>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text"> </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-4">
+                                        <label class="p-2">Sex</label>
+                                      </div>
+                                      <div class="col-md-8">
+                                        <select class="form-control"> </select>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-4">
+                                        <label class="p-2">City</label>
+                                      </div>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text"> </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-4">
+                                        <label class="p-2">PostCode</label>
+                                      </div>
+                                      <div class="col-md-8">
+                                        <input class="form-control" type="text">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 text-right">
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <label class="p-2">Pat. number</label>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <input class="form-control" type="text"> </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <label class="p-2">Hos. number</label>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <input class="form-control" type="text"> </div>
+                                    </div>
+                                    <div style="border:1px solid #000;" class="p-2">
+                                      <div class="row">
+                                        <div class="col-md-12 text-left">
+                                          <label class="p-2">Age</label>
+                                        </div>
+                                      </div>
+                                      <div class="row text-left">
+                                        <div class="col-md-3">
+                                          <label class="p-2">
+                                            <input type="radio" aria-label="Radio button for following text input" value="on"> Birthdate</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                          <label class="p-2">
+                                            <input type="radio" aria-label="Radio button for following text input" value="on"> Year</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                          <label class="p-2">
+                                            <input type="radio" aria-label="Radio button for following text input" value="on"> Month</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                          <label class="p-2">
+                                            <input type="radio" aria-label="Radio button for following text input" value="on"> Day</label>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-md-6">
+                                          <label class="p-2">Minimum value</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <input class="form-control" type="text"> </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-md-6">
+                                          <label class="p-2">Maximum value</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <input class="form-control" type="text"> </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row text-right">
+                                          <div class="col-md-4">
+                                            <label class="p-2">Lacation code</label>
+                                          </div>
+                                          <div class="col-md-8">
+                                            <select class="form-control"> </select>
+                                          </div>
+                                        </div>
+                                        <div class="row text-right">
+                                          <div class="col-md-4">
+                                            <label class="p-2">Doctor code</label>
+                                          </div>
+                                          <div class="col-md-8">
+                                            <select class="form-control"> </select>
+                                          </div>
+                                        </div>
+                                        <div class="row text-right">
+                                          <div class="col-md-4">
+                                            <label class="p-2">Pathologist</label>
+                                          </div>
+                                          <div class="col-md-8">
+                                            <select class="form-control"> </select>
+                                          </div>
+                                        </div>
+                                        <div class="row text-right">
+                                          <div class="col-md-4">
+                                            <label class="p-2">Screener</label>
+                                          </div>
+                                          <div class="col-md-8">
+                                            <select class="form-control"> </select>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div style="border:1px solid #000;" class="form-group p-2">
+                                          <div class="row">
+                                            <div class="col-md-12 text-left">
+                                              <label class="p-2">Creation date</label>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6 text-right">
+                                              <label class="p-2">From:</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <select class="form-control"> </select>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6 text-right">
+                                              <label class="p-2">To:</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <select class="form-control"> </select>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row pull-right">
+                                          <div class="col-md-2">
+                                            <button class="btn btn-secondary" type="button"> Search </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+      
+                              </div>
+                              <hr>
+                            </div> 
+      
+                            <div class="row">
+                              <div class="col-md-2">
+                                <label class="p-2">Name</label>
+                              </div>
+                              <div class="col-md-3">
+                                <label class="p-2">อธรรม</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-2">
+                                <label class="p-2">Last Name</label>
+                              </div>
+                              <div class="col-md-3">
+                                <label class="p-2">แสนดี</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-2">
+                                <label class="p-2">Sex</label>
+                              </div>
+                              <div class="col-md-3">
+                                <label class="p-2">ชาย</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-2">
+                                <label class="p-2">Birth Date</label>
+                              </div>
+                              <div class="col-md-3">
+                                <label class="p-2">10 พฤษภาคม 2540 (21 ปี 2 เดือน 8 วัน)</label>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
                 <div class="row">
                   <div class="col-md-12">
                     <div class="card">
