@@ -20,7 +20,8 @@
   <link href="../../assets/css/font-muli.css" rel="stylesheet" type="text/css">
   <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css">
   <link href="../../assets/css/themify-icons.css" rel="stylesheet">
-  <link href="./mui.css" rel="stylesheet"> </head>
+  <link href="./mui.css" rel="stylesheet">
+</head>
 
 <body>
   <div class="wrapper">
@@ -67,7 +68,7 @@
           <li class="d-flex flex-column">
             <a href="5_slide.html">
               <i class="nav-icon"></i>
-              <p>Slide prepalation</p>
+              <p>Slide Preparation</p>
             </a>
           </li>
           <li class="d-flex flex-column">
@@ -90,8 +91,7 @@
           </li>
           <li class="d-flex flex-column">
             <a href="#tables3" aria-expanded="true" class="nav-link collapsed" data-toggle="collapse">
-              <p>Calendar of pathologist
-                <i class="fa fa-sort-desc submenu-toggle"></i>
+              <p>Calendar of pathologist <i class="fa fa-sort-desc submenu-toggle"></i>
               </p>
             </a>
             <div class="collapse" id="tables3" role="navigation" aria-expanded="true">
@@ -125,8 +125,7 @@
           </li>
           <li class="d-flex flex-column">
             <a href="#tables" aria-expanded="false" class="nav-link collapsed" data-toggle="collapse">
-              <p>Material Management
-                <i class="fa fa-sort-desc submenu-toggle"></i>
+              <p>Material Management <i class="fa fa-sort-desc submenu-toggle"></i>
               </p>
             </a>
             <div class="collapse" id="tables" role="navigation" aria-expanded="false" style="">
@@ -177,8 +176,7 @@
               <a href="#" class="dropdown-toggle nav-link" id="notificationList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="ti-bell nav-icon"></i>
                 <span class="notification">6</span>
-                <p class="hidden-lg-up"> Notifications
-                  <i class="fa fa-sort-desc submenu-toggle"></i>
+                <p class="hidden-lg-up"> Notifications <i class="fa fa-sort-desc submenu-toggle"></i>
                 </p>
               </a>
               <div class="dropdown-menu" aria-labelledby="notificationList">
@@ -227,21 +225,21 @@
                       <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
                           <li class="nav-item">
-                            <a data-toggle="tab" href="#Prepalation" class="nav-link active">Prepalation</a>
+                            <a data-toggle="tab" href="#Preparation" class="nav-link active">Preparation</a>
                           </li>
                           <li class="nav-item">
-                            <a data-toggle="tab" href="#summary" class="nav-link">Summary</a>
+                            <a data-toggle="tab" href="#Summary" class="nav-link">Summary</a>
                           </li>
                         </ul>
                       </div>
                       <div class="tab-content">
                         <!-- TAB1 -->
-                        <div id="Prepalation" class="tab-pane fade in active show">
+                        <div id="Preparation" class="tab-pane fade in active show">
                           <div class="card-body p-2">
                             <div class="dataTables_wrapper container-fluid dt-bootstrap4" id="datatables_wrapper">
                               <div class="row">
                                 <div class="col-md-4">
-                                  <h5>Slide</h5>
+                                  <h5>Slide Preparation</h5>
                                 </div>
                                 <div class="col-md-1">
                                   <label class="p-2">From</label>
@@ -272,8 +270,7 @@
                                     <div class="row">
                                       <div class="col-sm-12 col-md-6">
                                         <div class="dataTables_length" id="datatables_length">
-                                          <label class="form-group">Show
-                                            <select name="datatables_length" aria-controls="datatables" class="form-control input-sm">
+                                          <label class="form-group">Show <select name="datatables_length" aria-controls="datatables" class="form-control input-sm">
                                               <option value="10">10</option>
                                               <option value="25">25</option>
                                               <option value="50">50</option>
@@ -289,19 +286,15 @@
                                       </div>
                                     </div>
                                     <div class="row">
-                                      <div class="col-sm-12 col-md-12"> .
-                                        <table id="datatables" class="table table-sm table-striped table-hover table-responsive" style="width:100%; overflow-x: scroll;" role="grid" aria-describedby="datatables_info">
+                                      <div class="col-sm-12">
+                                        <table id="datatables" class="table table-sm table-striped table-hover table-responsive" style="width:100%;" role="grid" aria-describedby="datatables_info">
                                           <colgroup>
-                                            <col width="10%">
-                                            <col width="15%">
-                                            <col width="15%">
-                                            <col width="15%">
-                                            <col width="15%">
-                                            <col width="15%">
-                                            <col width="15%"> </colgroup>
+                                            <col width="5">
+                                            <col width="200">
+                                          </colgroup>
                                           <thead>
                                             <tr role="row">
-                                              <th tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">
+                                              <th tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" aria-sort="ascending">
                                                 <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </th>
                                               <th tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">
                                                 <select class="form-control">
@@ -313,14 +306,14 @@
                                                   <option value="เลือก">Decal</option>
                                                 </select>
                                               </th>
-                                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">SID</th>
-                                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Pathologist</th>
-                                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Screener</th>
-                                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Pathology Assistance</th>
-                                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Slide number</th>
-                                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Slide type</th>
-                                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Slide Start</th>
-                                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1">Slide Finish</th>
+                                              <th>Specimen number</th>
+                                              <th>Slide number</th>
+                                              <th>Slide type</th>
+                                              <th>Pathologist</th>
+                                              <th>Screener</th>
+                                              <th>Pathology Assistance</th>
+                                              <th>Slide Start</th>
+                                              <th>Slide Finish</th>
                                             </tr>
                                           </thead>
                                           <tbody>
@@ -337,12 +330,12 @@
                                                   <option value="เลือก">Decal</option>
                                                 </select>
                                               </td>
-                                              <td>006781</td>
-                                              <td>1120</td>
                                               <td>-</td>
                                               <td>-</td>
                                               <td>-</td>
-                                              <td>A</td>
+                                              <td>-</td>
+                                              <td>-</td>
+                                              <td>-</td>
                                               <td>
                                                 <input class="form-control" type="datetime-local" style="width:200px;"> </td>
                                               <td>
@@ -361,12 +354,12 @@
                                                   <option value="เลือก">Decal</option>
                                                 </select>
                                               </td>
-                                              <td></td>
-                                              <td>1121</td>
                                               <td>-</td>
                                               <td>-</td>
                                               <td>-</td>
-                                              <td>B</td>
+                                              <td>-</td>
+                                              <td>-</td>
+                                              <td>-</td>
                                               <td>
                                                 <input class="form-control" type="datetime-local" style="width:200px;">
                                               </td>
@@ -386,12 +379,12 @@
                                                   <option value="เลือก">Decal</option>
                                                 </select>
                                               </td>
-                                              <td></td>
-                                              <td>1150</td>
                                               <td>-</td>
                                               <td>-</td>
                                               <td>-</td>
-                                              <td>C</td>
+                                              <td>-</td>
+                                              <td>-</td>
+                                              <td>-</td>
                                               <td>
                                                 <input class="form-control" type="datetime-local" style="width:200px;">
                                               </td>
@@ -411,12 +404,12 @@
                                                   <option value="เลือก">Decal</option>
                                                 </select>
                                               </td>
-                                              <td></td>
-                                              <td>1112</td>
                                               <td>-</td>
                                               <td>-</td>
                                               <td>-</td>
-                                              <td>D</td>
+                                              <td>-</td>
+                                              <td>-</td>
+                                              <td>-</td>
                                               <td>
                                                 <input class="form-control" type="datetime-local" style="width:200px;">
                                               </td>
@@ -436,12 +429,12 @@
                                                   <option value="เลือก">Decal</option>
                                                 </select>
                                               </td>
-                                              <td>006785</td>
-                                              <td>1230</td>
                                               <td>-</td>
                                               <td>-</td>
                                               <td>-</td>
-                                              <td>A</td>
+                                              <td>-</td>
+                                              <td>-</td>
+                                              <td style="">-</td>
                                               <td>
                                                 <input class="form-control" type="datetime-local" style="width:200px;">
                                               </td>
@@ -456,8 +449,9 @@
                                               <th tabindex="0" colspan="1"></th>
                                               <th tabindex="0" colspan="1"></th> -->
                                               <th tabindex="0" colspan="2"> Define Date &amp; Time </th>
-                                              <th tabindex="0" colspan="3">
+                                              <th tabindex="0" colspan="2">
                                                 <input type="datetime-local" name="" id="input" class="form-control" style="width:200px;"> </th>
+                                              <th tabindex="0" colspan="4"></th>
                                               <th class="sorting text-center" colspan="1">
                                                 <button class="btn">Slide Start</button>
                                               </th>
@@ -512,7 +506,7 @@
                         </div>
                         <!-- END TAB1 -->
                         <!-- TAB2 -->
-                        <div id="summary" class="tab-pane fade">
+                        <div id="Summary" class="tab-pane fade">
                           <div class="">
                             <div class="card p-2">
                               <div class="card-body">
@@ -653,22 +647,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="card">
-                      <div class="card-body p-2">
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-md-12">
-                              <label for="firstName">Register By :&nbsp;</label>
-                              <label for="firstName">Dvangkamon Wattanatranon, M.D</label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </form>
               <!--
                 </div>   
@@ -680,8 +658,7 @@
       </div>
       <footer class="footer">
         <div class="container">
-          <p class="copyright float-right"> ©
-            <script>
+          <p class="copyright float-right"> © <script>
               document.write(new Date().getFullYear())
             </script>
             <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
@@ -728,9 +705,7 @@
   <script src="../../assets/vendors/jquery.tagsinput.js"></script>
   <!-- Material Dashboard javascript methods -->
   <script src="../../assets/js/inspire.js"></script>
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
-    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
-  </pingendo>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
 </body>
 
 </html>
