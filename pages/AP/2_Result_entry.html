@@ -55,7 +55,7 @@
           <li class="d-flex flex-column">
             <a href="2_Specimen_recaption.html">
               <i class="nav-icon"></i>
-              <p>Specimen recaption</p>
+              <p>Specimen reception</p>
             </a>
           </li>
           <li class="d-flex flex-column">
@@ -67,13 +67,13 @@
           <li class="d-flex flex-column">
             <a href="5_slide.html">
               <i class="nav-icon"></i>
-              <p>SlideSlide</p>
+              <p>Slide prepalation</p>
             </a>
           </li>
-          <li class="d-flex flex-column active">
+          <li class="d-flex flex-column">
             <a href="2_Result_entry.html">
               <i class="nav-icon"></i>
-              <p>Result Entry</p>
+              <p>Coding Result</p>
             </a>
           </li>
           <li class="d-flex flex-column">
@@ -89,12 +89,12 @@
             </a>
           </li>
           <li class="d-flex flex-column">
-            <a href="#tables3" aria-expanded="false" class="nav-link collapsed" data-toggle="collapse">
+            <a href="#tables3" aria-expanded="true" class="nav-link collapsed" data-toggle="collapse">
               <p>Calendar of pathologist
                 <i class="fa fa-sort-desc submenu-toggle"></i>
               </p>
             </a>
-            <div class="collapse" id="tables3" role="navigation" aria-expanded="false" style="">
+            <div class="collapse" id="tables3" role="navigation" aria-expanded="true">
               <ul class="nav flex-column ps-container ps-theme-default" data-ps-id="2b94cf34-2f02-ad93-3c9a-fec0a52844f9">
                 <li>
                   <a class="nav-link" href="10_1_Calendar.html">Calendar</a>
@@ -104,6 +104,9 @@
                 </li>
                 <li>
                   <a class="nav-link" href="10_1_Screener.html">Screener</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="10_1_pa.html">Pathology Assistance</a>
                 </li>
                 <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
                   <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
@@ -132,10 +135,10 @@
                   <a class="nav-link" href="10_Matirial_Management_Gross_Specimen.html">Gross Specimen</a>
                 </li>
                 <li>
-                  <a class="nav-link" href="10_Matirial_Management_Matirial.html">Material</a>
+                  <a class="nav-link" href="10_Matirial_Management_Cassette.html">Cassette</a>
                 </li>
                 <li>
-                  <a class="nav-link" href="10_Matirial_Management_Document.html">Document</a>
+                  <a class="nav-link" href="10_Matirial_Management_Slide.html">Slide</a>
                 </li>
                 <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;">
                   <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
@@ -166,7 +169,7 @@
           <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">Result Entry</a>
+          <a class="navbar-brand" href="#">Coding Result</a>
         </div>
         <div class="collapse navbar-collapse" id="navbarItems">
           <ul class="nav navbar-nav ml-auto">
@@ -218,253 +221,422 @@
                 <div class="card-body p-2">
 -->
               <form class="form">
-                  <div class="row">
-                      <div class="col-md-12">
-                        <div class="card">
-                          <div class="card-header">
-                            <div class="row">
-                              <div class="col-md-6">
-                                <label class="p-2">
-                                  <b>AP</b>
-                                </label>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label class="p-2">
+                              <b>AP</b>
+                            </label>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="pull-right">
+                              <a class="btn btn-primary" data-toggle="collapse" data-target="#search">
+                                <i class="fa fa-search"></i>
+                              </a>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body p-2">
+                        <div class="row collapse" id="search">
+                          <div class="col-md-12 p-2">
+                            <div class="row text-right">
+                              <div class="col-md-2">
+                                <label class="p-2">Specialty</label>
                               </div>
-                              <div class="col-md-6">
-                                <label class="pull-right">
-                                  <a class="btn btn-primary" data-toggle="collapse" data-target="#search"><i class="fa fa-search"></i></a>
-                                </label>
+                              <div class="col-md-4">
+                                <select class="form-control"> </select>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6 text-right">
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <label class="p-2">Request number</label>
+                                  </div>
+                                  <div class="col-md-8">
+                                    <input class="form-control" type="text"> </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <label class="p-2">Name</label>
+                                  </div>
+                                  <div class="col-md-8">
+                                    <input class="form-control" type="text"> </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <label class="p-2">Lastname</label>
+                                  </div>
+                                  <div class="col-md-8">
+                                    <input class="form-control" type="text"> </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <label class="p-2">Maiden name</label>
+                                  </div>
+                                  <div class="col-md-8">
+                                    <input class="form-control" type="text"> </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <label class="p-2">Sex</label>
+                                  </div>
+                                  <div class="col-md-8">
+                                    <select class="form-control"> </select>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <label class="p-2">City</label>
+                                  </div>
+                                  <div class="col-md-8">
+                                    <input class="form-control" type="text"> </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <label class="p-2">PostCode</label>
+                                  </div>
+                                  <div class="col-md-8">
+                                    <input class="form-control" type="text"> </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6 text-right">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <label class="p-2">Pat. number</label>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <input class="form-control" type="text"> </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <label class="p-2">Hos. number</label>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <input class="form-control" type="text"> </div>
+                                </div>
+                                <div style="border:1px solid #000;" class="p-2">
+                                  <div class="row">
+                                    <div class="col-md-12 text-left">
+                                      <label class="p-2">Age</label>
+                                    </div>
+                                  </div>
+                                  <div class="row text-left">
+                                    <div class="col-md-3">
+                                      <label class="p-2">
+                                        <input type="radio" aria-label="Radio button for following text input" value="on"> Birthdate</label>
+                                    </div>
+                                    <div class="col-md-3">
+                                      <label class="p-2">
+                                        <input type="radio" aria-label="Radio button for following text input" value="on"> Year</label>
+                                    </div>
+                                    <div class="col-md-3">
+                                      <label class="p-2">
+                                        <input type="radio" aria-label="Radio button for following text input" value="on"> Month</label>
+                                    </div>
+                                    <div class="col-md-3">
+                                      <label class="p-2">
+                                        <input type="radio" aria-label="Radio button for following text input" value="on"> Day</label>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <label class="p-2">Minimum value</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <input class="form-control" type="text"> </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <label class="p-2">Maximum value</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <input class="form-control" type="text"> </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
-                          <div class="card-body p-2">
-                            <div class="row collapse" id="search">
-                              <div class="col-md-12 p-2">
+                          <div class="col-md-12">
+                            <div class="row">
+                              <div class="col-md-6">
                                 <div class="row text-right">
-                                  <div class="col-md-2">
-                                    <label class="p-2">Specialty</label>
-                                  </div>
                                   <div class="col-md-4">
+                                    <label class="p-2">Lacation code</label>
+                                  </div>
+                                  <div class="col-md-8">
+                                    <select class="form-control"> </select>
+                                  </div>
+                                </div>
+                                <div class="row text-right">
+                                  <div class="col-md-4">
+                                    <label class="p-2">Doctor code</label>
+                                  </div>
+                                  <div class="col-md-8">
+                                    <select class="form-control"> </select>
+                                  </div>
+                                </div>
+                                <div class="row text-right">
+                                  <div class="col-md-4">
+                                    <label class="p-2">Pathologist</label>
+                                  </div>
+                                  <div class="col-md-8">
+                                    <select class="form-control"> </select>
+                                  </div>
+                                </div>
+                                <div class="row text-right">
+                                  <div class="col-md-4">
+                                    <label class="p-2">Screener</label>
+                                  </div>
+                                  <div class="col-md-8">
+                                    <select class="form-control"> </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div style="border:1px solid #000;" class="form-group p-2">
+                                  <div class="row">
+                                    <div class="col-md-12 text-left">
+                                      <label class="p-2">Creation date</label>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-6 text-right">
+                                      <label class="p-2">From:</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <select class="form-control"> </select>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-6 text-right">
+                                      <label class="p-2">To:</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <select class="form-control"> </select>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row pull-right">
+                                  <div class="col-md-2">
+                                    <button class="btn btn-secondary" type="button"> Search </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <hr> </div>
+                          <div class="row">
+                            <div class="col-md-3">
+                              <label class="p-2">Name&nbsp;อธรรม</label>
+                            </div>
+                            <div class="col-md-3">
+                              <label class="p-2">Last Name แสนดี</label>
+                            </div>
+                            <div class="col-md-3">
+                              <label class="p-2">Sex ชาย</label>
+                            </div>
+                            <div class="col-md-3">
+                              <label class="p-2">Birth Date&nbsp;10 พฤษภาคม 2540 (21 ปี 2 เดือน 8 วัน)</label>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="row collapse" id="search">
+                        <div class="col-md-12 p-2">
+                          <div class="row text-right">
+                            <div class="col-md-2">
+                              <label class="p-2">Specialty</label>
+                            </div>
+                            <div class="col-md-4">
+                              <select class="form-control"> </select>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6 text-right">
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <label class="p-2">Request number</label>
+                                </div>
+                                <div class="col-md-8">
+                                  <input class="form-control" type="text"> </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <label class="p-2">Name</label>
+                                </div>
+                                <div class="col-md-8">
+                                  <input class="form-control" type="text"> </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <label class="p-2">Lastname</label>
+                                </div>
+                                <div class="col-md-8">
+                                  <input class="form-control" type="text"> </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <label class="p-2">Maiden name</label>
+                                </div>
+                                <div class="col-md-8">
+                                  <input class="form-control" type="text"> </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <label class="p-2">Sex</label>
+                                </div>
+                                <div class="col-md-8">
+                                  <select class="form-control"> </select>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <label class="p-2">City</label>
+                                </div>
+                                <div class="col-md-8">
+                                  <input class="form-control" type="text"> </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <label class="p-2">PostCode</label>
+                                </div>
+                                <div class="col-md-8">
+                                  <input class="form-control" type="text"> </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 text-right">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <label class="p-2">Pat. number</label>
+                                </div>
+                                <div class="col-md-6">
+                                  <input class="form-control" type="text"> </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <label class="p-2">Hos. number</label>
+                                </div>
+                                <div class="col-md-6">
+                                  <input class="form-control" type="text"> </div>
+                              </div>
+                              <div style="border:1px solid #000;" class="p-2">
+                                <div class="row">
+                                  <div class="col-md-12 text-left">
+                                    <label class="p-2">Age</label>
+                                  </div>
+                                </div>
+                                <div class="row text-left">
+                                  <div class="col-md-3">
+                                    <label class="p-2">
+                                      <input type="radio" aria-label="Radio button for following text input" value="on"> Birthdate</label>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <label class="p-2">
+                                      <input type="radio" aria-label="Radio button for following text input" value="on"> Year</label>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <label class="p-2">
+                                      <input type="radio" aria-label="Radio button for following text input" value="on"> Month</label>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <label class="p-2">
+                                      <input type="radio" aria-label="Radio button for following text input" value="on"> Day</label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <label class="p-2">Minimum value</label>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <input class="form-control" type="text"> </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <label class="p-2">Maximum value</label>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <input class="form-control" type="text"> </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="row text-right">
+                                <div class="col-md-4">
+                                  <label class="p-2">Lacation code</label>
+                                </div>
+                                <div class="col-md-8">
+                                  <select class="form-control"> </select>
+                                </div>
+                              </div>
+                              <div class="row text-right">
+                                <div class="col-md-4">
+                                  <label class="p-2">Doctor code</label>
+                                </div>
+                                <div class="col-md-8">
+                                  <select class="form-control"> </select>
+                                </div>
+                              </div>
+                              <div class="row text-right">
+                                <div class="col-md-4">
+                                  <label class="p-2">Pathologist</label>
+                                </div>
+                                <div class="col-md-8">
+                                  <select class="form-control"> </select>
+                                </div>
+                              </div>
+                              <div class="row text-right">
+                                <div class="col-md-4">
+                                  <label class="p-2">Screener</label>
+                                </div>
+                                <div class="col-md-8">
+                                  <select class="form-control"> </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div style="border:1px solid #000;" class="form-group p-2">
+                                <div class="row">
+                                  <div class="col-md-12 text-left">
+                                    <label class="p-2">Creation date</label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-6 text-right">
+                                    <label class="p-2">From:</label>
+                                  </div>
+                                  <div class="col-md-6">
                                     <select class="form-control"> </select>
                                   </div>
                                 </div>
                                 <div class="row">
                                   <div class="col-md-6 text-right">
-                                    <div class="row">
-                                      <div class="col-md-4">
-                                        <label class="p-2">Request number</label>
-                                      </div>
-                                      <div class="col-md-8">
-                                        <input class="form-control" type="text"> </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-4">
-                                        <label class="p-2">Name</label>
-                                      </div>
-                                      <div class="col-md-8">
-                                        <input class="form-control" type="text"> </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-4">
-                                        <label class="p-2">Lastname</label>
-                                      </div>
-                                      <div class="col-md-8">
-                                        <input class="form-control" type="text"> </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-4">
-                                        <label class="p-2">Maiden name</label>
-                                      </div>
-                                      <div class="col-md-8">
-                                        <input class="form-control" type="text"> </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-4">
-                                        <label class="p-2">Sex</label>
-                                      </div>
-                                      <div class="col-md-8">
-                                        <select class="form-control"> </select>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-4">
-                                        <label class="p-2">City</label>
-                                      </div>
-                                      <div class="col-md-8">
-                                        <input class="form-control" type="text"> </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-4">
-                                        <label class="p-2">PostCode</label>
-                                      </div>
-                                      <div class="col-md-8">
-                                        <input class="form-control" type="text">
-                                      </div>
-                                    </div>
+                                    <label class="p-2">To:</label>
                                   </div>
-                                  <div class="col-md-6 text-right">
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                        <label class="p-2">Pat. number</label>
-                                      </div>
-                                      <div class="col-md-6">
-                                        <input class="form-control" type="text"> </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col-md-6">
-                                        <label class="p-2">Hos. number</label>
-                                      </div>
-                                      <div class="col-md-6">
-                                        <input class="form-control" type="text"> </div>
-                                    </div>
-                                    <div style="border:1px solid #000;" class="p-2">
-                                      <div class="row">
-                                        <div class="col-md-12 text-left">
-                                          <label class="p-2">Age</label>
-                                        </div>
-                                      </div>
-                                      <div class="row text-left">
-                                        <div class="col-md-3">
-                                          <label class="p-2">
-                                            <input type="radio" aria-label="Radio button for following text input" value="on"> Birthdate</label>
-                                        </div>
-                                        <div class="col-md-3">
-                                          <label class="p-2">
-                                            <input type="radio" aria-label="Radio button for following text input" value="on"> Year</label>
-                                        </div>
-                                        <div class="col-md-3">
-                                          <label class="p-2">
-                                            <input type="radio" aria-label="Radio button for following text input" value="on"> Month</label>
-                                        </div>
-                                        <div class="col-md-3">
-                                          <label class="p-2">
-                                            <input type="radio" aria-label="Radio button for following text input" value="on"> Day</label>
-                                        </div>
-                                      </div>
-                                      <div class="row">
-                                        <div class="col-md-6">
-                                          <label class="p-2">Minimum value</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                          <input class="form-control" type="text"> </div>
-                                      </div>
-                                      <div class="row">
-                                        <div class="col-md-6">
-                                          <label class="p-2">Maximum value</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                          <input class="form-control" type="text"> </div>
-                                      </div>
-                                    </div>
+                                  <div class="col-md-6">
+                                    <select class="form-control"> </select>
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="row text-right">
-                                          <div class="col-md-4">
-                                            <label class="p-2">Lacation code</label>
-                                          </div>
-                                          <div class="col-md-8">
-                                            <select class="form-control"> </select>
-                                          </div>
-                                        </div>
-                                        <div class="row text-right">
-                                          <div class="col-md-4">
-                                            <label class="p-2">Doctor code</label>
-                                          </div>
-                                          <div class="col-md-8">
-                                            <select class="form-control"> </select>
-                                          </div>
-                                        </div>
-                                        <div class="row text-right">
-                                          <div class="col-md-4">
-                                            <label class="p-2">Pathologist</label>
-                                          </div>
-                                          <div class="col-md-8">
-                                            <select class="form-control"> </select>
-                                          </div>
-                                        </div>
-                                        <div class="row text-right">
-                                          <div class="col-md-4">
-                                            <label class="p-2">Screener</label>
-                                          </div>
-                                          <div class="col-md-8">
-                                            <select class="form-control"> </select>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="col-md-6">
-                                        <div style="border:1px solid #000;" class="form-group p-2">
-                                          <div class="row">
-                                            <div class="col-md-12 text-left">
-                                              <label class="p-2">Creation date</label>
-                                            </div>
-                                          </div>
-                                          <div class="row">
-                                            <div class="col-md-6 text-right">
-                                              <label class="p-2">From:</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                              <select class="form-control"> </select>
-                                            </div>
-                                          </div>
-                                          <div class="row">
-                                            <div class="col-md-6 text-right">
-                                              <label class="p-2">To:</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                              <select class="form-control"> </select>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="row pull-right">
-                                          <div class="col-md-2">
-                                            <button class="btn btn-secondary" type="button"> Search </button>
-                                          </div>
-                                        </div>
-                                      </div>
+                              <div class="row pull-right">
+                                <div class="col-md-2">
+                                  <button class="btn btn-secondary" type="button"> Search </button>
                                 </div>
-      
-                              </div>
-                              <hr>
-                            </div> 
-      
-                            <div class="row">
-                              <div class="col-md-2">
-                                <label class="p-2">Name</label>
-                              </div>
-                              <div class="col-md-3">
-                                <label class="p-2">อธรรม</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-2">
-                                <label class="p-2">Last Name</label>
-                              </div>
-                              <div class="col-md-3">
-                                <label class="p-2">แสนดี</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-2">
-                                <label class="p-2">Sex</label>
-                              </div>
-                              <div class="col-md-3">
-                                <label class="p-2">ชาย</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-2">
-                                <label class="p-2">Birth Date</label>
-                              </div>
-                              <div class="col-md-3">
-                                <label class="p-2">10 พฤษภาคม 2540 (21 ปี 2 เดือน 8 วัน)</label>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                        <hr> </div>
                     </div>
+                  </div>
+                </div>
                 <div class="row">
                   <div class="col-md-12">
                     <div class="card">
@@ -560,33 +732,33 @@
                                     </select>
                                   </div>
                                 </div>
-
                                 <div class="row">
-                                    <div class="col-md-12">
-                                      <div class="material-datatables">
-                                        <div id="datatables_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
-                                          <div class="row">
-                                            <div class="col-sm-12 col-md-6">
-                                              <div class="dataTables_length" id="datatables_length">
-                                                <label>Show
-                                                  <select name="datatables_length" aria-controls="datatables" class="form-control input-sm">
-                                                    <option value="10">10</option>
-                                                    <option value="25">25</option>
-                                                    <option value="50">50</option>
-                                                    <option value="-1">All</option>
-                                                  </select> entries</label>
-                                              </div>
-                                            </div>
-                                            <div class="col-sm-12 col-md-6">
-                                              <div id="datatables_filter" class="dataTables_filter">
-                                                <label>
-                                                  <input type="search" class="form-control input-sm" placeholder="Search records" aria-controls="datatables"> </label>
-                                              </div>
+                                  <div class="col-md-12">
+                                    <div class="material-datatables">
+                                      <div id="datatables_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
+                                        <div class="row">
+                                          <div class="col-sm-12 col-md-6">
+                                            <div class="dataTables_length" id="datatables_length">
+                                              <label>Show
+                                                <select name="datatables_length" aria-controls="datatables" class="form-control input-sm">
+                                                  <option value="10">10</option>
+                                                  <option value="25">25</option>
+                                                  <option value="50">50</option>
+                                                  <option value="-1">All</option>
+                                                </select> entries</label>
                                             </div>
                                           </div>
-                                          <div class="row table-responsive">
-                                            <div class="col-sm-12">
-                                              <table id="datatables" class="table table-sm table-striped table-no-bordered table-hover" style="width: 100%;" role="grid" aria-describedby="datatables_info">
+                                          <div class="col-sm-12 col-md-6">
+                                            <div id="datatables_filter" class="dataTables_filter">
+                                              <label>
+                                                <input type="search" class="form-control input-sm" placeholder="Search records" aria-controls="datatables"> </label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row table-responsive">
+                                          <div class="col-sm-12">
+                                            <table id="datatables" class="table table-sm table-striped table-no-bordered table-hover" style="width: 100%;" role="grid" aria-describedby="datatables_info">
+                                              <colgroup>
                                                 <col width="5%">
                                                 <col width="12%">
                                                 <col width="10%">
@@ -595,175 +767,233 @@
                                                 <col width="10%">
                                                 <col width="10%">
                                                 <col width="10%">
-                                                <col width="10%">
-                                                <thead>
-                                                  <tr role="row">
-                                                    <th class="sorting_asc" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" aria-sort="ascending">
-                                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on">No</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">Request Number</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">SID</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">Test code</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">Test name</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">result1</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending">result2</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending">result3</th>
-                                                    <th class="disabled-sorting text-right sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 147px;">Actions</th>
-                                                  </tr>
-                                                </thead>
-                                                <tbody> </tbody>
-                                                <tbody>
-                                                    <tr role="row" class="odd">
-                                                        <td class="sorting_1">
-                                                          <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;&nbsp;1</td>
-                                                        <td>RN00001</td>
-                                                        <td><input type="text" class="form-control input-sm"></td>
-                                                        <td><input type="text" class="form-control input-sm"></td>
-                                                        <td><input type="text" class="form-control input-sm"></td>
-                                                        
-                                                        <td><input type="text" class="form-control input-sm"></td>
-                                                        <td><input type="text" class="form-control input-sm"></td>
-                                                        <td><input type="text" class="form-control input-sm"></td>
-                                                        <td class="text-center">
-                                                          <button class="btn btn-warning btn-xs">
-                                                            <i class="fa fa-edit"></i>
-                                                          </button>
-                                                          <button class="btn btn-danger btn-xs">
-                                                            <i class="fa fa-trash"></i>
-                                                          </button>
-                                                        </td>
-                                                      </tr>
-                                                  <tr role="row" class="even">
-                                                    <td class="sorting_1">
-                                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;&nbsp;2</td>
-                                                    <td>RN00001</td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td class="text-center">
-                                                      <button class="btn btn-warning btn-xs">
-                                                        <i class="fa fa-edit"></i>
-                                                      </button>
-                                                      <button class="btn btn-danger btn-xs">
-                                                        <i class="fa fa-trash"></i>
-                                                      </button>
-                                                    </td>
-                                                  </tr>
-                                                  <tr role="row" class="odd">
-                                                    <td class="sorting_1">
-                                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;&nbsp;3</td>
-                                                    <td>RN00001</td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td class="text-center">
-                                                      <button class="btn btn-warning btn-xs">
-                                                        <i class="fa fa-edit"></i>
-                                                      </button>
-                                                      <button class="btn btn-danger btn-xs">
-                                                        <i class="fa fa-trash"></i>
-                                                      </button>
-                                                    </td>
-                                                  </tr>
-                                                  <tr role="row" class="even">
-                                                    <td class="sorting_1">
-                                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;&nbsp;4</td>
-                                                    <td>RN00001</td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td class="text-center">
-                                                      <button class="btn btn-warning btn-xs">
-                                                        <i class="fa fa-edit"></i>
-                                                      </button>
-                                                      <button class="btn btn-danger btn-xs">
-                                                        <i class="fa fa-trash"></i>
-                                                      </button>
-                                                    </td>
-                                                  </tr>
-                                                  <tr role="row" class="odd">
-                                                    <td class="sorting_1">
-                                                      <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;&nbsp;5</td>
-                                                    <td>RN00001</td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td><input type="text" class="form-control input-sm"></td>
-                                                    <td class="text-center">
-                                                      <button class="btn btn-warning btn-xs">
-                                                        <i class="fa fa-edit"></i>
-                                                      </button>
-                                                      <button class="btn btn-danger btn-xs">
-                                                        <i class="fa fa-trash"></i>
-                                                      </button>
-                                                    </td>
-                                                  </tr>
-                                                </tbody>
-                                              </table>
+                                                <col width="10%"> </colgroup>
+                                              <thead>
+                                                <tr role="row">
+                                                  <th class="sorting_asc" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" aria-sort="ascending">
+                                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on">No</th>
+                                                  <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">Request Number</th>
+                                                  <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">SID</th>
+                                                  <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">Test code</th>
+                                                  <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">Test name</th>
+                                                  <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">result1</th>
+                                                  <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending">result2</th>
+                                                  <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending">result3</th>
+                                                  <th class="disabled-sorting text-right sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 147px;">Actions</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody> </tbody>
+                                              <tbody>
+                                                <tr role="row" class="odd">
+                                                  <td class="sorting_1">
+                                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;&nbsp;1</td>
+                                                  <td>RN00001</td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td class="text-center">
+                                                    <button class="btn btn-warning btn-xs">
+                                                      <i class="fa fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger btn-xs">
+                                                      <i class="fa fa-trash"></i>
+                                                    </button>
+                                                  </td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                  <td class="sorting_1">
+                                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;&nbsp;2</td>
+                                                  <td>RN00001</td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td class="text-center">
+                                                    <button class="btn btn-warning btn-xs">
+                                                      <i class="fa fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger btn-xs">
+                                                      <i class="fa fa-trash"></i>
+                                                    </button>
+                                                  </td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                  <td class="sorting_1">
+                                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;&nbsp;3</td>
+                                                  <td>RN00001</td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td class="text-center">
+                                                    <button class="btn btn-warning btn-xs">
+                                                      <i class="fa fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger btn-xs">
+                                                      <i class="fa fa-trash"></i>
+                                                    </button>
+                                                  </td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                  <td class="sorting_1">
+                                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;&nbsp;4</td>
+                                                  <td>RN00001</td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td class="text-center">
+                                                    <button class="btn btn-warning btn-xs">
+                                                      <i class="fa fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger btn-xs">
+                                                      <i class="fa fa-trash"></i>
+                                                    </button>
+                                                  </td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                  <td class="sorting_1">
+                                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on">&nbsp;&nbsp;5</td>
+                                                  <td>RN00001</td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td>
+                                                    <input type="text" class="form-control input-sm">
+                                                  </td>
+                                                  <td class="text-center">
+                                                    <button class="btn btn-warning btn-xs">
+                                                      <i class="fa fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-danger btn-xs">
+                                                      <i class="fa fa-trash"></i>
+                                                    </button>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <div class="row form-group">
+                                          <div class="col-sm-12 col-md-5">
+                                            <div class="dataTables_info" id="datatables_info" role="status" aria-live="polite">Showing 1 to 10 of 40 entries</div>
+                                          </div>
+                                          <div class="col-sm-12 col-md-7">
+                                            <div class="dataTables_paginate paging_full_numbers" id="datatables_paginate">
+                                              <ul class="pagination">
+                                                <li class="paginate_button page-item first disabled" id="datatables_first">
+                                                  <a href="#" aria-controls="datatables" data-dt-idx="0" tabindex="0" class="page-link">First</a>
+                                                </li>
+                                                <li class="paginate_button page-item previous disabled" id="datatables_previous">
+                                                  <a href="#" aria-controls="datatables" data-dt-idx="1" tabindex="0" class="page-link">Previous</a>
+                                                </li>
+                                                <li class="paginate_button page-item active">
+                                                  <a href="#" aria-controls="datatables" data-dt-idx="2" tabindex="0" class="page-link">1</a>
+                                                </li>
+                                                <li class="paginate_button page-item ">
+                                                  <a href="#" aria-controls="datatables" data-dt-idx="3" tabindex="0" class="page-link">2</a>
+                                                </li>
+                                                <li class="paginate_button page-item ">
+                                                  <a href="#" aria-controls="datatables" data-dt-idx="4" tabindex="0" class="page-link">3</a>
+                                                </li>
+                                                <li class="paginate_button page-item ">
+                                                  <a href="#" aria-controls="datatables" data-dt-idx="5" tabindex="0" class="page-link">4</a>
+                                                </li>
+                                                <li class="paginate_button page-item next" id="datatables_next">
+                                                  <a href="#" aria-controls="datatables" data-dt-idx="6" tabindex="0" class="page-link">Next</a>
+                                                </li>
+                                                <li class="paginate_button page-item last" id="datatables_last">
+                                                  <a href="#" aria-controls="datatables" data-dt-idx="7" tabindex="0" class="page-link">Last</a>
+                                                </li>
+                                              </ul>
                                             </div>
                                           </div>
-                                          <div class="row form-group">
-                                            <div class="col-sm-12 col-md-5">
-                                              <div class="dataTables_info" id="datatables_info" role="status" aria-live="polite">Showing 1 to 10 of 40 entries</div>
-                                            </div>
-                                            <div class="col-sm-12 col-md-7">
-                                              <div class="dataTables_paginate paging_full_numbers" id="datatables_paginate">
-                                                <ul class="pagination">
-                                                  <li class="paginate_button page-item first disabled" id="datatables_first">
-                                                    <a href="#" aria-controls="datatables" data-dt-idx="0" tabindex="0" class="page-link">First</a>
-                                                  </li>
-                                                  <li class="paginate_button page-item previous disabled" id="datatables_previous">
-                                                    <a href="#" aria-controls="datatables" data-dt-idx="1" tabindex="0" class="page-link">Previous</a>
-                                                  </li>
-                                                  <li class="paginate_button page-item active">
-                                                    <a href="#" aria-controls="datatables" data-dt-idx="2" tabindex="0" class="page-link">1</a>
-                                                  </li>
-                                                  <li class="paginate_button page-item ">
-                                                    <a href="#" aria-controls="datatables" data-dt-idx="3" tabindex="0" class="page-link">2</a>
-                                                  </li>
-                                                  <li class="paginate_button page-item ">
-                                                    <a href="#" aria-controls="datatables" data-dt-idx="4" tabindex="0" class="page-link">3</a>
-                                                  </li>
-                                                  <li class="paginate_button page-item ">
-                                                    <a href="#" aria-controls="datatables" data-dt-idx="5" tabindex="0" class="page-link">4</a>
-                                                  </li>
-                                                  <li class="paginate_button page-item next" id="datatables_next">
-                                                    <a href="#" aria-controls="datatables" data-dt-idx="6" tabindex="0" class="page-link">Next</a>
-                                                  </li>
-                                                  <li class="paginate_button page-item last" id="datatables_last">
-                                                    <a href="#" aria-controls="datatables" data-dt-idx="7" tabindex="0" class="page-link">Last</a>
-                                                  </li>
-                                                </ul>
-                                              </div>
-                                            </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-6"> </div>
+                                          <div class="col-md-2">
+                                            <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal"> Add </button>
                                           </div>
-                                          <div class="row">
-                                            <div class="col-md-6"> </div>
-                                            <div class="col-md-2">
-                                              <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal"> Add </button>
-                                            </div>
-                                            <div class="col-md-2">
-                                              <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal"> Eidt</button>
-                                            </div>
-                                            <div class="col-md-2">
-                                              <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal"> Delete</button>
-                                            </div>
+                                          <div class="col-md-2">
+                                            <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal"> Eidt</button>
+                                          </div>
+                                          <div class="col-md-2">
+                                            <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal"> Delete</button>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-
+                                </div>
                                 <div class="row">
                                   <div class="col-md-11"> </div>
                                   <div class="col-md-1">
@@ -837,7 +1067,7 @@
   <script src="../../assets/vendors/jquery.tagsinput.js"></script>
   <!-- Material Dashboard javascript methods -->
   <script src="../../assets/js/inspire.js"></script>
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;&nbsp;&nbsp;
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
     <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
   </pingendo>
   <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
