@@ -251,7 +251,7 @@
                             </div>
                             <div class="row">
                               <div class="col-md-5">
-                                <label class="p-2">Lastname : </label>
+                                <label class="p-2">Last name : </label>
                               </div>
                               <div class="col-md-6">
                                 <label class="p-2">Lastname</label>
@@ -336,8 +336,12 @@
                               <div class="col-md-6">
                                 <input type="text" class="form-control"> </div>
                             </div>
+                            <div class="row">
+                              <div class="col-md-6"><label class="p-2">Hospital number</label></div>
+                              <div class="col-md-6"><input type="text" class="form-control"></div>
+                            </div>
                           </div>
-                          <div class="col-md-4">
+                          <!-- <div class="col-md-4">
                             <div class="row">
                               <div class="col-md-6"><label class="p-2">Hospital number</label></div>
                               <div class="col-md-6"><input type="text" class="form-control"></div>
@@ -345,7 +349,7 @@
                             <div class="row">
                               <div class="col-md-12"></div>
                             </div>
-                          </div>
+                          </div> -->
                         </div>
                         <div class="row">
                           <div class="col-md-4">
@@ -353,11 +357,14 @@
                               <div class="col-md-6" style="">
                                 <label class="p-2">Request date&amp;time</label>
                               </div>
-                              <div class="col-md-4" style="">
-                                <input type="date" class="form-control"> </div>
-                              <div class="col-md-2" style="">
-                                <input type="time" class="form-control">
+                              <div class="col-md-6" style="">
+                                <input class="form-control" type="datetime-local" id="party-time"
+                                name="party-time" value="2018-06-12T19:30"
+                                min="2018-06-07T00:00" max="2018-06-14T00:00" />
                               </div>
+                              <!-- <div class="col-md-2" style="">
+                                <input type="time" class="form-control">
+                              </div> -->
                             </div>
                           </div>
                           <div class="col-md-4">
@@ -378,11 +385,11 @@
                           <div class="col-md-4">
                             <div class="row">
                               <div class="col-md-6">
-                                <label class="p-2">Attending doctor</label>
+                                <label class="p-2">Attending Doctor</label>
                               </div>
                               <div class="col-md-6">
                                 <select class="form-control">
-                                  <option value="MR">-- Attending doctor --</option>
+                                  <option value="MR">-- Attending Doctor --</option>
                                 </select>
                               </div>
                             </div>
@@ -394,21 +401,27 @@
                               <div class="col-md-6" style="">
                                 <label class="p-2">Collection date&amp;time</label>
                               </div>
-                              <div class="col-md-4" style="">
-                                <input type="date" class="form-control"> </div>
-                              <div class="col-md-2" style="">
-                                <input type="time" class="form-control">
+                              <div class="col-md-6" style="">
+                                <input class="form-control" type="datetime-local" id="party-time"
+                                name="party-time" value="2018-06-12T19:30"
+                                min="2018-06-07T00:00" max="2018-06-14T00:00" />
                               </div>
+                              <!-- <div class="col-md-2" style="">
+                                <input type="time" class="form-control">
+                              </div> -->
                             </div>
                             <div class="row">
                               <div class="col-md-6">
                                 <label class="p-2">Reception date&amp;time</label>
                               </div>
-                              <div class="col-md-4">
-                                <input type="date" class="form-control"> </div>
-                              <div class="col-md-2">
-                                <input type="time" class="form-control">
+                              <div class="col-md-6" style="">
+                                <input class="form-control" type="datetime-local" id="party-time"
+                                name="party-time" value="2018-06-12T19:30"
+                                min="2018-06-07T00:00" max="2018-06-14T00:00" />
                               </div>
+                              <!-- <div class="col-md-2">
+                                <input type="time" class="form-control">
+                              </div> -->
                             </div>
                             <div class="row">
                               <div class="col-md-6">
@@ -428,7 +441,7 @@
                               </div>
                               <div class="col-md-6">
                                 <select class="form-control">
-                                  <option value="MR">DEFDOC</option>
+                                  <option value="MR">--Location--</option>
                                 </select>
                               </div>
                             </div>
@@ -691,7 +704,7 @@
                                     <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal"> Add </button>
                                   </div>
                                   <div class="col-md-2">
-                                    <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal"> Eidt</button>
+                                    <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal"> Update</button>
                                   </div>
                                   <div class="col-md-2">
                                     <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal"> Delete</button>
@@ -703,12 +716,37 @@
                         </div>
                       </div>
                     </div>
+
+                    <div class="card">
+                        <div class="card-body p-2">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <label class="p-2">Order comment : </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-8">
+                              <textarea id="textarea" rows="2" class="form-control"></textarea>
+                            </div>
+                            <div class="col-md-2">
+                              <button class="btn btn-outline-secondary form-control" type="button">OK</button>
+                            </div>
+                            <div class="col-md-2">
+                              <button class="btn btn-outline-secondary form-control" type="button">Cancel</button>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12"> </div>
+                          </div>
+                        </div>
+                      </div>
+
                     <div class="card">
                       <div class="card-body p-2">
                         <div class="row">
                           <div class="col-md-2">
                             <input type="checkbox" aria-label="Checkbox for following text input" value="on">
-                            <label class="p-2">Paraphin blocks</label>
+                            <label class="p-2">Paraffin block</label>
                           </div>
                           <div class="col-md-4">
                             <input type="text" class="form-control"> </div>
@@ -736,7 +774,7 @@
                             <input type="checkbox" aria-label="Checkbox for following text input" value="on">
                             <label class="p-2">ใช้เนื้อเดิม</label>
                           </div>
-                          <div class="col-md-1 text-right">
+                          <div class="col-md-3 text-right">
                             <label class="">Specimen number</label>
                           </div>
                           <div class="col-md-3">
@@ -745,20 +783,20 @@
                         </div>
                         <div class="row">
                           <div class="col-md-2"></div>
-                          <div class="col-md-1 text-right">
+                          <div class="col-md-3 text-right">
                             <label class="">Block</label>
                           </div>
                           <div class="col-md-3">
                             <input type="text" class="form-control"> </div>
                         </div>
-                        <div class="row">
+                        <!-- <div class="row">
                           <div class="col-md-12">
                             <div class="col-md-12">
                               <label class="p-2">Order comment</label>
                             </div>
                             <input type="text" class="form-control">
                           </div>
-                        </div>
+                        </div> -->
                       </div>
                     </div>
                     <div class="card">
@@ -766,19 +804,19 @@
                         <div class="row">
                           <div class="col-md-3">
                             <input type="checkbox" aria-label="Checkbox for following text input" value="on">
-                            <label class="p-2">Print Sammary Order</label>
+                            <label class="p-2">Print Summary Order</label>
                           </div>
                           <div class="col-md-3">
                             <input type="checkbox" aria-label="Checkbox for following text input" value="on">
-                            <label class="p-2">Print speciment label</label>
+                            <label class="p-2">Print Specimen Label</label>
                           </div>
                           <div class="col-md-3">
                             <input type="checkbox" aria-label="Checkbox for following text input" value="on">
-                            <label class="p-2">Print billing form</label>
+                            <label class="p-2">Print Billing Form</label>
                           </div>
                           <div class="col-md-1"> </div>
                           <div class="col-md-2">
-                            <button class="btn btn-outline-secondary form-control" type="button"> Save </button>
+                            <!-- <button class="btn btn-outline-secondary form-control" type="button"> Save </button> -->
                           </div>
                         </div>
                       </div>
