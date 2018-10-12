@@ -292,7 +292,7 @@
                     <div class="card">
                       <div class="card-body p-2">
                         <div class="row">
-                          <div class="col-md-6">
+                          <div class="col-md-4">
                             <div class="row">
                               <div class="col-md-3">
                                 <label class="p-2">Specialty</label>
@@ -313,6 +313,38 @@
                                 </select>
                               </div>
                             </div>
+                            <div class="row"></div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label class="p-2">Request number</label>
+                              </div>
+                              <div class="col-md-9">
+                                <input type="text" class="form-control"> </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label class="p-2">Hospital number</label>
+                              </div>
+                              <div class="col-md-9">
+                                <input type="text" class="form-control"> </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="row">
+                              <div class="col-md-12"></div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12"></div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
                             <div class="row">
                               <div class="col-md-3">
                                 <label class="p-2">Request date&amp;time</label>
@@ -323,6 +355,39 @@
                                 <input type="time" class="form-control">
                               </div>
                             </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label class="p-2">Doctor</label>
+                              </div>
+                              <div class="col-md-6">
+                                <select class="form-control">
+                                  <option value="MR">DEFDOC</option>
+                                </select>
+                              </div>
+                              <div class="col-md-3">
+                                <button class="btn btn-outline-secondary form-control" type="button">
+                                  <i class="ti-plus"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <label class="p-2">Attending doctor</label>
+                              </div>
+                              <div class="col-md-6">
+                                <select class="form-control">
+                                  <option value="MR">-- Attending doctor --</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
                             <div class="row">
                               <div class="col-md-3">
                                 <label class="p-2">Collection date&amp;time</label>
@@ -344,46 +409,17 @@
                               </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-3">
-                                  <label class="p-2">Patient type</label>
-                                </div>
-                                <div class="col-md-9">
-                                  <select class="form-control">
-                                    <option>-- type --</option>
-                                  </select>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="row">
                               <div class="col-md-3">
-                                <label class="p-2">Request number</label>
+                                <label class="p-2">Patient type</label>
                               </div>
                               <div class="col-md-9">
-                                <input type="text" class="form-control"> </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-3">
-                                <label class="p-2">Hospital number</label>
-                              </div>
-                              <div class="col-md-9">
-                                <input type="text" class="form-control"> </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-3">
-                                <label class="p-2">Doctor</label>
-                              </div>
-                              <div class="col-md-6">
                                 <select class="form-control">
-                                  <option value="MR">DEFDOC</option>
+                                  <option>-- type --</option>
                                 </select>
                               </div>
-                              <div class="col-md-3">
-                                <button class="btn btn-outline-secondary form-control" type="button">
-                                  <i class="ti-plus"></i>
-                                </button>
-                              </div>
                             </div>
+                          </div>
+                          <div class="col-md-4">
                             <div class="row">
                               <div class="col-md-3">
                                 <label class="p-2">Location</label>
@@ -413,6 +449,24 @@
                                   <option>-- status --</option>
                                 </select>
                               </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <label class="p-2">Destination</label>
+                                  </div>
+                                  <div class="col-md-6"><input type="text" class="form-control"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12"></div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12"></div>
                             </div>
                           </div>
                         </div>
@@ -488,7 +542,8 @@
                                           <td>S18-00008-1</td>
                                           <td>Fname Lname</td>
                                           <td></td>
-                                          <td></td> <td></td>
+                                          <td></td>
+                                          <td></td>
                                           <td></td>
                                           <td class="text-center">
                                             <button class="btn btn-warning btn-xs">
@@ -506,7 +561,8 @@
                                           <td>S18-00008-1</td>
                                           <td>Fname Lname</td>
                                           <td></td>
-                                          <td></td> <td></td>
+                                          <td></td>
+                                          <td></td>
                                           <td></td>
                                           <td class="text-center">
                                             <button class="btn btn-warning btn-xs">
@@ -524,7 +580,8 @@
                                           <td>S18-00008-1</td>
                                           <td>Fname Lname</td>
                                           <td></td>
-                                          <td></td> <td></td>
+                                          <td></td>
+                                          <td></td>
                                           <td></td>
                                           <td class="text-center">
                                             <button class="btn btn-warning btn-xs">
@@ -542,7 +599,8 @@
                                           <td>S18-00008-1</td>
                                           <td>Fname Lname</td>
                                           <td></td>
-                                          <td></td> <td></td>
+                                          <td></td>
+                                          <td></td>
                                           <td></td>
                                           <td class="text-center">
                                             <button class="btn btn-warning btn-xs">
@@ -560,7 +618,8 @@
                                           <td>S18-00008-1</td>
                                           <td>Fname Lname</td>
                                           <td></td>
-                                          <td></td> <td></td>
+                                          <td></td>
+                                          <td></td>
                                           <td></td>
                                           <td class="text-center">
                                             <button class="btn btn-warning btn-xs">
@@ -574,16 +633,16 @@
                                       </tbody>
                                       <tfoot>
                                         <tr>
-                                            <th class="sorting_asc" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" aria-sort="ascending">
-                                                <input type="checkbox" aria-label="Checkbox for following text input" value="on"> No</th>
-                                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">Specimen number</th>
-                                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">Test code</th>
-                                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">Test name</th>
-                                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">Organ</th>
-                                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">Specimen type</th>
-                                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">Specimen site</th>
-                                              <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending">Price</th>
-                                              <th class="disabled-sorting text-right sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 147px;">Actions</th>
+                                          <th class="sorting_asc" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" aria-sort="ascending">
+                                            <input type="checkbox" aria-label="Checkbox for following text input" value="on"> No</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">Specimen number</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">Test code</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">Test name</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">Organ</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">Specimen type</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">Specimen site</th>
+                                          <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending">Price</th>
+                                          <th class="disabled-sorting text-right sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 147px;">Actions</th>
                                         </tr>
                                       </tfoot>
                                     </table>
@@ -679,7 +738,7 @@
                             <label class="">Specimen number</label>
                           </div>
                           <div class="col-md-3">
-                            <input type="text" class="form-control"> 
+                            <input type="text" class="form-control">
                           </div>
                         </div>
                         <div class="row">
@@ -782,7 +841,7 @@
   <script src="../../assets/vendors/jquery.tagsinput.js"></script>
   <!-- Material Dashboard javascript methods -->
   <script src="../../assets/js/inspire.js"></script>
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-site:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
   <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content ">
@@ -790,7 +849,8 @@
           <div class="row">
             <div class="col-md-4"> </div>
             <div class="col-md-4">
-              <input type="text" class="form-control" placeholder="Search"> </div>
+              <br>
+              <input type="text" class="form-control" placeholder="Search" style="90%"> </div>
           </div>
         </div>
         <div class="modal-body">
