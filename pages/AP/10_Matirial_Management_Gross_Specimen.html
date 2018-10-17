@@ -194,10 +194,10 @@
                       <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
                           <li class="nav-item">
-                            <a class="active nav-link" href="#" data-toggle="tab" data-target="#tabzero" aria-expanded="false">Storage</a>
+                            <a class="active nav-link" href="#" data-toggle="tab" data-target="#tabzero" aria-expanded="true">Storage</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="tab" data-target="#tabone" aria-expanded="false">Archive</a>
+                            <a class="nav-link" href="#" data-toggle="tab" data-target="#tabone" aria-expanded="true">Archive</a>
                           </li>
                           <li class="nav-item" style="">
                             <a class="nav-link" href="#" data-toggle="tab" data-target="#tabtwo" aria-expanded="true"><span style="font-size: 14px;">Transfer</span></a>
@@ -210,7 +210,7 @@
                       <div class="card-body p-2">
                         <div class="tab-content mt-2">
                           <!-- Start Tab 0 -->
-                          <div class="tab-pane fade show" id="tabzero" role="tabpanel" aria-expanded="true">
+                          <div class="tab-pane active" id="tabzero" role="tabpanel" aria-expanded="true">
                             <div class="card">
                               <div class="card-body p-2" style="">
                                 <div class="row">
@@ -401,6 +401,8 @@
                                                   <th selectaria-label="Date: activate to sort column ascending">Fridge</th>
                                                   <th selectaria-label="Date: activate to sort column ascending">Shelf</th>
                                                   <th class="disabled-sorting text-right sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending">Position</th>
+                                                  <th class="disabled-sorting text-right sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending">Source</th>
+                                                  <th class="disabled-sorting text-right sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" contenteditable="true">Pathologist</th>
                                                   <th class="disabled-sorting text-right sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending">Status</th>
                                                 </tr>
                                               </thead>
@@ -409,6 +411,8 @@
                                                   <td class="sorting_1">1</td>
                                                   <td>12/12/2018 (12:00)</td>
                                                   <td>1808000000 <i class="fa fa-comment"></i></td>
+                                                  <td class="text-center">value</td>
+                                                  <td class="text-center">value</td>
                                                   <td class="text-center">value</td>
                                                   <td class="text-center">value</td>
                                                   <td class="text-center">value</td>
@@ -423,12 +427,16 @@
                                                   <td class="text-center">value</td>
                                                   <td class="text-center">value</td>
                                                   <td class="text-center">value</td>
+                                                  <td class="text-center">value</td>
+                                                  <td class="text-center">value</td>
                                                   <td class="text-center text-success">Archive</td>
                                                 </tr>
                                                 <tr role="row" class="odd">
                                                   <td class="sorting_1">3</td>
                                                   <td>12/12/2018 (12:00)</td>
                                                   <td>1808000000</td>
+                                                  <td class="text-center">value</td>
+                                                  <td class="text-center">value</td>
                                                   <td class="text-center">value</td>
                                                   <td class="text-center">value</td>
                                                   <td class="text-center">value</td>
@@ -443,12 +451,16 @@
                                                   <td class="text-center">value</td>
                                                   <td class="text-center">value</td>
                                                   <td class="text-center">value</td>
+                                                  <td class="text-center">value</td>
+                                                  <td class="text-center">value</td>
                                                   <td class="text-center text-success">Archive</td>
                                                 </tr>
                                                 <tr role="row" class="odd">
                                                   <td class="sorting_1">5</td>
                                                   <td>12/12/2018 (12:00)</td>
                                                   <td>1808000000</td>
+                                                  <td class="text-center">value</td>
+                                                  <td class="text-center">value</td>
                                                   <td class="text-center">value</td>
                                                   <td class="text-center">value</td>
                                                   <td class="text-center">value</td>
@@ -507,42 +519,14 @@
                             <div class="card">
                               <div class="card-body p-2" style="">
                                 <div class="row">
-                                  <div class="form-inline col-md-8">
-                                    <div class="col-md-3">
-                                      <div class="">
-                                        <select class="form-control">
-                                          <option value="">---status-</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <div class="input-group">
-                                        <input type="text" class="form-control input-sm">
-                                        <span class="input-group-addon">
-                                          <span class="fa fa-calendar"></span>
-                                        </span>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <div class="input-group">
-                                        <input type="text" class="form-control input-sm">
-                                        <span class="input-group-addon">
-                                          <span class="fa fa-calendar"></span>
-                                        </span>
-                                      </div>
-                                    </div>
-                                    <div class="input-group mb-3 col-sm-2 col-md-3">
-                                      <a class="btn btn-primary">Search</a>
-                                    </div>
-                                  </div>
                                   <div class="input-group mb-3 col-sm-4" style="">
                                     <input type="text" class="input-sm form-control" value="1808000001">
                                     <div class="input-group-append">
-                                      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="true" aria-controls="collapseExample">
-                                        <i class="fa fa-barcode"></i> Archive </a>
+                                      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="true" aria-controls="collapseExample1">
+                                        <i class="fa fa-barcode"></i>&nbsp;Search</a>
                                     </div>
                                   </div>
-                                  <div class="col-md-12 collapse" id="collapseExample1" aria-expanded="false" style="">
+                                  <div class="col-md-12 collapse" id="collapseExample1" aria-expanded="true" style="">
                                     <!-- start patient history -->
                                     <hr>
                                     <div class="row">
@@ -796,6 +780,24 @@
                                           <th class="text-center">Position</th>
                                           <th class="text-center">Comment</th>
                                         </tr>
+                                        <tr>
+                                          <th></th>
+                                          <th></th>
+                                          <th class="text-center"></th>
+                                          <th class="text-center"><select name="" id="input" class="form-control input-sm">
+                                              <option value="">select</option>
+                                            </select></th>
+                                          <th class="text-center"><select name="" id="input" class="form-control input-sm">
+                                              <option value="">select</option>
+                                            </select></th>
+                                          <th class="text-center"><select name="" id="input" class="form-control input-sm">
+                                              <option value="">select</option>
+                                            </select></th>
+                                          <th class="text-center"><select name="" id="input" class="form-control input-sm">
+                                              <option value="">select</option>
+                                            </select></th>
+                                          <th class="text-center"></th>
+                                        </tr>
                                       </thead>
                                       <tbody>
                                         <tr>
@@ -877,26 +879,6 @@
                                           </td>
                                         </tr>
                                       </tbody>
-                                      <tfoot>
-                                        <tr>
-                                          <th></th>
-                                          <th>No</th>
-                                          <th class="text-center">Specimen number</th>
-                                          <th class="text-center"><select name="" id="input" class="form-control input-sm">
-                                              <option value="">select</option>
-                                            </select></th>
-                                          <th class="text-center"><select name="" id="input" class="form-control input-sm">
-                                              <option value="">select</option>
-                                            </select></th>
-                                          <th class="text-center"><select name="" id="input" class="form-control input-sm">
-                                              <option value="">select</option>
-                                            </select></th>
-                                          <th class="text-center"><select name="" id="input" class="form-control input-sm">
-                                              <option value="">select</option>
-                                            </select></th>
-                                          <th class="text-center">Comment</th>
-                                        </tr>
-                                      </tfoot>
                                     </table>
                                     <div class="pull-right">
                                       <a class="btn btn-primary"> Archive </a>
@@ -904,53 +886,271 @@
                                     </div>
                                   </div>
                                 </div>
-                                <hr>
-                                <div class="row"></div>
                               </div>
                             </div>
                           </div>
                           <!-- End Tab 1 -->
                           <!-- Start Tab 2-->
-                          <div class="tab-pane fade active" id="tabtwo" role="tabpanel" aria-expanded="true">
+                          <div class="tab-pane fade" id="tabtwo" role="tabpanel" aria-expanded="true">
                             <div class="card">
                               <div class="row">
-                                <div class="form-inline col-md-8">
-                                  <div class="col-md-3">
-                                    <div class="input-group">
-                                      <select class="form-control input-sm">
-                                        <option value="-- status --">-- status --</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-3">
-                                    <div class="input-group">
-                                      <input type="text" class="form-control input-sm">
-                                      <span class="input-group-addon">
-                                        <span class="fa fa-calendar"></span>
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-3">
-                                    <div class="input-group">
-                                      <input type="text" class="form-control input-sm">
-                                      <span class="input-group-addon">
-                                        <span class="fa fa-calendar"></span>
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <div class="input-group mb-3 col-sm-2 col-md-3">
-                                    <a class="btn btn-primary">Search</a>
-                                  </div>
-                                </div>
                                 <div class="input-group mb-3 col-sm-4">
                                   <input type="text" class="input-sm form-control" value="1808000001">
                                   <div class="input-group-append">
                                     <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                      <i class="fa fa-barcode"></i>&nbsp;Transfer </a>
+                                      <i class="fa fa-barcode"></i>&nbsp;Search</a>
                                   </div>
                                 </div>
                                 <div class="collapse col-md-12" id="collapseExample2">
+                                  <!-- start patient history -->
+                                  <hr>
+                                  <div class="row">
+                                    <div class="col-md-4">
+                                      <div class="row">
+                                        <div class="col-md-6">
+                                          <label class="p-2">Patient number : </label>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <label class="p-2">PN000001</label>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-md-6">
+                                          <label class="p-2">Name :</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <label class="p-2">Name</label>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-md-6">
+                                          <label class="p-2">Last name : </label>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <label class="p-2">Lastname</label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                      <div class="row">
+                                        <div class="col-md-6">
+                                          <label class="p-2">Date of birth : </label>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <label class="p-2">10/10/2018 (29Y9M9D)</label>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-md-6">
+                                          <label class="p-2">Alternative patient num :</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <label class="p-2">YYY4567890123</label>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-md-6"><label class="p-2">Maiden name :&nbsp;</label></div>
+                                        <div class="col-md-6"><label class="p-2">name</label></div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                      <div class="row">
+                                        <div class="col-md-4">
+                                          <div class="col-md-12">
+                                            <label class="p-2">Sex :</label>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-8"><label class="p-2">Male</label></div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-md-12"></div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-md-12"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr>
+                                  <div class="">
+                                    <div class="row">
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <label class="p-2">Specialty</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label class="p-2">Specialty</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <label class="p-2">Priority</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label class="p-2">Routine</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <label class="p-2">Request number</label>
+                                          </div>
+                                          <div class="col-md-6"><label class="p-2">Request number</label></div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-6"><label class="p-2">Hospital number</label></div>
+                                          <div class="col-md-6"><label class="p-2">Hospital number</label></div>
+                                        </div>
+                                      </div>
+                                      <!-- <div class="col-md-4">
+                                          <div class="row">
+                                            <div class="col-md-6"><label class="p-2">Hospital number</label></div>
+                                            <div class="col-md-6"><input type="text" class="form-control"></div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-12"></div>
+                                          </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-6" style="">
+                                            <label class="p-2">Request date&amp;time</label>
+                                          </div>
+                                          <div class="col-md-6" style="">
+                                            <label class="p-2">12/12/2017 12:00</label>
+                                          </div>
+                                          <!-- <div class="col-md-2" style="">
+                                              <input type="time" class="form-control">
+                                            </div> -->
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <label class="p-2">Doctor</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label class="p-2">DEFDOC</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <label class="p-2">Attending Doctor</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label class="p-2">Attending Doctor</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-6" style="">
+                                            <label class="p-2">Collection date&amp;time</label>
+                                          </div>
+                                          <div class="col-md-6" style="">
+                                            <label class="p-2">12/12/2017 12:00</label>
+                                          </div>
+                                          <!-- <div class="col-md-2" style="">
+                                              <input type="time" class="form-control">
+                                            </div> -->
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <label class="p-2">Reception date&amp;time</label>
+                                          </div>
+                                          <div class="col-md-6" style="">
+                                            <label class="p-2">12/12/2017 12:00</label>
+                                          </div>
+                                          <!-- <div class="col-md-2">
+                                              <input type="time" class="form-control">
+                                            </div> -->
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <label class="p-2">Patient type</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label class="p-2">patient type</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <label class="p-2">Location</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label class="p-2">DEFDOC</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-6" style="">
+                                            <label class="p-2">Specimen Collector</label>
+                                          </div>
+                                          <div class="col-md-6" style="">
+                                            <label class="p-2">Specimen Collector</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <label class="p-2">Patient status</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label class="p-2">Patient status</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-12">
+                                            <div class="row">
+                                              <div class="col-md-6">
+                                                <label class="p-2">Destination</label>
+                                              </div>
+                                              <div class="col-md-6">
+                                                <label class="p-2">Destination</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12"></div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <div class="row">
+                                          <div class="col-md-2">
+                                            <label class="p-2">Order comment</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label class="p-2">comment...</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- end patient history -->
                                   <table class="table table-sm table-bordered table-striped" style="width:100%">
+                                    <colgroup>
+                                      <col>
+                                      <col>
+                                      <col>
+                                      <col width="20%">
+                                      <col width="20%">
+                                      <col>
+                                    </colgroup>
                                     <thead>
                                       <tr>
                                         <th class="text-center">
@@ -959,8 +1159,17 @@
                                         <th class="text-center">Specimen number</th>
                                         <th class="text-center">Source</th>
                                         <th class="text-center">Pathologist</th>
-                                        <th class="text-center">Return Date</th>
                                         <th class="text-center">Comment</th>
+                                      </tr>
+                                      <tr>
+                                        <th></th>
+                                        <th class="text-center"></th>
+                                        <th class="text-center"></th>
+                                        <th class="text-center"><input type="text" class="form-control"></th>
+                                        <th class="text-center"><select class="form-control">
+                                            <option value="">select</option>
+                                          </select></th>
+                                        <th class="text-center"></th>
                                       </tr>
                                     </thead>
                                     <tbody>
@@ -975,9 +1184,6 @@
                                         <td class="text-center"><select name="" class="form-control input-sm">
                                             <option value="">select</option>
                                           </select></td>
-                                        <td class="text-center">
-                                          <input type="date" class="form-control input-sm">
-                                        </td>
                                         <td class="text-center">
                                           <input type="text" class="form-control input-sm">
                                         </td>
@@ -994,35 +1200,15 @@
                                             <option value="">select</option>
                                           </select></td>
                                         <td class="text-center">
-                                          <input type="date" class="form-control input-sm">
-                                        </td>
-                                        <td class="text-center">
                                           <input type="text" class="form-control input-sm">
                                         </td>
                                       </tr>
                                     </tbody>
-                                    <tfoot>
-                                      <tr>
-                                        <th><button class="btn btn-primary">+</button></th>
-                                        <th class="text-center">No</th>
-                                        <th class="text-center">Specimen number</th>
-                                        <th class="text-center">Source</th>
-                                        <th class="text-center">Pathologist</th>
-                                        <th class="text-center">Return Date</th>
-                                        <th class="text-center">Comment</th>
-                                      </tr>
-                                    </tfoot>
                                   </table>
                                   <div class="pull-right">
-                                    <a class="btn btn-primary"> Send </a>
+                                    <a class="btn btn-primary"> Transfer </a>
                                     <a class="btn btn-danger"> Cancel </a>
                                   </div>
-                                </div>
-                              </div>
-                              <hr>
-                              <div class="row">
-                                <div class="col-md-12">
-                                  <div class="material-datatables"></div>
                                 </div>
                               </div>
                             </div>
@@ -1033,42 +1219,254 @@
                             <div class="card">
                               <div class="card-body p-1">
                                 <div class="row">
-                                  <div class="form-inline col-md-8">
-                                    <div class="col-md-3">
-                                      <div class="input-group">
-                                        <select class="form-control input-sm">
-                                          <option value="-- status --">-- status --</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <div class="input-group">
-                                        <input type="text" class="form-control input-sm">
-                                        <span class="input-group-addon">
-                                          <span class="fa fa-calendar"></span>
-                                        </span>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <div class="input-group">
-                                        <input type="text" class="form-control input-sm">
-                                        <span class="input-group-addon">
-                                          <span class="fa fa-calendar"></span>
-                                        </span>
-                                      </div>
-                                    </div>
-                                    <div class="input-group mb-3 col-sm-2 col-md-3">
-                                      <a class="btn btn-primary">Search</a>
-                                    </div>
-                                  </div>
                                   <div class="input-group mb-3 col-sm-4">
                                     <input type="text" class="input-sm form-control" value="1808000001">
                                     <div class="input-group-append">
                                       <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                        <i class="fa fa-barcode"></i>&nbsp;Discard</a>
+                                        <i class="fa fa-barcode"></i>&nbsp;Search</a>
                                     </div>
                                   </div>
                                   <div class="collapse col-md-12" id="collapseExample3">
+                                    <!-- start patient history -->
+                                    <hr>
+                                    <div class="row">
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <label class="p-2">Patient number : </label>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label class="p-2">PN000001</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <label class="p-2">Name :</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label class="p-2">Name</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <label class="p-2">Last name : </label>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label class="p-2">Lastname</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <label class="p-2">Date of birth : </label>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label class="p-2">10/10/2018 (29Y9M9D)</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <label class="p-2">Alternative patient num :</label>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label class="p-2">YYY4567890123</label>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-6"><label class="p-2">Maiden name :&nbsp;</label></div>
+                                          <div class="col-md-6"><label class="p-2">name</label></div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <div class="row">
+                                          <div class="col-md-4">
+                                            <div class="col-md-12">
+                                              <label class="p-2">Sex :</label>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-8"><label class="p-2">Male</label></div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12"></div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-md-12"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <hr>
+                                    <div class="">
+                                      <div class="row">
+                                        <div class="col-md-4">
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              <label class="p-2">Specialty</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label class="p-2">Specialty</label>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              <label class="p-2">Priority</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label class="p-2">Routine</label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              <label class="p-2">Request number</label>
+                                            </div>
+                                            <div class="col-md-6"><label class="p-2">Request number</label></div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6"><label class="p-2">Hospital number</label></div>
+                                            <div class="col-md-6"><label class="p-2">Hospital number</label></div>
+                                          </div>
+                                        </div>
+                                        <!-- <div class="col-md-4">
+                                            <div class="row">
+                                              <div class="col-md-6"><label class="p-2">Hospital number</label></div>
+                                              <div class="col-md-6"><input type="text" class="form-control"></div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-md-12"></div>
+                                            </div>
+                                          </div> -->
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-md-4">
+                                          <div class="row">
+                                            <div class="col-md-6" style="">
+                                              <label class="p-2">Request date&amp;time</label>
+                                            </div>
+                                            <div class="col-md-6" style="">
+                                              <label class="p-2">12/12/2017 12:00</label>
+                                            </div>
+                                            <!-- <div class="col-md-2" style="">
+                                                <input type="time" class="form-control">
+                                              </div> -->
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              <label class="p-2">Doctor</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label class="p-2">DEFDOC</label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              <label class="p-2">Attending Doctor</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label class="p-2">Attending Doctor</label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-md-4">
+                                          <div class="row">
+                                            <div class="col-md-6" style="">
+                                              <label class="p-2">Collection date&amp;time</label>
+                                            </div>
+                                            <div class="col-md-6" style="">
+                                              <label class="p-2">12/12/2017 12:00</label>
+                                            </div>
+                                            <!-- <div class="col-md-2" style="">
+                                                <input type="time" class="form-control">
+                                              </div> -->
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              <label class="p-2">Reception date&amp;time</label>
+                                            </div>
+                                            <div class="col-md-6" style="">
+                                              <label class="p-2">12/12/2017 12:00</label>
+                                            </div>
+                                            <!-- <div class="col-md-2">
+                                                <input type="time" class="form-control">
+                                              </div> -->
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              <label class="p-2">Patient type</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label class="p-2">patient type</label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              <label class="p-2">Location</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label class="p-2">DEFDOC</label>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6" style="">
+                                              <label class="p-2">Specimen Collector</label>
+                                            </div>
+                                            <div class="col-md-6" style="">
+                                              <label class="p-2">Specimen Collector</label>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              <label class="p-2">Patient status</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label class="p-2">Patient status</label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="row">
+                                            <div class="col-md-12">
+                                              <div class="row">
+                                                <div class="col-md-6">
+                                                  <label class="p-2">Destination</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <label class="p-2">Destination</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-12"></div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-12"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-md-12">
+                                          <div class="row">
+                                            <div class="col-md-2">
+                                              <label class="p-2">Order comment</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label class="p-2">comment...</label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- end patient history -->
                                     <table class="table table-sm table-bordered table-striped" style="width:100%">
                                       <colgroup>
                                         <col width="5%">
@@ -1088,11 +1486,18 @@
                                           <th class="text-center">No</th>
                                           <th class="text-center">Date and time</th>
                                           <th class="text-center">Specimen number</th>
-                                          <th class="text-center">Location</th>
-                                          <th class="text-center">Fridge</th>
-                                          <th class="text-center">Shelf</th>
-                                          <th class="text-center">Position</th>
+                                          <th class="text-center">Reason For Discard</th>
                                           <th class="text-center">Comment</th>
+                                        </tr>
+                                        <tr>
+                                          <th></th>
+                                          <th class="text-center"></th>
+                                          <th class="text-center"></th>
+                                          <th class="text-center"></th>
+                                          <th class="text-center"><select class="form-control input-sm" name="">
+                                              <option value="">select</option>
+                                            </select></th>
+                                          <th class="text-center"></th>
                                         </tr>
                                       </thead>
                                       <tbody>
@@ -1103,21 +1508,6 @@
                                           <td class="text-center"><input type="date" class="form-control input-sm"></td>
                                           <td class="text-center">
                                             <input type="text" class="form-control input-sm">
-                                          </td>
-                                          <td class="text-center">
-                                            <select class="form-control input-sm" name="">
-                                              <option value="">select</option>
-                                            </select>
-                                          </td>
-                                          <td class="text-center">
-                                            <select class="form-control input-sm" name="">
-                                              <option value="">select</option>
-                                            </select>
-                                          </td>
-                                          <td class="text-center">
-                                            <select class="form-control input-sm" name="">
-                                              <option value="">select</option>
-                                            </select>
                                           </td>
                                           <td class="text-center">
                                             <select class="form-control input-sm" name="">
@@ -1142,35 +1532,10 @@
                                             </select>
                                           </td>
                                           <td class="text-center">
-                                            <select class="form-control input-sm" name="">
-                                              <option value="">select</option>
-                                            </select>
-                                          </td>
-                                          <td class="text-center">
-                                            <select class="form-control input-sm" name="">
-                                              <option value="">select</option>
-                                            </select>
-                                          </td>
-                                          <td class="text-center">
-                                            <select class="form-control input-sm" name="">
-                                              <option value="">select</option>
-                                            </select>
-                                          </td>
-                                          <td class="text-center">
                                             <input type="text" class="form-control input-sm">
                                           </td>
                                         </tr>
                                       </tbody>
-                                      <tfoot>
-                                        <tr>
-                                          <th><button class="btn btn-primary">+</button></th>
-                                          <th class="text-center">No</th>
-                                          <th class="text-center">Date and time</th>
-                                          <th class="text-center">Specimen number</th>
-                                          <th class="text-center">Leason For Discard</th>
-                                          <th class="text-center">Comment</th>
-                                        </tr>
-                                      </tfoot>
                                     </table>
                                     <div class="pull-right">
                                       <a class="btn btn-primary"> Discard </a>
