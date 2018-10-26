@@ -17,6 +17,11 @@ $(function () {
                 sub: null
             }
             ,{
+                name: 'Check Out Relative',
+                link: 'new-checkout-relative.html',
+                sub: null
+            }
+            ,{
                 name: 'Motuary Details',
                 link: 'new-motuary_details.html',
                 sub: null
