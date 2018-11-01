@@ -2,7 +2,7 @@ $(function () {
     var data = {
         menu: [
             {
-                name: 'Registration',
+                name: 'Check In',
                 link: 'new-regis.html',
                 sub: null
             }
