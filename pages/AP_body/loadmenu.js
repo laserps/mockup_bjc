@@ -6,19 +6,10 @@ $(function () {
                 link: 'new-regis.html',
                 sub: null
             }
-            ,{
-                name: 'Formalin',
-                link: 'new-formalin.html',
-                sub: null
-            }
+            
             ,{
                 name: 'Check Out',
                 link: 'new-checkout.html',
-                sub: null
-            }
-            ,{
-                name: 'Check Out Relative',
-                link: 'new-checkout-relative.html',
                 sub: null
             }
             ,{

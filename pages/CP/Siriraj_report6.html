@@ -32,62 +32,9 @@
         <a href="#" class="simple-text"> Work </a>
       </div>
       <div class="sidebar-wrapper">
-        <ul class="nav flex-column">
-          <li class="d-flex flex-column">
-            <a class="nav-link" href="snu-jobRef.html">
-              <i class="nav-icon ti-panel"></i>
-              <p>Dashboard</p>
-            </a>
-          </li>
-          <li class="d-flex flex-column ">
-            <a data-toggle="collapse" href="#charts7" class="collapsed nav-link" aria-expanded="false">
-              <i class="nav-icon ti-panel"></i>
-              <p> Statistic Report
-                <i class="fa fa-sort-desc submenu-toggle"></i>
-              </p>
-            </a>
-            <div class="collapse show" id="charts7" role="navigation" aria-expanded="true">
-              <ul class="nav flex-column">
-                <li class="">
-                  <a class="nav-link" href="">1. รายงานผล (TAT)</a>
-                </li>
-                <li class="">
-                  <a class="nav-link" href="SNU_list_location.html"> 2. ระยะเวลา Single Queue
-                    <br>&nbsp;&nbsp;&nbsp;-&gt; OPD Register</a>
-                </li>
-                <li class="">
-                  <a class="nav-link" href="SNU_list_location.html"> 3. ระยะเวลา OPD Register
-                    <br>&nbsp;&nbsp;&nbsp;-&gt; รับใบคืน </a>
-                </li>
-                <li class="">
-                  <a class="nav-link" href="SNU_list_location.html"> 4. ระยะเวลา รับใบคืน
-                    <br>&nbsp;&nbsp;&nbsp;-&gt; จ่ายเงิน </a>
-                </li>
-                <li class="">
-                  <a class="nav-link" href="SNU_list_location.html"> 5. ระยะเวลา จ่ายเงิน
-                    <br>&nbsp;&nbsp;&nbsp;-&gt; เจาะเลือด</a>
-                </li>
-                <li class="">
-                  <a class="nav-link" href="SNU_list_location.html"> 6. ระยะเวลา เจาะเลือด
-                    <br>&nbsp;&nbsp;&nbsp;-&gt; Check in โต๊ะ 20</a>
-                </li>
-                <li class="">
-                  <a class="nav-link" href="SNU_list_location.html"> 7. ระยะเวลา Check in โต๊ะ
-                    <br>&nbsp;&nbsp;&nbsp;20 -&gt; Check out </a>
-                </li>
-                <li class="">
-                  <a class="nav-link" href="SNU_list_location.html"> 8. ระยะเวลา Check out
-                    <br>&nbsp;&nbsp;&nbsp;-&gt; CentralLab</a>
-                </li>
-                <li class="">
-                  <a class="nav-link" href="SNU_list_location.html"> 9. ระยะเวลา CentralLab
-                    <br>&nbsp;&nbsp;&nbsp;-&gt; Middlewares</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
+        <ul class="nav flex-column" id="menu">
+          </ul>
+    </div>
     </div>
     <div class="main-panel">
       <nav class="navbar navbar-default navbar-toggleable-md navbar-inverse">
@@ -264,6 +211,7 @@
   <script src="../../assets/js/demo.js"></script>
   <!--  Checkbox, Radio, Switch and Tags Input Plugins -->
   <script src="../../assets/js/bootstrap-checkbox-radio-switch-tags.js"></script>
+  <script src="loadmenu.js"></script>
   <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
     <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
   </pingendo>
