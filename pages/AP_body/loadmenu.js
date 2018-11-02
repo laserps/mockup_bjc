@@ -40,18 +40,26 @@ $(function () {
 
     var str = "";
     $.each( data.menu , function (key , value) {
+
+        // <li class="d-flex flex-column active">
+        //     <a class="nav-link" href="../widgets/widgets.html">
+        //         <i class="nav-icon ti-widget"></i>
+        //         <p>Widgets</p>
+        //     </a>
+        // </li>
+
         if(value.sub==null){
             str += 
             `<li class="d-flex flex-column">
-                <a href="`+value.link+`">
-                <i class="nav-icon"></i>
-                <p>`+value.name+`</p>
+                <a class="nav-link" href="`+value.link+`">
+                    <i class="nav-icon ti-widget"></i>
+                    <p>`+value.name+`</p>
                 </a>
             </li>`;
         }else{
             str += 
             `<li class="d-flex flex-column">
-                    <a href="#tables`+key+`" aria-expanded="false" class="nav-link collapsed" data-toggle="collapse">
+                    <a class="nav-link" href="#tables`+key+`" aria-expanded="false" class="nav-link collapsed" data-toggle="collapse">
                         <p>`+value.name+`
                             <i class="fa fa-sort-desc submenu-toggle"></i>
                         </p>
@@ -62,6 +70,7 @@ $(function () {
                         $.each(value.sub, function (keyin , valuein) {
                             str +=
                             `<li>
+                                <i class="far fa-address-card"></i>
                                 <a class="nav-link" href="`+valuein.link+`">`+valuein.name+`</a>
                             </li>`;
                         });
