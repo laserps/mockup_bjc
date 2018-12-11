@@ -2,6 +2,11 @@ $(function () {
     var data = {
         menu: [
             {
+                name: 'Request Search',
+                link: '0_first.html',
+                sub: null
+            },
+            {
                 name: 'Patient Register',
                 link: '0_Register_navbar.html',
                 sub: null
