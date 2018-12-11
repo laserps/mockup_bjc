@@ -46,7 +46,8 @@
           </button>
         </div>
         <div class="navbar-header">
-          <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+          <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand" href="#">Slide</a>
@@ -57,7 +58,8 @@
               <a href="#" class="dropdown-toggle nav-link" id="notificationList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="ti-bell nav-icon"></i>
                 <span class="notification">6</span>
-                <p class="hidden-lg-up"> Notifications <i class="fa fa-sort-desc submenu-toggle"></i>
+                <p class="hidden-lg-up"> Notifications
+                  <i class="fa fa-sort-desc submenu-toggle"></i>
                 </p>
               </a>
               <div class="dropdown-menu" aria-labelledby="notificationList">
@@ -151,7 +153,8 @@
                                     <div class="row">
                                       <div class="col-sm-12 col-md-6">
                                         <div class="dataTables_length" id="datatables_length">
-                                          <label class="form-group">Show <select name="datatables_length" aria-controls="datatables" class="form-control input-sm">
+                                          <label class="form-group">Show
+                                            <select name="datatables_length" aria-controls="datatables" class="form-control input-sm">
                                               <option value="10">10</option>
                                               <option value="25">25</option>
                                               <option value="50">50</option>
@@ -168,18 +171,27 @@
                                     </div>
                                     <div class="row">
                                       <div class="col-sm-12">
-                                        <table id="datatables" class="table table-sm table-striped table-hover table-responsive" style="width:100%;" role="grid" aria-describedby="datatables_info">
-                                          <colgroup>
-                                            <col width="5">
-                                            <col width="200">
-                                          </colgroup>
-                                          <thead>
-                                            <tr role="row">
-                                              <th tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" aria-sort="ascending">
-                                                <!-- <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </th> -->
-                                              <th tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">
-                                                Status
-                                                <!-- <select class="form-control">
+                                        <div style="overflow:scroll;">
+                                          <table id="datatables" class="table table-sm table-hover" style="width:1800px;">
+                                            <colgroup>
+                                              <col width="5%">
+                                              <col width="10%">
+                                              <col width="10%">
+                                              <col width="10%">
+                                              <col width="10%">
+                                              <col width="10%">
+                                              <col width="10%">
+                                              <col width="10%">
+                                              <col width="10%">
+                                            </colgroup>
+                                            <thead>
+                                              <tr role="row">
+                                                <th tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending"
+                                                  aria-sort="ascending">
+                                                  <!-- <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </th> -->
+                                                  <th tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">
+                                                    Status
+                                                    <!-- <select class="form-control">
                                                   <optgroup label="Complete"></optgroup>
                                                   <option value="เลือก">Complete</option>
                                                   <optgroup label="Incomplete"></optgroup>
@@ -187,212 +199,213 @@
                                                   <option value="เลือก">Delay</option>
                                                   <option value="เลือก">Decal</option>
                                                 </select> -->
-                                              </th>
-                                              <th>Specimen number</th>
-                                              <th>Slide number</th>
-                                              <th>Slide type</th>
-                                              <th>Pathologist</th>
-                                              <th>Screener</th>
-                                              <th>Pathology Assistance</th>
-                                              <th>Slide Start</th>
-                                              <th>Slide Finish</th>
-                                            </tr>
-                                            <tr>
+                                                  </th>
+                                                  <th>Specimen number</th>
+                                                  <th>Slide number</th>
+                                                  <th>Slide type</th>
+                                                  <th>Pathologist</th>
+                                                  <th>Screener</th>
+                                                  <th>Pathology Assistance</th>
+                                                  <th>Slide Start</th>
+                                                  <th>Slide Finish</th>
+                                              </tr>
+                                              <tr>
                                                 <th>
-                                                    <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </th>
+                                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </th>
                                                 </th>
                                                 <th>
-                                                    <select class="form-control">
-                                                        <optgroup label="Complete"></optgroup>
-                                                        <option value="เลือก">Complete</option>
-                                                        <optgroup label="Incomplete"></optgroup>
-                                                        <option value="เลือก">Incomplete</option>
-                                                        <option value="เลือก">Delay</option>
-                                                        <option value="เลือก">Decal</option>
-                                                      </select>
+                                                  <select class="form-control">
+                                                    <optgroup label="Complete"></optgroup>
+                                                    <option value="เลือก">Complete</option>
+                                                    <optgroup label="Incomplete"></optgroup>
+                                                    <option value="เลือก">Incomplete</option>
+                                                    <option value="เลือก">Delay</option>
+                                                    <option value="เลือก">Decal</option>
+                                                  </select>
                                                 </th>
                                                 <th></th>
                                                 <th></th>
                                                 <th></th>
                                                 <th>
-                                                    <select class="form-control">
-                                                        <optgroup label="Complete"></optgroup>
-                                                        <option value="เลือก">Complete</option>
-                                                        <optgroup label="Incomplete"></optgroup>
-                                                        <option value="เลือก">Incomplete</option>
-                                                        <option value="เลือก">Delay</option>
-                                                        <option value="เลือก">Decal</option>
-                                                      </select>
+                                                  <select class="form-control">
+                                                    <optgroup label="Complete"></optgroup>
+                                                    <option value="เลือก">Complete</option>
+                                                    <optgroup label="Incomplete"></optgroup>
+                                                    <option value="เลือก">Incomplete</option>
+                                                    <option value="เลือก">Delay</option>
+                                                    <option value="เลือก">Decal</option>
+                                                  </select>
                                                 </th>
                                                 <th>
-                                                    <select class="form-control">
-                                                        <optgroup label="Complete"></optgroup>
-                                                        <option value="เลือก">Complete</option>
-                                                        <optgroup label="Incomplete"></optgroup>
-                                                        <option value="เลือก">Incomplete</option>
-                                                        <option value="เลือก">Delay</option>
-                                                        <option value="เลือก">Decal</option>
-                                                      </select>
+                                                  <select class="form-control">
+                                                    <optgroup label="Complete"></optgroup>
+                                                    <option value="เลือก">Complete</option>
+                                                    <optgroup label="Incomplete"></optgroup>
+                                                    <option value="เลือก">Incomplete</option>
+                                                    <option value="เลือก">Delay</option>
+                                                    <option value="เลือก">Decal</option>
+                                                  </select>
                                                 </th>
                                                 <th>
-                                                    <select class="form-control">
-                                                        <optgroup label="Complete"></optgroup>
-                                                        <option value="เลือก">Complete</option>
-                                                        <optgroup label="Incomplete"></optgroup>
-                                                        <option value="เลือก">Incomplete</option>
-                                                        <option value="เลือก">Delay</option>
-                                                        <option value="เลือก">Decal</option>
-                                                      </select>
+                                                  <select class="form-control">
+                                                    <optgroup label="Complete"></optgroup>
+                                                    <option value="เลือก">Complete</option>
+                                                    <optgroup label="Incomplete"></optgroup>
+                                                    <option value="เลือก">Incomplete</option>
+                                                    <option value="เลือก">Delay</option>
+                                                    <option value="เลือก">Decal</option>
+                                                  </select>
                                                 </th>
                                                 <th></th>
                                                 <th></th>
                                               </tr>
-                                          </thead>
-                                          <tbody>
-                                            <tr role="row" class="odd">
-                                              <td class="sorting_1">
-                                                <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                              <td>
-                                                <select class="form-control">
-                                                  <optgroup label="Complete"></optgroup>
-                                                  <option value="เลือก">Complete</option>
-                                                  <optgroup label="Incomplete"></optgroup>
-                                                  <option value="เลือก">Incomplete</option>
-                                                  <option value="เลือก">Delay</option>
-                                                  <option value="เลือก">Decal</option>
-                                                </select>
-                                              </td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>
-                                                <input class="form-control" type="datetime-local" style="width:200px;"> </td>
-                                              <td>
-                                                <input class="form-control" type="datetime-local" style="width:200px;"> </td>
-                                            </tr>
-                                            <tr role="row" class="even">
-                                              <td class="sorting_1">
-                                                <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                              <td>
-                                                <select class="form-control">
-                                                  <optgroup label="Complete"></optgroup>
-                                                  <option value="เลือก">Complete</option>
-                                                  <optgroup label="Incomplete"></optgroup>
-                                                  <option value="เลือก">Incomplete</option>
-                                                  <option value="เลือก">Delay</option>
-                                                  <option value="เลือก">Decal</option>
-                                                </select>
-                                              </td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>
-                                                <input class="form-control" type="datetime-local" style="width:200px;">
-                                              </td>
-                                              <td>
-                                                <input class="form-control" type="datetime-local" style="width:200px;"> </td>
-                                            </tr>
-                                            <tr role="row" class="odd">
-                                              <td class="sorting_1">
-                                                <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                              <td>
-                                                <select class="form-control">
-                                                  <optgroup label="Complete"></optgroup>
-                                                  <option value="เลือก">Complete</option>
-                                                  <optgroup label="Incomplete"></optgroup>
-                                                  <option value="เลือก">Incomplete</option>
-                                                  <option value="เลือก">Delay</option>
-                                                  <option value="เลือก">Decal</option>
-                                                </select>
-                                              </td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>
-                                                <input class="form-control" type="datetime-local" style="width:200px;">
-                                              </td>
-                                              <td>
-                                                <input class="form-control" type="datetime-local" style="width:200px;"> </td>
-                                            </tr>
-                                            <tr role="row" class="even">
-                                              <td class="sorting_1">
-                                                <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                              <td>
-                                                <select class="form-control">
-                                                  <optgroup label="Complete"></optgroup>
-                                                  <option value="เลือก">Complete</option>
-                                                  <optgroup label="Incomplete"></optgroup>
-                                                  <option value="เลือก">Incomplete</option>
-                                                  <option value="เลือก">Delay</option>
-                                                  <option value="เลือก">Decal</option>
-                                                </select>
-                                              </td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>
-                                                <input class="form-control" type="datetime-local" style="width:200px;">
-                                              </td>
-                                              <td>
-                                                <input class="form-control" type="datetime-local" style="width:200px;"> </td>
-                                            </tr>
-                                            <tr role="row" class="odd">
-                                              <td class="sorting_1">
-                                                <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
-                                              <td>
-                                                <select class="form-control">
-                                                  <optgroup label="Complete"></optgroup>
-                                                  <option value="เลือก">Complete</option>
-                                                  <optgroup label="Incomplete"></optgroup>
-                                                  <option value="เลือก">Incomplete</option>
-                                                  <option value="เลือก">Delay</option>
-                                                  <option value="เลือก">Decal</option>
-                                                </select>
-                                              </td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td>-</td>
-                                              <td style="">-</td>
-                                              <td>
-                                                <input class="form-control" type="datetime-local" style="width:200px;">
-                                              </td>
-                                              <td>
-                                                <input class="form-control" type="datetime-local" style="width:200px;"> </td>
-                                            </tr>
-                                          </tbody>
-                                          <tfoot>
-                                            <tr role="row">
-                                              <!-- <th tabindex="0" colspan="1"></th>
+                                            </thead>
+                                            <tbody>
+                                              <tr role="row" class="odd">
+                                                <td class="sorting_1">
+                                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                                <td>
+                                                  <select class="form-control">
+                                                    <optgroup label="Complete"></optgroup>
+                                                    <option value="เลือก">Complete</option>
+                                                    <optgroup label="Incomplete"></optgroup>
+                                                    <option value="เลือก">Incomplete</option>
+                                                    <option value="เลือก">Delay</option>
+                                                    <option value="เลือก">Decal</option>
+                                                  </select>
+                                                </td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                  <input class="form-control" type="datetime-local" style="width:200px;"> </td>
+                                                <td>
+                                                  <input class="form-control" type="datetime-local" style="width:200px;"> </td>
+                                              </tr>
+                                              <tr role="row" class="even">
+                                                <td class="sorting_1">
+                                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                                <td>
+                                                  <select class="form-control">
+                                                    <optgroup label="Complete"></optgroup>
+                                                    <option value="เลือก">Complete</option>
+                                                    <optgroup label="Incomplete"></optgroup>
+                                                    <option value="เลือก">Incomplete</option>
+                                                    <option value="เลือก">Delay</option>
+                                                    <option value="เลือก">Decal</option>
+                                                  </select>
+                                                </td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                  <input class="form-control" type="datetime-local" style="width:200px;">
+                                                </td>
+                                                <td>
+                                                  <input class="form-control" type="datetime-local" style="width:200px;"> </td>
+                                              </tr>
+                                              <tr role="row" class="odd">
+                                                <td class="sorting_1">
+                                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                                <td>
+                                                  <select class="form-control">
+                                                    <optgroup label="Complete"></optgroup>
+                                                    <option value="เลือก">Complete</option>
+                                                    <optgroup label="Incomplete"></optgroup>
+                                                    <option value="เลือก">Incomplete</option>
+                                                    <option value="เลือก">Delay</option>
+                                                    <option value="เลือก">Decal</option>
+                                                  </select>
+                                                </td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                  <input class="form-control" type="datetime-local" style="width:200px;">
+                                                </td>
+                                                <td>
+                                                  <input class="form-control" type="datetime-local" style="width:200px;"> </td>
+                                              </tr>
+                                              <tr role="row" class="even">
+                                                <td class="sorting_1">
+                                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                                <td>
+                                                  <select class="form-control">
+                                                    <optgroup label="Complete"></optgroup>
+                                                    <option value="เลือก">Complete</option>
+                                                    <optgroup label="Incomplete"></optgroup>
+                                                    <option value="เลือก">Incomplete</option>
+                                                    <option value="เลือก">Delay</option>
+                                                    <option value="เลือก">Decal</option>
+                                                  </select>
+                                                </td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                  <input class="form-control" type="datetime-local" style="width:200px;">
+                                                </td>
+                                                <td>
+                                                  <input class="form-control" type="datetime-local" style="width:200px;"> </td>
+                                              </tr>
+                                              <tr role="row" class="odd">
+                                                <td class="sorting_1">
+                                                  <input type="checkbox" aria-label="Checkbox for following text input" value="on"> </td>
+                                                <td>
+                                                  <select class="form-control">
+                                                    <optgroup label="Complete"></optgroup>
+                                                    <option value="เลือก">Complete</option>
+                                                    <optgroup label="Incomplete"></optgroup>
+                                                    <option value="เลือก">Incomplete</option>
+                                                    <option value="เลือก">Delay</option>
+                                                    <option value="เลือก">Decal</option>
+                                                  </select>
+                                                </td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td style="">-</td>
+                                                <td>
+                                                  <input class="form-control" type="datetime-local" style="width:200px;">
+                                                </td>
+                                                <td>
+                                                  <input class="form-control" type="datetime-local" style="width:200px;"> </td>
+                                              </tr>
+                                            </tbody>
+                                            <tfoot>
+                                              <tr role="row">
+                                                <!-- <th tabindex="0" colspan="1"></th>
                                               <th tabindex="0" colspan="1"></th>
                                               <th tabindex="0" colspan="1"></th>
                                               <th tabindex="0" colspan="1"></th> -->
-                                              <th tabindex="0" colspan="2"> Define Date &amp; Time </th>
-                                              <th tabindex="0" colspan="2">
-                                                <input type="datetime-local" name="" id="input" class="form-control" style="width:200px;"> </th>
-                                              <th tabindex="0" colspan="4"></th>
-                                              <th class="sorting text-center" colspan="1">
-                                                <button class="btn">Slide Start</button>
-                                              </th>
-                                              <th class="sorting text-center" colspan="1">
-                                                <button class="btn">Slide End</button>
-                                              </th>
-                                            </tr>
-                                          </tfoot>
-                                        </table>
+                                                <th tabindex="0" colspan="2"> Define Date &amp; Time </th>
+                                                <th tabindex="0" colspan="2">
+                                                  <input type="datetime-local" name="" id="input" class="form-control" style="width:200px;"> </th>
+                                                <th tabindex="0" colspan="4"></th>
+                                                <th class="sorting text-center" colspan="1">
+                                                  <button class="btn">Slide Start</button>
+                                                </th>
+                                                <th class="sorting text-center" colspan="1">
+                                                  <button class="btn">Slide End</button>
+                                                </th>
+                                              </tr>
+                                            </tfoot>
+                                          </table>
+                                        </div>
                                       </div>
                                     </div>
                                     <div class="row">
@@ -590,7 +603,8 @@
       </div>
       <footer class="footer">
         <div class="container">
-          <p class="copyright float-right"> © <script>
+          <p class="copyright float-right"> ©
+            <script>
               document.write(new Date().getFullYear())
             </script>
             <a href="#">Workbythai Internet And Marketing Co., Ltd.</a>
@@ -638,7 +652,10 @@
   <!-- Material Dashboard javascript methods -->
   <script src="../../assets/js/inspire.js"></script>
   <script src="loadmenu.js"></script>
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo"
+      height="16">
+  </pingendo>
 </body>
 
 </html>
