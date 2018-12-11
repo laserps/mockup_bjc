@@ -109,8 +109,7 @@ $(function () {
         if (value.sub == null) {
             str +=
                 `<li class="d-flex flex-column">
-                <a class="nav-link" href="` + value.link + `">
-                    <i class="nav-icon fas fa-sliders-h"></i>
+                <a class="nav-link" href="` + value.link + `"> 
                     <p>` + value.name + `</p>
                 </a>
             </li>`;
@@ -118,9 +117,8 @@ $(function () {
             str +=
                 `<li class="d-flex flex-column">
                     <a class="nav-link" href="#tables` + key + `" aria-expanded="true" class="nav-link" data-toggle="collapse">
-                        <i class="nav-icon fas fa-cogs"></i>
-                        <p>` + value.name + `
-                            <i class="fa fa-sort-desc submenu-toggle"></i>
+                         
+                        <p>` + value.name + ` 
                         </p>
                     </a>
                     <div class="collapse show" id="tables` + key + `" role="navigation" aria-expanded="true">
@@ -128,7 +126,7 @@ $(function () {
             $.each(value.sub, function (keyin, valuein) {
                 str +=
                             `<li class="d-flex flex-column">
-                                <a class="nav-link" href="` + valuein.link + `"><i class="far fas fa-cog"></i> ` + valuein.name + `</a>
+                                <a class="nav-link" href="` + valuein.link + `">` + valuein.name + `</a>
                             </li>`;
             });
             str += `    </ul>
