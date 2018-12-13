@@ -2,18 +2,18 @@ $(function () {
     var data = {
         menu: [
             {
-                name: 'Check In',
+                name: 'Morgue Check In',
                 link: 'new-regis.html',
                 sub: null
             }
             
             ,{
-                name: 'Check Out',
+                name: 'Morgue Check Out',
                 link: 'new-checkout.html',
                 sub: null
             }
             ,{
-                name: 'Motuary Details',
+                name: 'Morgue Search',
                 link: 'new-motuary_details.html',
                 sub: null
             }
