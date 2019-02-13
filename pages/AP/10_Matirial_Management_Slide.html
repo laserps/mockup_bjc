@@ -1820,21 +1820,56 @@
                             <div class="card">
                               <div class="card-body p-2">
                                 <div class="row">
-                                  <div class="input-group mb-3 col-sm-4">
-                                    <input type="text" class="input-sm form-control" value="1808000001">
-                                    <div class="input-group-append">
-                                      <a class="btn btn-primary" role="button" id="search1">
-                                        <i class="fa fa-barcode"></i>&nbsp;Search</a>
+                                  <div class="mb-3 col-sm-4">
+                                    <label>Check-In</label>
+                                    <div class="input-group ">
+                                      <input type="text" class="form-control" value="1808000001">
+                                      <div class="input-group-append">
+                                        <a class="btn btn-primary" role="button" id="search1">
+                                          <i class="fa fa-barcode"></i>&nbsp;Search</a>
+                                      </div>
                                     </div>
                                   </div>
 
-                                  <div class="input-group mb-3 col-sm-4">
-                                    <input type="text" class="input-sm form-control" value="1808000001">
-                                    <div class="input-group-append">
-                                      <a class="btn btn-primary" role="button" id="search2">
-                                        <i class="fa fa-barcode"></i>&nbsp;Search</a>
+                                  <div class="col-md-8">
+                                    <label>List</label>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                        <div class="input-group">
+                                          <select class="form-control w-100">
+                                            <option value="-- status --">-- status --</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <div class="input-group">
+                                          <input type="text" class="form-control input-sm">
+                                          <span class="input-group-addon">
+                                            <span class="fa fa-calendar"></span>
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <div class="input-group">
+                                          <input type="text" class="form-control input-sm">
+                                          <span class="input-group-addon">
+                                            <span class="fa fa-calendar"></span>
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <div class="input-group mb-3 col-sm-2 col-md-3">
+                                        <a class="btn btn-primary" id="search2" role="button">Search</a>
+                                      </div>
                                     </div>
                                   </div>
+
+                                  <!-- <div class="input-group mb-3 col-sm-4">
+                                    <input type="text" class="input-sm form-control" value="1808000001">
+                                    <div class="input-group-append">
+                                      <a class="btn btn-primary" role="button" >
+                                        <i class="fa fa-barcode"></i>&nbsp;Search</a>
+                                    </div>
+                                  </div> -->
 
                                   <!-- list-of-chenk-in1 -->
                                   <div class="col-md-12" id="list-of-chenk-in1" style="display: none;">
@@ -2301,10 +2336,6 @@
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="pull-right">
-                                      <a class="btn btn-primary"> Check-In </a>
-                                      <a class="btn btn-danger"> Cancel </a>
-                                    </div>
                                   </div>
                                   <!-- END list-of-chenk-in2 -->
 
@@ -2319,19 +2350,46 @@
                             <div class="card">
                               <div class="card-body p-2">
                                 <div class="row">
-                                  <div class="input-group mb-3 col-sm-4">
-                                    <input type="text" class="input-sm form-control" value="1808000001">
-                                    <div class="input-group-append">
-                                      <a class="btn btn-primary" role="button" id="search-checkOut1">
-                                        <i class="fa fa-barcode"></i>&nbsp;Search</a>
+                                  <div class="mb-3 col-sm-4">
+                                    <label>Check-In</label>
+                                    <div class="input-group ">
+                                      <input type="text" class="form-control" value="1808000001">
+                                      <div class="input-group-append">
+                                        <a class="btn btn-primary" role="button" id="search-checkOut1">
+                                          <i class="fa fa-barcode"></i>&nbsp;Search</a>
+                                      </div>
                                     </div>
                                   </div>
 
-                                  <div class="input-group mb-3 col-sm-4">
-                                    <input type="text" class="input-sm form-control" value="1808000001">
-                                    <div class="input-group-append">
-                                      <a class="btn btn-primary" role="button" id="search-checkOut2">
-                                        <i class="fa fa-barcode"></i>&nbsp;Search</a>
+                                  <div class="col-md-8">
+                                    <label>LIst</label>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                        <div class="input-group">
+                                          <select class="form-control w-100">
+                                            <option value="-- status --">-- status --</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <div class="input-group">
+                                          <input type="text" class="form-control input-sm">
+                                          <span class="input-group-addon">
+                                            <span class="fa fa-calendar"></span>
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <div class="input-group">
+                                          <input type="text" class="form-control input-sm">
+                                          <span class="input-group-addon">
+                                            <span class="fa fa-calendar"></span>
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <div class="input-group mb-3 col-sm-2 col-md-3">
+                                        <a class="btn btn-primary" id="search-checkOut2" role="button">Search</a>
+                                      </div>
                                     </div>
                                   </div>
 
@@ -2804,10 +2862,6 @@
                                           </div>
                                         </div>
                                       </div>
-                                    </div>
-                                    <div class="pull-right">
-                                      <a class="btn btn-primary"> Check-Out </a>
-                                      <a class="btn btn-danger"> Cancel </a>
                                     </div>
                                   </div>
                                   <!-- END list-of-chenk-Out2 -->
