@@ -317,6 +317,7 @@
                                         <input type="checkbox" aria-label="Checkbox for following text input" value="on">
                                         <label class="p-2">Allow Autopsy Examination</label>
                                       </div>
+
                                     </div>
                                     <div class="row">
                                       <div class="col-md-4">
@@ -563,7 +564,7 @@
                                 </div>
                               </div>
                               <div class="col-md-6">
-                                <input type="checkbox" aria-label="Checkbox for following text input" value="on">
+                                <input type="checkbox" aria-label="Checkbox for following text input" value="on"  id="chkPassport">
                                 <label class="p-2">Allow Autopsy Examination</label>
                               </div>
                             </div>
@@ -615,12 +616,19 @@
                             </div>
                           </div>
                         </div>
+
+
+
                         <div style="border-bottom: 1px solid rgba(204, 197, 185, 0.5);"></div>
+
+
+                      <div id="dvPassport" style="display: none">
                         <div class="row">
                           <div class="col-md-6">
-                            <label class="p-2">Autopsy</label>
+                            <label class="p-2">Autopsy Examination</label>
                           </div>
                         </div>
+
                         <div class="row">
                           <div class="col-md-6">
                             <div class="row">
@@ -665,7 +673,26 @@
                                 <label class="p-2">Suspected Organ :</label>
                               </div>
                               <div class="col-10 col-md-6">
-                                <input type="text" class="form-control">
+
+                                <div class="form-check-inline">
+                                  <label class="form-check-label mr-3">
+                                    <input type="checkbox" class="form-check-input" value="">
+                                    <label class="pl-1">Organ 1</label>
+                                  </label>
+                                </div>
+                                <div class="form-check-inline mr-3">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">
+                                    <label class="pl-1">Organ 2</label>
+                                  </label>
+                                </div>
+                                <div class="form-check-inline mr-3">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">
+                                    <label class="pl-1">Organ 3</label>
+                                  </label>
+                                </div>
+                               <!--  <input type="text" class="form-control"> -->
                               </div>
                             </div>
                             <div class="row">
@@ -736,6 +763,10 @@
                             </div>
                           </div>
                         </div>
+                      </div>
+
+
+
                         <div class="row">
                           <div class="col-md-6">
                             <div class="row p-2">
@@ -852,6 +883,20 @@
   <!-- Material Dashboard javascript methods -->
   <script src="../../assets/js/inspire.js"></script>
   <script src="loadmenu.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+        $("#chkPassport").click(function () {
+            if ($(this).is(":checked")) {
+                $("#dvPassport").show();
+            } else {
+                $("#dvPassport").hide();
+            }
+        });
+    });
+  </script>
+
+
   <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
 </body>
 
