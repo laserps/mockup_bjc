@@ -109,16 +109,16 @@ $(function () {
         if (value.sub == null) {
             str +=
                 `<li class="d-flex flex-column">
+                
                 <a class="nav-link" href="` + value.link + `"> 
-                    <p>` + value.name + `</p>
+                    <p><i class="fa fa-tasks" aria-hidden="true"></i> ` + value.name + `</p>
                 </a>
             </li>`;
         } else {
             str +=
                 `<li class="d-flex flex-column">
                     <a class="nav-link" href="#tables` + key + `" aria-expanded="true" class="nav-link" data-toggle="collapse">
-                         
-                        <p>` + value.name + ` 
+                        <p><i class="fa fa-tasks" aria-hidden="true"></i> ` + value.name + ` 
                         </p>
                     </a>
                     <div class="collapse show" id="tables` + key + `" role="navigation" aria-expanded="true">

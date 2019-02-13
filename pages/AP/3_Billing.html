@@ -18,6 +18,7 @@
   <!--     Fonts and icons     -->
   <link href="../../assets/css/font-awesome.min.css" rel="stylesheet">
   <link href="../../assets/css/font-muli.css" rel="stylesheet" type="text/css">
+  <link href="../../assets/vendors/select2-4.0.6-rc.1/dist/css/select2.min.css" rel="stylesheet">
   <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css">
   <link href="../../assets/css/themify-icons.css" rel="stylesheet">
   <link href="./mui.css" rel="stylesheet">
@@ -576,19 +577,54 @@
                   <div class="card">
                     <div class="card-body p-1">
                       <div class="dataTables_wrapper container-fluid dt-bootstrap4" id="datatables_wrapper">
+
                         <div class="row text-right form-group">
-                          <div class="col-sm-12 col-md-4">
-                            <select class="form-control">
-                              <option>Pathologist</option>
-                            </select>
+                            <div class="col-sm-12 col-md-3">
+                              <div class="form-group text-left">
+                                <label>Pathologist</label>
+                                <select class="form-control" id="js-example-basic-single" name="states[]" multiple="multiple">
+                                  <option>Pathologist</option>
+                                  <option>Pathologist1</option>
+                                  <option>Pathologist2</option>
+                                  <option>Pathologist3</option>
+                                  <option>Pathologist4</option>
+                                </select>
+                              </div>
+                              
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                              <div class="form-group text-left">
+                                <label>Screener</label>
+                                <select class="form-control" id="js-example-basic-single1" name="states[]" multiple="multiple">
+                                  <option>Screener</option>
+                                  <option>Screener1</option>
+                                  <option>Screener2</option>
+                                  <option>Screener3</option>
+                                  <option>Screener4</option>
+                                  <option>Screener5</option>
+                                  <option>Screener6</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                              <div class="form-group text-left">
+                                <label>Pathologist Assistance</label>
+                                <select class="form-control" id="js-example-basic-single2" name="states[]" multiple="multiple">
+                                  <option>Pathologist Assistance</option>
+                                  <option>Pathologist Assistance1</option>
+                                  <option>Pathologist Assistance2</option>
+                                  <option>Pathologist Assistance3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <!-- <div class="col-sm-12 col-md-3">
+                              <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal"> Add </button>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                              <button class="btn btn-outline-secondary form-control" type="button" data-target="#exampleModal" data-toggle="modal">Import Excel <br> </button>
+                            </div> -->
                           </div>
-                          <div class="col-sm-12 col-md-4">
-                            <select class="form-control">
-                              <option>Screener</option>
-                            </select>
-                          </div>
-                          <div class="col-sm-12 col-md-4"></div>
-                        </div>
+
                       </div>
                       <div class="row">
                         <div class="col-md-12">
@@ -826,6 +862,7 @@
   </div>
   <!--   Core JS Files   -->
   <script src="../../assets/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="../../assets/vendors/select2-4.0.6-rc.1/dist/js/select2.min.js" type="text/javascript"></script>
   <script src="../../assets/vendors/jquery-ui.min.js" type="text/javascript"></script>
   <script src="../../assets/vendors/tether.min.js" type="text/javascript"></script>
   <script src="../../assets/vendors/bootstrap.min.js" type="text/javascript"></script>
@@ -863,6 +900,17 @@
   <!-- Material Dashboard javascript methods -->
   <script src="../../assets/js/inspire.js"></script>
   <script src="loadmenu.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('#js-example-basic-single').select2();
+    });
+     $(document).ready(function() {
+        $('#js-example-basic-single1').select2();
+    });
+      $(document).ready(function() {
+        $('#js-example-basic-single2').select2();
+    });
+  </script>
   <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
 </body>
 
